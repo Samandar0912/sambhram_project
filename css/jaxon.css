@@ -4,26 +4,34 @@
     box-sizing: border-box;
 }
 .owl-carousel{
-padding: 10px 0;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: none !important;
 }
 .owl-carousel .item{
     width: 200px;
-    height: 200px;
-    border: 1px solid #000;
+    height: 180px;
+    box-shadow: 0 0 15px #e2e1e1;
 }
 .owl-carousel .item img{
-   width: 100%;
-   aspect-ratio: 4/3;
-   object-fit: contain;
-   mix-blend-mode: color-burn;
+    background: #fff;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
 }
 .owl-carousel .item p{
-   font-size: 20px;
-    font-weight: bold;
+    background: #fff;
+    font-size: 18px;
     text-align: center;
 }
 
-
+.owl-dots{
+    display: none !important;
+}
 
 
 .footer{
@@ -40,14 +48,14 @@ padding: 10px 0;
 }
 .footer_title img{
     height: 90px;
-    width: 90px;
     line-height: 100px;
 
 }
 .footer_title h4{
-    margin-left: 10px;
+    width: 300px;
+    height: 100px;
+    padding: 20px 5px;
     color: #fff;
-    line-height: 100px;
 }
 .footer_container hr{
     color: #fff;
@@ -59,9 +67,11 @@ padding: 10px 0;
     display: inline-block;
 }
 .footer_content p a{
+    color: #fff;
     text-decoration: none;
 }
 .footer_content button{
+    border: 1px solid #fff !important;
     color: #fff;
     padding: 10px 40px;
     display: block;

@@ -28,11 +28,11 @@ const swiper = new Swiper('.swiper', {
 
 var owl = $('.owl-carousel');
     owl.owlCarousel({
-        items:4,
+        items:5,
         loop:true,
         margin:10,
         autoplay:true,
-        autoplayTimeout:1000,
+        autoplayTimeout:4000,
         autoplayHoverPause:true
     });
     $('.play').on('click',function(){
