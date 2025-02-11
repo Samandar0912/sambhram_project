@@ -272,6 +272,19 @@
     justify-content: space-between;
 }
 
+.news_card .card .news-img{
+    width: 300px;
+    height: 270px !important;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.elon_card .card .elon-img{
+    width: 100%;
+    height: 270px !important;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
 .card{
     width: 300px;
     height: 300px;
@@ -281,11 +294,7 @@
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.card > img{
-    border-radius: 6px;
-    object-fit: cover;
-    width: 300px;
-}
+
 .card > .title{
     font-size: 14px;
     color: #1b3557;
@@ -760,5 +769,141 @@
 .call-boxs:nth-child(2){
     border-left: 1px solid #727375;
     border-right: 1px solid #727375;
+}
+
+
+
+/* =============================================================== */
+/* =============================================================== */
+/* ===================                 =========================== */
+/* ===================    Jaxon css    =========================== */
+/* ===================                 =========================== */
+/* =============================================================== */
+/* =============================================================== */
+
+
+.owl-carousel{
+    margin-top: 30px;
+    padding: 10px 0;
+    display: flex;
+}
+/* .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: none !important;
+} */
+.owl-carousel .item{
+    width: 200px;
+    height: 180px;
+    box-shadow: 0 0 15px #e2e1e1;
+}
+.owl-carousel .item img{
+    background: #fff;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.owl-carousel .item p{
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.owl-dots{
+    display: none !important;
+}
+
+
+
+
+
+
+
+.footer{
+    background: url('../img/footer/footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0;
+    
+}
+.footer_title{
+    display: flex;
+    height: 100px;
+}
+.footer_title img{
+    height: 90px;
+    line-height: 100px;
+
+}
+.footer_title h4{
+    width: 300px;
+    height: 100px;
+    padding: 20px 5px;
+    color: #fff;
+}
+.footer_container hr{
+    color: #fff;
+}
+.footer_content{
+    color: #fff;
+}
+.footer_content p{
+    display: inline-block;
+}
+.footer_content p a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer_content button{
+    border: 1px solid #fff !important;
+    color: #fff;
+    padding: 10px 40px;
+    display: block;
+    margin-top: 20px;
+    border: #fff 1px solid;
+    letter-spacing: 1px;
+}
+.footer_social a{
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+.footer_social > a > img{
+    width: 35px;
+}
+.footer_bottom p{
+    color: #fff;
+}
+
+.footer_call a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 0;
+}
+.footer_call a img{
+    width: 30px;
+}
+
+
+
+/* =============================================================== */
+/* =============================================================== */
+/* ===================                 =========================== */
+/* ===================    Jaxon css    =========================== */
+/* ===================                 =========================== */
+/* =============================================================== */
+/* =============================================================== */
+
+
+.paginations-box{
+    width: 100%;
+    /* height: 30px; */
+    border: 1px solid red;
+    margin: 20px 0;
+    text-align: center;
 }
 
