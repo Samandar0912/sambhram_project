@@ -1,0 +1,359 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sambhram{% endblock title %}
+
+    
+    {% block bg-img %}
+            <div class="bg-img-box">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="{% static 'img/bg-img-1.jpg' %}" alt=""></div>
+                        <div class="swiper-slide"><img src="{% static 'img/bg-img-1.jpg' %}" alt=""></div>
+                    </div>
+                
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                    <div class="swiper-scrollbar"></div>
+                
+                </div>
+            </div>
+    {% endblock bg-img %}
+
+    {% block news %}
+        <!-- Yangiliklar -->
+        <div class="bg_img_box">
+            <section class="news">
+                
+                <div class="section-info ">
+                    <div class="left">
+                        <h2>Yangiliklar</h2>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="right">
+                        <a href="#">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                    </div>
+                </div>
+
+                <div class="container-fluid news_card">
+                    <a href="#" class="card">
+                        <img class="news-img" src="{% static 'img/bg-img-1.jpg' %}" alt="rasm1">
+                        <p class="title">Janubiy Koreyaning “AJOU MOTOR COLLEGE”  vakillari bilan uchrashuv </p>
+                        <p>
+                            <span>Noy 16, 2023 </span>
+                            <span><img src="{% static 'img/icon/eys.png' %}"> 32</span>
+                        </p>
+                    </a>
+   
+                </div>
+            </section>
+        </div>
+
+        <!-- Yangiliklar END -->
+    {% endblock news %}
+
+    {% block elonlar %}
+        <div class="bg_img_box">
+            <section class="news">
+                
+                <div class="section-info">
+                    <div class="left">
+                        <h2>Elonlar</h2>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="right">
+                        <a href="#">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                    </div>
+                </div>
+
+                <div class="container-fluid elon_card">
+                    
+                    <a href="#" class="card">
+                        <img class="elon-img" src="{% static 'img/bg-img-1.jpg' %}" alt="rasm1">
+                        <p class="elon-title">O’quv jarayoni</p>
+                        <p class="title">Janubiy Koreyaning “AJOU MOTOR COLLEGE”  vakillari bilan uchrashuv </p>
+                        <p>
+                            <span>Noy 16, 2023 </span>
+                            <span><img src="{% static 'img/icon/eys.png' %}"> 32</span>
+                        </p>
+                    </a>
+                
+                </div>
+            </section>
+        </div>
+    {% endblock elonlar %}
+
+    {% block havola %}
+        <section class="news">
+        
+            <div class="section-info havola-line">
+                <div class="left">
+                    <h2>Havolalar</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid links_card">
+                <a href="#" class="cards">
+                    <img src="{% static 'img/havola/Link1.png' %}" alt="rasm1">
+                    <div class="box">
+                        <img src="{% static 'img/havola/pedagogika.png' %}" alt="rasm1">
+                        <p class="title_p">Pedagogika</p>
+                    </div>
+                </a>
+            
+                <a href="#" class="cards">
+                    <img src="{% static 'img/havola/Link2.png' %}" alt="rasm1">
+                    <div class="box">
+                        <img src="{% static 'img/havola/student.png' %}" alt="rasm1">
+                        <p class="title_p">Sambhram.uz</p>
+                    </div>
+                </a>
+            
+                <a href="#" class="cards">
+                    <img src="{% static 'img/havola/Link3.png' %}" alt="rasm1">
+                    <div class="box">
+                        <img src="{% static 'img/havola/jadval.png' %}" alt="rasm1">
+                        <p class="title_p">Dars jadvali</p>
+                    </div>
+                </a>
+            
+                <a href="#" class="cards">
+                    <img src="{% static 'img/havola/Link4.png' %}" alt="rasm1">
+                    <div class="box">
+                        <img src="{% static 'img/havola/Masofaviy-talim.png"' %}" alt="rasm1">
+                        <p class="title_p">Masofaviy ta'lim</p>
+                    </div>
+                </a>
+            
+        
+            
+            </div>
+        </section>
+    {% endblock havola %}
+
+    {% block about_us %}
+        <section class="about_us">
+            <div class="about-main">
+                <div class="about-img-cards">
+                    <img src="{% static 'img/universitet-haqida/bg-img-book.png' %}">
+                </div>
+                <div class="about-img-logo">
+                    <div class="line-box1">
+                        <span class="loader1"></span>
+                        <span class="loader2"></span>
+                        <span class="loader3"></span>
+                        <div class="img-card">
+                            <img src="{% static 'img/logo.png' %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img-title">
+                    <h3>Universitet haqida</h3>
+                    <p>“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.</p>
+                    <p>Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.</p>
+                    <p>Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.</p>
+
+                    <a href="#">Batafsil</a>
+                    
+                </div>
+            </div>
+        </section>
+    {% endblock about_us %}
+
+    {% block statistika %}
+        <div class="bg_img_box">
+            <section class="news">
+                
+                <div class="section-info havola-line">
+                    <div class="left">
+                        <h2>Universitetning asosiy ko'rsatkichlari</h2>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="container-fluid indicator">
+                    <div class="indicator-left">
+                        <img src="{% static 'img/indicator/indicator.png' %}" alt="">
+                        <div class="indicator-top">
+                            <p><img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-1.png' %}" alt="img">Jami hudud</p>
+                            <h3>4 400 <span class="span-sup">m <sup>2</sup></span></h3>
+                        </div>
+                        
+                        <div class="indicator-line"></div>
+                        
+                        <div class="indicator-bottom">
+                            <p> <img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-2.png' %}" alt="forest">Yashil maydon</p>
+                            <h3>1 140 <span class="span-sup">m <sup>2</sup></span></h3>
+                            <img class="indicator-forest" src="{% static 'img/indicator/forest.png' %}">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="indicator-right">
+                        <div class="row">
+                            <div class="col col-top">
+                                <div class="col-box-img">
+                                    <h4>Fakultetlar</h4>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="col-box">
+                                    <div class="col-box-left">
+                                        <p>Kofedra</p>
+                                        <h4>5</h4>
+                                    </div>
+                                    <div class="col-box-right">
+                                        <p>Fakultet</p>
+                                        <h4>3</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="col-box-img">
+                                    <h4>Xodimlar soni</h4>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="col-box">
+                                    <div class="col-box-left">
+                                        <p>Jami</p>
+                                        <h4>53</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col col-bottom col-bottom-border">
+                                <div class="col-box-img">
+                                    <h4>Talabalar soni</h4>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="col-box">
+                                    <div class="col-box-left">
+                                        <p>Jami</p>
+                                        <h4>53</h5>
+                                    </div>
+                                    <div class="col-box-center">
+                                        <p>Bakalavr</p>
+                                        <h4>1 957</h4>
+                                    </div>
+                                    <div class="col-box-left">
+                                        <p>Magistratura</p>
+                                        <h4>20</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-bottom ">
+                                <div class="col-box-img">
+                                    <h4>O’qituvchi va professorlar</h4>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="col-box">
+                                    <div class="col-box-left">
+                                        <p>Fan doktori</p>
+                                        <h4>53</h3>
+                                    </div>
+                                    <div class="col-box-center">
+                                        <p>Fan nomzodi</p>
+                                        <h4>27</h4>
+                                    </div>
+                                    <div class="col-box-left">
+                                        <p>O’qituvchi</p>
+                                        <h4>56</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row d-flex justify-content-between flex-column">
+                            <div class="col col-box-img col-box-img-2 ">
+                                <h3>Talabalar to'g'risida qisqacha ma'lumot</h3>
+                            </div>
+                            <div class="col call-boxs-info">
+                                <div class="call-boxs">
+                                    <h3>35%</h3>
+                                    <p>Moliyaviy yordam oladigan talabalar</p>
+                                </div>
+                                <div class="call-boxs">
+                                    <h3>46%</h3>
+                                    <p>Talaba o'qituvchilar</p>
+                                </div>
+                                <div class="call-boxs">
+                                    <h3>89%</h3>
+                                    <p>Bitiruvdan keyin bir yil ichida ishga joylashish</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    {% endblock statistika %}
+
+    {% block indikator %}
+        <section class="indicator-page">
+            
+            <div class="section-info havola-line">
+                <div class="left">
+                    <h2>Foydali Havolalar</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid links_card">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/adliya.png">
+                        <p>Adliya vazirligi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/gerb.png">
+                        <p>Adliya vazirligi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/talim.png">
+                        <p>Xalq ta'lim vazirligi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/test.png">
+                        <p>Davlat test markazi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/ziyonet.png">
+                        <p>Ziyo net</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/adliya.png">
+                        <p>Adliya vazirligi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/adliya.png">
+                        <p>Adliya vazirligi</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/hoydali-havolalar/adliya.png">
+                        <p>Adliya vazirligi</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="title">
+                <div class="title-line"></div>
+                <h6 class="title-text">Sambhram Universiteti</h6>
+                <div class="title-line"></div>
+            </div>
+        </section>
+
+    {% endblock indikator %}
+

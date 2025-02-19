@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/fontAwesome/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Owl-Carusel/owl-carusel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Owl-Carusel/owl-carusel-default.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap5.3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+    <title>{% block title %}{% endblock title %}</title>
+
+
+
+</head>
+<body>
+    
+
+    {% include "__navbar.html" %}
+    {% block bg-img %}{% endblock bg-img %}
+    
+    {% block main %}{% endblock main %}
+
+    {% block news %}{% endblock news %}
+    {% block elonlar %}{% endblock elonlar %}
+    {% block havola %}{% endblock havola %}
+    {% block about_us %}{% endblock about_us %}
+    {% block statistika %}{% endblock statistika %}
+    {% block indikator %}{% endblock indikator %}
+    
+    
+    {% include "__footer.html" %}
+
+
+    <script src="{% static 'js/JQuery.js' %}"></script>
+    <script src="{% static 'js/Owl-Carusel.js' %}"></script>
+    <script src="{% static 'js/bootstrap5.3.js' %}"></script>
+    <script src="{% static 'js/swiper.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
