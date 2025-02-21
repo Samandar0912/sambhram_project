@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+    <div class="bg_img_box">
+        <section class="news">
+            
+            <div class="section-info">
+                <div class="left">
+                    <h2>Yangiliklar</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid news_card_in">
+                <div class="block_news row">
+                    <div class="block_news_card-left col-8">
+                        
+                        {% if news_article.photo %}
+                            <img class="news-img" src="{{ news_article.photo.url }}" alt="Asosiy rasm">
+                        {% endif %}
+
+                        <p class="time">
+                            <span>{{ news_article.past_times }}</span>
+                            <span><img src="{% static 'img/icon/eys.png' %}"> {{ news_article.views|default:0 }}</span>
+                        </p>
+
+                        <h4>{{ news_article.title }}</h4>
+                        
+                        <p>{{ news_article.body }}</p>
+                        
+                        {% if images %}  {# Agar qo‘shimcha rasmlar bo‘lsa #}
+                            <div class="img-box row">
+                                {% for img in images %}
+                                    <img class="news-img col-4" src="{{ img.image.url }}" alt="Qo‘shimcha rasm">
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                    </div>
+                    
+                    <div class="block_news_card-right col-4">
+                        <h6>Boshqa Yangiliklar</h6>
+                        {% for other in related_news %}
+                            <a href="{% url 'main:news_detail' slug=other.slug %}" class="card">
+                                {% if other.photo %}
+                                    <img class="news-img" src="{{ other.photo.url }}" alt="rasm1">
+                                {% endif %}
+                                <p class="title">{{ other.title|truncatewords:10 }}</p>
+                                <p>
+                                    <span>{{ other.past_times }}</span>
+                                    <span><img src="{% static 'img/icon/eys.png' %}"> {{ other.views|default:0 }}</span>
+                                </p>
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock main %}

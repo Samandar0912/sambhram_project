@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+    <div class="bg_img_box">
+        <section class="news">
+            
+            <div class="section-info ">
+                <div class="left">
+                    <h2>Elonlar</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid news_card">
+            
+            
+                {% load static %}
+
+                {% for item in elon_articles %}
+                    <a href="{% url 'main:elon_detail' item.slug %}" class="card">
+                        <img class="news-img" src="{{ item.photo.url }}" alt="rasm">
+                        <p class="title">{{ item.title|truncatewords:9 }}</p>
+                        <p>
+                            <span>{{ item.past_times }}</span>
+                            <span><img src="{% static 'img/icon/eys.png' %}"> {{ item.views|default:0 }}</span>
+                        </p>
+                    </a>
+                {% endfor %}
+                
+
+                
+            
+       
+            
+    
+            </div>
+            <div class="paginations-box">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">Birinchi</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">Oldingi</a>
+                {% endif %}
+            
+                <span> Sahifa {{ page_obj.number }} / {{ page_obj.paginator.num_pages }} </span>
+            
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">Keyingi</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">Oxirgi</a>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+
+
+
+
+{% endblock main %}
+
+    

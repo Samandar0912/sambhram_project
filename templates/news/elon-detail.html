@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+    <div class="bg_img_box">
+        <section class="news">
+            
+            <div class="section-info">
+                <div class="left">
+                    <h2>Elonlar</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid news_card_in">
+                <div class="block_news row">
+                    <div class="block_news_card-left col-8">
+                        
+                        {% if elon.photo %}
+                            <img class="news-img" src="{{ elon.photo.url }}" alt="Asosiy rasm">
+                        {% endif %}
+
+                        <p class="time">
+                            <span>{{ elon.past_times }}</span>
+                            <span><img src="{% static 'img/icon/eys.png' %}"> {{ elon.views|default:0 }}</span>
+                        </p>
+
+                        <h4>{{ elon.title }}</h4>
+                        
+                        <p>{{ elon.body }}</p>
+                        
+                        {% if images %}  {# Agar qo‘shimcha rasmlar bo‘lsa #}
+                            <div class="img-box row">
+                                {% for img in images %}
+                                    <img class="news-img col-4" src="{{ img.image.url }}" alt="Qo‘shimcha rasm">
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                    </div>
+                    
+                    <div class="block_news_card-right col-4">
+                        <h6>Boshqa Elonlar</h6>
+                        {% for other in related_elon %}
+                            <a href="{% url 'main:elon_detail' slug=other.slug %}" class="card">
+                                {% if other.photo %}
+                                    <img class="news-img" src="{{ other.photo.url }}" alt="rasm1">
+                                {% endif %}
+                                <p class="title">{{ other.title|truncatewords:7 }}</p>
+                                <p>
+                                    <span>{{ other.past_times }}</span>
+                                    <span><img src="{% static 'img/icon/eys.png' %}"> {{ other.views|default:0 }}</span>
+                                </p>
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock main %}

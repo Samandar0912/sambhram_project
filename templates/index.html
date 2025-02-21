@@ -8,8 +8,19 @@
             <div class="bg-img-box">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="{% static 'img/bg-img-1.jpg' %}" alt=""></div>
-                        <div class="swiper-slide"><img src="{% static 'img/bg-img-1.jpg' %}" alt=""></div>
+
+                        {% for item in bgimg %}
+                            {% if item.img %}
+                                <div class="swiper-slide">
+                                    <img src="{{ item.img.url }}" alt="">
+                                </div>
+                            {% else %}
+                                <div class="swiper-slide">
+                                    <img src="{% static 'img/bg-img-1.jpg' %}" alt="">
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        
                     </div>
                 
                     <!-- <div class="swiper-pagination"></div> -->
@@ -34,19 +45,21 @@
                         <span class="line"></span>
                     </div>
                     <div class="right">
-                        <a href="#">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:news' %}">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                     </div>
                 </div>
 
                 <div class="container-fluid news_card">
-                    <a href="#" class="card">
-                        <img class="news-img" src="{% static 'img/bg-img-1.jpg' %}" alt="rasm1">
-                        <p class="title">Janubiy Koreyaning “AJOU MOTOR COLLEGE”  vakillari bilan uchrashuv </p>
-                        <p>
-                            <span>Noy 16, 2023 </span>
-                            <span><img src="{% static 'img/icon/eys.png' %}"> 32</span>
-                        </p>
-                    </a>
+                    {% for item in news|slice:":8" %}
+                        <a href="{% url 'main:news_detail' item.slug %}" class="card">
+                            <img class="news-img" src="{{ item.photo.url }}" alt="rasm1">
+                            <p class="title">{{ item.title|truncatewords:9 }}</p>
+                            <p>
+                                <span>{{ item.past_times }}</span>
+                                <span><img src="{% static 'img/icon/eys.png' %}"> {{ item.views|default:0 }}</span>
+                            </p>
+                        </a>
+                    {% endfor %}
    
                 </div>
             </section>
@@ -66,21 +79,22 @@
                         <span class="line"></span>
                     </div>
                     <div class="right">
-                        <a href="#">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:elon' %}">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                     </div>
                 </div>
 
                 <div class="container-fluid elon_card">
-                    
-                    <a href="#" class="card">
-                        <img class="elon-img" src="{% static 'img/bg-img-1.jpg' %}" alt="rasm1">
-                        <p class="elon-title">O’quv jarayoni</p>
-                        <p class="title">Janubiy Koreyaning “AJOU MOTOR COLLEGE”  vakillari bilan uchrashuv </p>
-                        <p>
-                            <span>Noy 16, 2023 </span>
-                            <span><img src="{% static 'img/icon/eys.png' %}"> 32</span>
-                        </p>
-                    </a>
+                    {% for item in elon|slice:":3" %}    
+                        <a href="{% url 'main:elon_detail' item.slug %}" class="card">
+                            <img class="elon-img" src="{{ item.photo.url }}" alt="rasm1">
+                            <p class="elon-title">{{ item.name }}</p>
+                            <p class="title">{{ item.title|truncatewords:10 }}</p>
+                            <p>
+                                <span>{{ item.past_times }} </span>
+                                <span><img src="{% static 'img/icon/eys.png' %}">  {{ item.views|default:0 }}</span>
+                            </p>
+                        </a>
+                    {% endfor %}
                 
                 </div>
             </section>
@@ -126,7 +140,7 @@
                 <a href="#" class="cards">
                     <img src="{% static 'img/havola/Link4.png' %}" alt="rasm1">
                     <div class="box">
-                        <img src="{% static 'img/havola/Masofaviy-talim.png"' %}" alt="rasm1">
+                        <img src="{% static 'img/havola/Masofaviy-talim.png' %}" alt="rasm1">
                         <p class="title_p">Masofaviy ta'lim</p>
                     </div>
                 </a>
@@ -312,38 +326,15 @@
 
             <div class="container-fluid links_card">
                 <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/adliya.png">
-                        <p>Adliya vazirligi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/gerb.png">
-                        <p>Adliya vazirligi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/talim.png">
-                        <p>Xalq ta'lim vazirligi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/test.png">
-                        <p>Davlat test markazi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/ziyonet.png">
-                        <p>Ziyo net</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/adliya.png">
-                        <p>Adliya vazirligi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/adliya.png">
-                        <p>Adliya vazirligi</p>
-                    </div>
-                    <div class="item">
-                        <img src="./img/hoydali-havolalar/adliya.png">
-                        <p>Adliya vazirligi</p>
-                    </div>
+                    
+                    {% for item in havola %}
+                        <div class="item">
+                            <a href="{{ item.link }}">
+                                <img src="{{ item.img.url }}">
+                                <p>{{ item.name }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
                     
                 </div>
             </div>
