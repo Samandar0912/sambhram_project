@@ -111,6 +111,7 @@ class ElonArticle(models.Model):
     
 
 
+# Elon rasmlari Model
 
 class ElonImage(models.Model):
     news = models.ForeignKey(ElonArticle, on_delete=models.CASCADE, related_name="images")
@@ -118,8 +119,8 @@ class ElonImage(models.Model):
 
 
 
-
 # Foydali havola model
+
 class HavolaImages(models.Model):
     name = models.CharField(max_length=50)
     img = models.ImageField(upload_to='Media/FH/')
@@ -132,6 +133,10 @@ class HavolaImages(models.Model):
     def __str__(self):
         return self.name
 
+
+
+
+# Rektorat User Model
 
 
 class RektoratCategory(models.Model):
@@ -182,6 +187,171 @@ class UserModel(models.Model):
     class Meta:
         verbose_name = "Rektorat ichki Hodimlar"
         verbose_name_plural = "Rektorat ichki Hodimlar"
+
+    def __str__(self):
+        return self.name
+
+
+# Facultet User Model
+
+class FacultetUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    body = models.TextField(verbose_name="Malumot")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    photo = models.ImageField(upload_to='Media/Fakultet/')
+    email = models.EmailField(max_length=254, verbose_name="email")
+    category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
+ 
+    def get_absolute_url(self):
+        return reverse('main:fakultet_detail', args=[str(self.pk)])  # To‘g‘ri namespace bilan chaqirish
+
+    class Meta:
+        verbose_name = "Fakultet"
+        verbose_name_plural = "Fakultetlar"
+
+    def __str__(self):
+        return self.name
+
+
+
+class FacultetInUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    photo = models.ImageField(upload_to='Media/Fakultet/')
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    email = models.EmailField(max_length=254, verbose_name="email")
+    tg = models.CharField(max_length=150, verbose_name="tg manzil")
+    category = models.ForeignKey(FacultetUserModel, on_delete=models.CASCADE)
+ 
+ 
+    class Meta:
+        verbose_name = "Fakultet ichki Hodimlar"
+        verbose_name_plural = "Fakultet ichki Hodimlar"
+
+    def __str__(self):
+        return self.name
+
+
+# Markaz User Model
+
+class MarkazUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    body = models.TextField(verbose_name="Malumot")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    photo = models.ImageField(upload_to='Media/markaz/')
+    email = models.EmailField(max_length=254, verbose_name="email")
+    category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
+ 
+    def get_absolute_url(self):
+        return reverse('main:markaz_detail', args=[str(self.pk)])
+
+    class Meta:
+        verbose_name = "Markaz"
+        verbose_name_plural = "Markazlar"
+
+    def __str__(self):
+        return self.name
+
+
+
+class MarkazInUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    photo = models.ImageField(upload_to='Media/Markaz/')
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    email = models.EmailField(max_length=254, verbose_name="email")
+    tg = models.CharField(max_length=150, verbose_name="tg manzil")
+    category = models.ForeignKey(MarkazUserModel, on_delete=models.CASCADE)
+ 
+ 
+    class Meta:
+        verbose_name = "Markaz ichki Hodimlar"
+        verbose_name_plural = "Markaz ichki Hodimlar"
+
+    def __str__(self):
+        return self.name
+
+
+
+# bo'lim User Model
+
+class BulimUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    body = models.TextField(verbose_name="Malumot")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    photo = models.ImageField(upload_to='Media/Bulim/')
+    email = models.EmailField(max_length=254, verbose_name="email")
+    category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
+ 
+    def get_absolute_url(self):
+        return reverse('main:bulim_detail', args=[str(self.pk)])
+
+    class Meta:
+        verbose_name = "Bo'lim"
+        verbose_name_plural = "Bo'limlar"
+
+    def __str__(self):
+        return self.name
+
+
+
+class BulimInUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    photo = models.ImageField(upload_to='Media/Bulim/')
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    email = models.EmailField(max_length=254, verbose_name="email")
+    tg = models.CharField(max_length=150, verbose_name="tg manzil")
+    category = models.ForeignKey(BulimUserModel, on_delete=models.CASCADE)
+ 
+ 
+    class Meta:
+        verbose_name = "Bo'lim ichki Hodimlar"
+        verbose_name_plural = "Bo'lim ichki Hodimlar"
+
+    def __str__(self):
+        return self.name
+
+
+# Kafedra User Model
+
+class KafedraUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    body = models.TextField(verbose_name="Malumot")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    photo = models.ImageField(upload_to='Media/Kafedra/')
+    email = models.EmailField(max_length=254, verbose_name="email")
+    category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
+ 
+    def get_absolute_url(self):
+        return reverse('main:kafedra_detail', args=[str(self.pk)])
+
+    class Meta:
+        verbose_name = "Kafedra"
+        verbose_name_plural = "Kafedra"
+
+    def __str__(self):
+        return self.name
+
+
+
+class KafedraInUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    photo = models.ImageField(upload_to='Media/Kafedra/')
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    email = models.EmailField(max_length=254, verbose_name="email")
+    tg = models.CharField(max_length=150, verbose_name="tg manzil")
+    category = models.ForeignKey(BulimUserModel, on_delete=models.CASCADE)
+ 
+ 
+    class Meta:
+        verbose_name = "Kafedra ichki Hodimlar"
+        verbose_name_plural = "Kafedra ichki Hodimlar"
 
     def __str__(self):
         return self.name

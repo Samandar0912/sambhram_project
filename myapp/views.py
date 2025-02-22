@@ -5,11 +5,12 @@ from myapp.models import *
 
 # Create your views here.
 
+# ================= INDEX =================
 class IndexView(TemplateView):
     template_name = "index.html"
     
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)  # `super()` bilan asosiy `context` ni olamiz
+        context = super().get_context_data(**kwargs)
         context['bgimg'] = EkranImages.objects.all()
         context['news'] = NewsArticle.objects.all()
         context['elon'] = ElonArticle.objects.all()
@@ -20,7 +21,8 @@ class IndexView(TemplateView):
 
 
 
-class NewsModelView(ListView):
+# ================= NEWS =================
+class NewsView(ListView):
     model = NewsArticle
     template_name = "news/news.html"
     context_object_name = "news_articles"
@@ -43,8 +45,9 @@ class NewsDetailView(DetailView):
 
 
 
+# ================= ELON =================
 
-class ElonModelView(ListView):
+class ElonView(ListView):
     model = ElonArticle  # TO'G'RI MODEL
     template_name = "news/elon.html"  
     context_object_name = "elon_articles"
@@ -69,26 +72,87 @@ class ElonDetailView(DetailView):
 
 
 
-class RektoratModelView(ListView):
+# ================= REKTORAT =================
+class RektoratView(ListView):
     model = RectoratUserModel
     context_object_name = 'rektorat'
-    template_name = "rektorat/rektorat.html"
+    template_name = "rektorat/rektorat/rektorat.html"
 
 
 class RektoratDetailView(DetailView):
     model = RectoratUserModel
     context_object_name = 'rektoratUser'
-    template_name = "rektorat/rektorat-detail.html"
+    template_name = "rektorat/rektorat/rektorat-detail.html"
 
 
 
 
-class FakultetModelView(TemplateView):
+# ================= FAKULTET =================
+class FakultetView(ListView):
+    model = FacultetUserModel
+    context_object_name = 'fakultet'
     template_name = "rektorat/fakultet/fakultet.html"
 
 
-class FakultetDetailView(TemplateView):
-    template_name = "rektorat/fakultet/fakultet-detail.html"
+class FakultetDetailView(DetailView):
+    model = FacultetUserModel
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["fakultet"] = FacultetUserModel.objects.all()
+        context["userFakultet"] = FacultetInUserModel.objects.all()
+        return context
+    
+    context_object_name = 'facultetUser'
+    template_name = "rektorat/fakultet/detail.html"
 
 
 
+
+
+# ================= MARKAZ =================
+class MarkazView(ListView):
+    model = MarkazUserModel
+    context_object_name = 'markaz'
+    template_name = "rektorat/markaz/markaz.html"
+
+class MarkazDetailView(DetailView):
+    model = MarkazUserModel
+    context_object_name = 'markaz'
+    template_name = "rektorat/markaz/detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["userMarkaz"] = MarkazInUserModel.objects.all()
+        return context
+
+# ================= BULIM =================
+class BulimView(ListView):
+    model = BulimUserModel
+    context_object_name = 'bulim'
+    template_name = "rektorat/bulim/bulim.html"
+
+class BulimDetailView(DetailView):
+    model = BulimUserModel
+    context_object_name = 'bulim'
+    template_name = "rektorat/bulim/detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["userBulim"] = BulimInUserModel.objects.all()
+        return context
+
+# ================= KAFEDRA =================
+class KafedraView(ListView):
+    model = KafedraUserModel
+    context_object_name = 'kafedra'
+    template_name = "rektorat/kafedra/kafedra.html"
+
+class KafedraDetailView(DetailView):
+    model = KafedraUserModel
+    context_object_name = 'kafedra'
+    template_name = "rektorat/kafedra/detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["userKafedra"] = KafedraInUserModel.objects.all()
+        return context

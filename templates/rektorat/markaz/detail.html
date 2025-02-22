@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<div class="bg_img_box">
+    <section class="rektorat">
+        <div class="breadcrumbb">
+            <ul>
+                <li><a href="#"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
+                <li class="sircl"></li>
+    
+                <li><a href="#">Universitet</a></li>
+                <li class="sircl"></li>
+                
+                <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
+                <li class="sircl"></li>
+                <li><a href="#">{{ markaz.name }}</a></li>
+        
+            </ul>
+        </div>
+        
+       
+        <div class="rektorat_users">
+            <div class="rektor_card_in">
+                <div class="left">
+                    <img src="{{ markaz.photo.url }}">
+                </div>
+                <div class="right">
+                    <p class="name">  <span>F.I.SH</span>      {{ markaz.name }}</p>
+                    <p class="rang">  <span>Lavozim</span>      {{ markaz.rang }}</p>
+                    <p class="tell">  <span>Telefon</span>      {{ markaz.number }}</p>
+                    <p class="email"> <span>E-pochta</span>     {{ markaz.email }}</p>
+                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
+                </div>
+            </div>
+      
+            <div class="all_cards_in">
+                
+                <p align="center">Umumiy ma’lumot </p>
+                <p>{{ markaz.body }}</p>
+               
+            </div>
+            {% if userMarkaz %}
+                <h1 align="center" class="title_user-info">Hodimlar haqida ma’lumot</h1>
+                <div class="plus-card">
+            
+                
+                    {% for item in userMarkaz %}      
+                    <div class="cards">
+                        <div class="img-box">
+                            <img src="{{ item.photo.url }}">
+                        </div>
+                        
+                        <div class="footer_card">
+                            <p class="user_title">{{ item.name }}</p>
+                            <p class="user_rang">{{ item.rang }}</p>
+                            <div class="link-btn">
+                                <a href=""><img src="{% static 'img/Rektorat/icon-call.png' %}">{{ item.number }}</a>
+                                <a href=""><img src="{% static 'img/Rektorat/icon-sms.png' %}">{{ item.email }}</a>
+                                <a href=""><img src="{% static 'img/Rektorat/icon-tg.png' %}">{{ item.tg }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            
+               
+                
+            </div>
+        </div>
+
+      
+    </section>
+</div>
+
+{% endblock main %}

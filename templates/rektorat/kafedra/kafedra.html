@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+    <div class="bg_img_box">
+        <section class="rektorat">
+            <div class="breadcrumbb">
+                <ul>
+                    <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
+                    <li class="sircl"></li>
+        
+                    <li><a href="#">Universitet</a></li>
+                    <li class="sircl"></li>
+                    
+                    <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
+                </ul>
+            </div>
+            
+            <div class="rektorat_users">
+         
+
+                <div class="all_cards">
+                    {% for item in kafedra %}
+                        <a href="{{ item.get_absolute_url }}" class="card">
+                            <img src="{{ item.photo.url }}">
+                            <p class="user_title">{{ item.name }}</p>
+                            <p class="user_rang">{{ item.rang }}</p>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock main %}

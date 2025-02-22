@@ -20,27 +20,17 @@
                 
                 <div class="rektorat_users">
                  
-            
                     <div class="all_cards">
-                        <a href="#" class="card">
-                            <img src="{% static 'img/Rektorat/samandar.jpg' %}">
-                            <p class="user_title">Saitov Sirojiddin Abduvaliyevich</p>
-                            <p class="user_rang">“Psixologiya” fakulteti dekani</p>
-                        
-                        </a>
+            
+                        {% for item in fakultet %}
+                            <a href="{% url 'main:fakultet_detail' item.pk %}" class="card">
+                                <img src="{{ item.photo.url }}">
+                                <p class="user_title">{{ item.name }}</p>
+                                <p class="user_rang">{{ item.rang }}</p>
+                            </a>
+                        {% endfor %}
                     
-                        <a href="#" class="card">
-                            <img src="{% static 'img/Rektorat/samandar.jpg' %}">
-                            <p class="user_title">Saitov Sirojiddin Abduvaliyevich</p>
-                            <p class="user_rang">“Psixologiya” fakulteti dekani</p>
-                        
-                        </a>
-                        <a href="#" class="card">
-                            <img src="{% static 'img/Rektorat/samandar.jpg' %}">
-                            <p class="user_title">Saitov Sirojiddin Abduvaliyevich</p>
-                            <p class="user_rang">“Psixologiya” fakulteti dekani</p>
-                        
-                        </a>
+             
                     
         
                     </div>
