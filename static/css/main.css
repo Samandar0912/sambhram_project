@@ -902,8 +902,6 @@
 
 .paginations-box{
     width: 100%;
-    /* height: 30px; */
-    border: 1px solid red;
     margin: 20px 0;
     text-align: center;
 }
@@ -1302,4 +1300,73 @@
 .activity_right  p{
     margin-left: 20px;
     color: #11456B;
+}
+
+
+
+
+.paginations-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.pagination-link {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    color: #11456B;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.pagination-link:hover {
+    background-color: #11456B;
+    color: white;
+    border-color: #11456B;
+}
+
+.pagination-link.active {
+    background-color: #11456B;
+    color: white;
+    border-color: #11456B;
+    cursor: default;
+}
+/* 
+.pagination-link:first-child::before {
+    content: "←";
+    font-size: 14px;
+    color: #11456B;
+}
+
+.pagination-link:last-child::before {
+    content: "→";
+    font-size: 14px;
+    color: #11456B;
+} */
+
+.pagination-link:hover:first-child::before, 
+.pagination-link:hover:last-child::before {
+    color: white;
+}
+
+/* Responsive dizayn */
+@media (max-width: 600px) {
+    .pagination-link {
+        padding: 6px 12px;
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
 }

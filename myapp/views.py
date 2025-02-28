@@ -27,7 +27,7 @@ class NewsView(ListView):
     template_name = "news/news.html"
     context_object_name = "news_articles"
     ordering = ["-created"] 
-    paginate_by = 12 
+    paginate_by = 2
 
 
 
@@ -52,7 +52,7 @@ class ElonView(ListView):
     template_name = "news/elon.html"  
     context_object_name = "elon_articles"
     ordering = ["-created"]  
-    paginate_by = 12  
+    paginate_by = 2  
 
 
 
@@ -156,3 +156,17 @@ class KafedraDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         context["userKafedra"] = KafedraInUserModel.objects.all()
         return context
+
+
+
+# ================= KAFEDRA =================
+
+class FaoliyatView(TemplateView):
+    template_name = "faoliyat/faoliyat.html"
+
+class XalqaroFaoliyatView(TemplateView):
+    template_name = "faoliyat/xf/xf.html"
+
+
+class OquvFaoliyatView(TemplateView):
+    template_name = "faoliyat/of/of.html"

@@ -31,6 +31,9 @@ urlpatterns = [
     path('Kafedralar/', views.KafedraView.as_view(), name='kafedra'),
     path('Kafedralar/<int:pk>/', views.KafedraDetailView.as_view(), name='kafedra_detail'),
     
+    path('Faoliyat/', views.FaoliyatView.as_view(), name='faoliyat'),
+    path('Faoliyat/Xalqaro-faoliyat', views.XalqaroFaoliyatView.as_view(), name='xf'),
+    path('Faoliyat/Oquv-faoliyat', views.OquvFaoliyatView.as_view(), name='of'),
     
     
 ]

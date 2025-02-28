@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="bg_img_box">
+    <section class="faoliyat">
+        <div class="breadcrumbb">
+            <ul>
+                <li><a href="#"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
+                <li class="sircl"></li>
+                <li><a href="#">Faoliyat</a></li>
+        {% comment %}     
+                <li class="sircl"></li>
+                <li><a href="#">Rektorat</a></li>
+        {% endcomment %}
+
+            </ul>
+        </div>
+        <div class="activity">
+            
+            {% include "faoliyat/f_left.html" %}
+            
+            <div class="activity_right">
+                <ul>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    <li><a href="#">O’QUV YANGILIKLAR</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock main %}
