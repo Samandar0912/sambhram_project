@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+    <div class="bg_img_box">
+        <section class="news">
+            
+            <div class="section-info">
+                <div class="left">
+                    <h2>Universitet Tarixi</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="container-fluid news_card_in">
+                <div class="block_news row">
+                    <div class="block_news_card-left col-8">
+                        
+                        {% if news_article.photo %}
+                            <img class="news-img" src="{{ news_article.photo.url }}" alt="Asosiy rasm">
+                        {% endif %}
+
+
+                        <h4>{{ news_article.title }}</h4>
+                        
+                        <p>{{ news_article.body }}</p>
+                        
+                        {% if images %}  {# Agar qo‘shimcha rasmlar bo‘lsa #}
+                            <div class="img-box row">
+                                {% for img in images %}
+                                    <img class="news-img col-4" src="{{ img.image.url }}" alt="Qo‘shimcha rasm">
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock main %}

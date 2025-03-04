@@ -17,7 +17,16 @@ class IndexView(TemplateView):
         context['havola'] = HavolaImages.objects.all()
         return context
     
+# ================= NEWS =================
 
+class AloqaView(TemplateView):
+    template_name = "content/aloqa.html"
+
+class HistoryView(TemplateView):
+    template_name = "content/history.html"
+
+class AboutView(TemplateView):
+    template_name = "content/about.html"
 
 
 
@@ -159,7 +168,9 @@ class KafedraDetailView(DetailView):
 
 
 
-# ================= KAFEDRA =================
+# ================= FAOLIYAT =================
+# ================= FAOLIYAT =================
+# ================= FAOLIYAT =================
 
 class FaoliyatView(TemplateView):
     template_name = "faoliyat/faoliyat.html"
@@ -167,6 +178,11 @@ class FaoliyatView(TemplateView):
 class XalqaroFaoliyatView(TemplateView):
     template_name = "faoliyat/xf/xf.html"
 
-
 class OquvFaoliyatView(TemplateView):
     template_name = "faoliyat/of/of.html"
+
+class IlmiyFaoliyatView(TemplateView):
+    template_name = "faoliyat/if/if.html"
+
+class MoliyaviyFaoliyatView(TemplateView):
+    template_name = "faoliyat/mf/mf.html"

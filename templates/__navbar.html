@@ -39,8 +39,8 @@
                     <li class="li_1">
                         <a href="#">SAMBHRAM Haqida <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="#">Universitet Haqida</a></li>
-                            <li><a href="#">Universitet Tarixi</a></li>
+                            <li><a href="{% url 'main:about' %}">Universitet Haqida</a></li>
+                            <li><a href="{% url 'main:history' %}">Universitet Tarixi</a></li>
                         </ul>
                     </li> 
                         
@@ -64,10 +64,12 @@
                     </li>
                         
                     <li class="li_1">
-                        <a href="#">Faoliyat        <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:faoliyat' %}">Faoliyat        <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="#">O'quv faoliyat</a></li>
-                            <li><a href="#">Xalqaro faoliyat</a></li>
+                            <li><a href="{% url 'main:if' %}">Ilmiy faoliyat</a></li>
+                            <li><a href="{% url 'main:of' %}">O'quv faoliyat</a></li>
+                            <li><a href="{% url 'main:xf' %}">Xalqaro faoliyat</a></li>
+                            <li><a href="{% url 'main:mf' %}">Moliyaviy faoliyat</a></li>
                         </ul>
                     </li>
                         
@@ -77,6 +79,9 @@
                             <li><a href="#">Kunduzgi</a></li>
                             <li><a href="#">Sirtqi Ta'lim</a></li>
                             <li><a href="#">2-Mutaxasislik</a></li>
+                            <li><a href="#">Bakalavr</a></li>
+                            <li><a href="#">Magistratura</a></li>
+                            <li><a href="#">Doktrantura</a></li>
                         </ul>
                     </li>
                         
@@ -91,9 +96,9 @@
                     </li>
                         
                     <li class="li_1">
-                        <a href="#">Aloqa<img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:aloqa' %}">Aloqa<img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="#">Aloqa</a></li>
+                            <li><a href="{% url 'main:aloqa' %}">Aloqa</a></li>
                         </ul>
                     </li>
                 </ul>

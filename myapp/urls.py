@@ -5,6 +5,9 @@ app_name = "main"
 
 urlpatterns = [
     path('',views.IndexView.as_view(), name="index"),
+    path('Aloqa',views.AloqaView.as_view(), name="aloqa"),
+    path('Universitet-Tarixi',views.HistoryView.as_view(), name="history"),
+    path('Universitet-Haqida',views.AboutView.as_view(), name="about"),
     
     path('Yangiliklar/', views.NewsView.as_view(), name='news'),
     path("Yangiliklar/<slug:slug>/", views.NewsDetailView.as_view(), name="news_detail"),   
@@ -34,6 +37,8 @@ urlpatterns = [
     path('Faoliyat/', views.FaoliyatView.as_view(), name='faoliyat'),
     path('Faoliyat/Xalqaro-faoliyat', views.XalqaroFaoliyatView.as_view(), name='xf'),
     path('Faoliyat/Oquv-faoliyat', views.OquvFaoliyatView.as_view(), name='of'),
+    path('Faoliyat/Moliyaviy-faoliyat', views.MoliyaviyFaoliyatView.as_view(), name='mf'),
+    path('Faoliyat/Ilmiy-faoliyat', views.IlmiyFaoliyatView.as_view(), name='if'),
     
     
 ]

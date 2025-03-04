@@ -8,11 +8,10 @@
             <ul>
                 <li><a href="#"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="#">Faoliyat</a></li>
-        {% comment %}     
+                <li><a href="{% url 'main:faoliyat' %}">Faoliyat</a></li>
+      
                 <li class="sircl"></li>
-                <li><a href="#">Rektorat</a></li>
-        {% endcomment %}
+                <li><a href="{% url 'main:xf' %}">Xalqaro faoliyat</a></li>
 
             </ul>
         </div>

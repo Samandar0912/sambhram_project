@@ -39,17 +39,17 @@ admin.site.register(ElonImage)
 
 admin.site.register(RektoratCategory)
 admin.site.register(RectoratUserModel)
-admin.site.register(UserModel)
+# admin.site.register(UserModel)
 
 admin.site.register(FacultetUserModel)
-admin.site.register(FacultetInUserModel)
+# admin.site.register(FacultetInUserModel)
 
 
 admin.site.register(MarkazUserModel)
-admin.site.register(MarkazInUserModel)
+# admin.site.register(MarkazInUserModel)
 
 admin.site.register(BulimUserModel)
-admin.site.register(BulimInUserModel)
+# admin.site.register(BulimInUserModel)
 
 admin.site.register(KafedraUserModel)
-admin.site.register(KafedraInUserModel)
+# admin.site.register(KafedraInUserModel)

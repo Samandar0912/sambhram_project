@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+
+<div class="bg_img_box">
+    <section class="rektorat">
+        <div class="breadcrumbb">
+            <ul>
+                <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
+                <li class="sircl"></li>
+    
+                <li><a href="#">Aloqa</a></li>
+            
+                
+        
+            </ul>
+        </div>
+        
+        <div class="rektorat_users">
+            <div class="rektor_card_in">
+                <div class="left">
+                    <img src="rasm">
+                </div>
+                <div class="right">
+                    <p class="name">  <span>F.I.SH</span>     lorem5</p>
+                    <p class="rang">  <span>Lavozim</span>    lorem5</p>
+                    <p class="tell">  <span>Telefon</span>    lorem5</p>
+                    <p class="email"> <span>E-pochta</span>   lorem5</p>
+                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
+                </div>
+            </div>
+      
+            <div class="all_cards_in">
+                
+                <p align="center">Umumiy ma’lumot </p>
+                <p>{{ facultetUser.body }}</p>
+               
+            </div>
+        </div>
+    </section>
+</div>
+   
+{% endblock main %}
