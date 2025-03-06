@@ -82,6 +82,13 @@ class ElonDetailView(DetailView):
 
 
 # ================= REKTORAT =================
+# ================= REKTORAT =================
+# ================= REKTORAT =================
+
+class RektoratMainView(TemplateView):
+    template_name = "rektorat/rekttorat.html"
+
+
 class RektoratView(ListView):
     model = RectoratUserModel
     context_object_name = 'rektorat'

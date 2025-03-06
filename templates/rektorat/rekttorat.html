@@ -8,20 +8,21 @@
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:talabalar' %}">Talabalar</a></li>
+                <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
             </ul>
         </div>
         <div class="activity">
             
-            {% include "talabalar/t_left.html" %}
+            {% include "rektorat/r_left.html" %}
             
             <div class="activity_right">
                 <ul>
-                    <li><a href="{% url 'main:T_Bakalavr' %}">Bakalavr</a></li>
-                    <li><a href="{% url 'main:T_Magistr' %}">Magistratura</a></li>
-                    <li><a href="{% url 'main:T_Sirqi' %}">Sirtqi Ta'lim</a></li>
-                    <li><a href="{% url 'main:T_qayta-tiklash' %}">O'qishni ko'chirish va qayta tiklash</a></li>
-                
+                    <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
+                    <li><a href="{% url 'main:fakultet' %}">Fakultetlar</a></li>
+                    <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
+                    <li><a href="{% url 'main:bulim' %}">Bo'limlar</a></li>
+                    <li><a href="{% url 'main:kafedra' %}">Kafedralar</a></li>
+
                 </ul>
             </div>
         </div>

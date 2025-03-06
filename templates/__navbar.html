@@ -53,7 +53,7 @@
                     </li>
                     
                     <li class="li_1">
-                        <a href="#">Universitet     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:rektorat_main' %}">Universitet     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
                             <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
                             <li><a href="{% url 'main:fakultet' %}">Fakultetlar</a></li>
@@ -88,10 +88,10 @@
                     <li class="li_1">
                         <a href="{% url 'main:talabalar' %}">Talabalar       <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="#">Bakalavr</a></li>
-                            <li><a href="#">Magistratura</a></li>
-                            <li><a href="#">Sirtqi Ta'lim</a></li>
-                            <li><a href="#">O'qishni ko'chirish va qayta tiklash</a></li>
+                            <li><a href="{% url 'main:T_Bakalavr' %}">Bakalavr</a></li>
+                            <li><a href="{% url 'main:T_Magistr' %}">Magistratura</a></li>
+                            <li><a href="{% url 'main:T_Sirqi' %}">Sirtqi Ta'lim</a></li>
+                            <li><a href="{% url 'main:T_qayta-tiklash' %}">O'qishni ko'chirish va qayta tiklash</a></li>
                         </ul>
                     </li>
                         

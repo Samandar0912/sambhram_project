@@ -15,6 +15,7 @@ urlpatterns = [
     path('Elonlar/', views.ElonView.as_view(), name='elon'),
     path("elon/<slug:slug>/", views.ElonDetailView.as_view(), name="elon_detail"),    
     
+    path('Rektorat-main/', views.RektoratMainView.as_view(), name='rektorat_main'),
     path('Rektorat/', views.RektoratView.as_view(), name='rektorat'),
     path('Rektorat/<int:pk>/', views.RektoratDetailView.as_view(), name='rektorat_detail'),
      
@@ -52,6 +53,10 @@ urlpatterns = [
     
     
     path('Talabalar/', views.TalabalarView.as_view(), name='talabalar'),
+    path('Talabalar/Sirtqi-talim', views.TalabalarSirqiView.as_view(), name='T_Sirqi'),
+    path('Talabalar/Bakalavir', views.TalabalarBakalavrView.as_view(), name='T_Bakalavr'),
+    path('Talabalar/Magistratura', views.TalabalarMagistrView.as_view(), name='T_Magistr'),
+    path('Talabalar/O\'qishni-ko\'chirish-vaqayta-tiklash', views.QaytaTiklashView.as_view(), name='T_qayta-tiklash'),
     
     
     
