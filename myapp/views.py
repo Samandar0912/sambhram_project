@@ -186,3 +186,52 @@ class IlmiyFaoliyatView(TemplateView):
 
 class MoliyaviyFaoliyatView(TemplateView):
     template_name = "faoliyat/mf/mf.html"
+
+
+# ================= TALIM =================
+# ================= TALIM =================
+# ================= TALIM =================
+
+
+class TalimView(TemplateView):
+    template_name = "talim/talim.html"
+    
+class KunduzView(TemplateView):
+    template_name = "talim/kunduzgi/kunduzgi.html"
+    
+class SirqiView(TemplateView):
+    template_name = "talim/sirtqi/sirtqi.html"
+    
+class BakalavrView(TemplateView):
+    template_name = "talim/bakalavr/bakalavr.html"
+    
+class MagistrView(TemplateView):
+    template_name = "talim/magistr/magistr.html"
+    
+class IkkinchiMutahasislikView(TemplateView):
+    template_name = "talim/2_mustaxasis/2m.html"
+    
+class DoktaranturaView(TemplateView):
+    template_name = "talim/doktarantura/doktarantura.html"
+    
+
+# ================= TALABALAR =================
+# ================= TALABALAR =================
+# ================= TALABALAR =================
+
+class TalabalarView(TemplateView):
+    template_name = "talabalar/talabalar.html"
+    
+    
+class TalabalarSirqiView(TemplateView):
+    template_name = "talabalar/sirtqi/sirtqi.html"
+    
+class TalabalarBakalavrView(TemplateView):
+    template_name = "talabalar/bakalavr/bakalavr.html"
+    
+class TalabalarMagistrView(TemplateView):
+    template_name = "talabalar/magistr/magistr.html"
+    
+class QaytaTiklashView(TemplateView):
+    template_name = "talabalar/qayta_tiklash/qayta_tiklash.html"
+    

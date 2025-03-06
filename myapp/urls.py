@@ -34,11 +34,26 @@ urlpatterns = [
     path('Kafedralar/', views.KafedraView.as_view(), name='kafedra'),
     path('Kafedralar/<int:pk>/', views.KafedraDetailView.as_view(), name='kafedra_detail'),
     
+    
     path('Faoliyat/', views.FaoliyatView.as_view(), name='faoliyat'),
     path('Faoliyat/Xalqaro-faoliyat', views.XalqaroFaoliyatView.as_view(), name='xf'),
     path('Faoliyat/Oquv-faoliyat', views.OquvFaoliyatView.as_view(), name='of'),
     path('Faoliyat/Moliyaviy-faoliyat', views.MoliyaviyFaoliyatView.as_view(), name='mf'),
     path('Faoliyat/Ilmiy-faoliyat', views.IlmiyFaoliyatView.as_view(), name='if'),
+    
+    
+    path('Talim/', views.TalimView.as_view(), name='talim'),
+    path('Talim/Kunduzki-talim', views.KunduzView.as_view(), name='kunduzki'),
+    path('Talim/Sritqi-talim', views.SirqiView.as_view(), name='sirtqi'),
+    path('Talim/Bakalavr', views.BakalavrView.as_view(), name='bakalavr'),
+    path('Talim/Magistratura', views.MagistrView.as_view(), name='magistr'),
+    path('Talim/2-Mutaxasislik', views.IkkinchiMutahasislikView.as_view(), name='2m'),
+    path('Talim/Doktarantura', views.DoktaranturaView.as_view(), name='doc'),
+    
+    
+    path('Talabalar/', views.TalabalarView.as_view(), name='talabalar'),
+    
+    
     
     
 ]

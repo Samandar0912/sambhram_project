@@ -74,19 +74,19 @@
                     </li>
                         
                     <li class="li_1">
-                        <a href="#">Ta'lim          <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:talim' %}">Ta'lim          <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="#">Kunduzgi</a></li>
-                            <li><a href="#">Sirtqi Ta'lim</a></li>
-                            <li><a href="#">2-Mutaxasislik</a></li>
-                            <li><a href="#">Bakalavr</a></li>
-                            <li><a href="#">Magistratura</a></li>
-                            <li><a href="#">Doktrantura</a></li>
+                            <li><a href="{% url 'main:kunduzki' %}">Kunduzgi</a></li>
+                            <li><a href="{% url 'main:sirtqi' %}">Sirtqi Ta'lim</a></li>
+                            <li><a href="{% url 'main:2m' %}">2-Mutaxasislik</a></li>
+                            <li><a href="{% url 'main:bakalavr' %}">Bakalavr</a></li>
+                            <li><a href="{% url 'main:magistr' %}">Magistratura</a></li>
+                            <li><a href="{% url 'main:sirtqi' %}">Doktrantura</a></li>
                         </ul>
                     </li>
                         
                     <li class="li_1">
-                        <a href="#">Talabalar       <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:talabalar' %}">Talabalar       <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
                             <li><a href="#">Bakalavr</a></li>
                             <li><a href="#">Magistratura</a></li>

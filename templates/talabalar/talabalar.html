@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="bg_img_box">
+    <section class="faoliyat">
+        <div class="breadcrumbb">
+            <ul>
+                <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
+                <li class="sircl"></li>
+                <li><a href="{% url 'main:talabalar' %}">Talabalar</a></li>
+            </ul>
+        </div>
+        <div class="activity">
+            
+            {% include "talabalar/t_left.html" %}
+            
+            <div class="activity_right">
+                <ul>
+                    <li><a href="{% url 'main:of' %}">Bakalavr</a></li>
+                    <li><a href="{% url 'main:of' %}">Magistratura</a></li>
+                    <li><a href="{% url 'main:of' %}">Sirtqi ta'lim</a></li>
+                    <li><a href="{% url 'main:of' %}">O'qishni ko'chirish va qayta tiklash</a></li>
+     
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock main %}

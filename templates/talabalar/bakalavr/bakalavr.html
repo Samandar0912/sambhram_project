@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="bg_img_box">
+    <section class="faoliyat">
+        <div class="breadcrumbb">
+            <ul>
+                <li><a href="#"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
+                <li class="sircl"></li>
+                <li><a href="{% url 'main:faoliyat' %}">Faoliyat</a></li>
+      
+                <li class="sircl"></li>
+                <li><a href="{% url 'main:of' %}">O'quv faoliyat</a></li>
+
+            </ul>
+        </div>
+        <div class="activity">
+            {% include "faoliyat/f_left.html" %}
+            <div class="activity_right">
+               
+                
+
+
+
+
+
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock main %}
