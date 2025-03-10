@@ -6,25 +6,20 @@
     <section class="faoliyat">
         <div class="breadcrumbb">
             <ul>
-                <li><a href="#"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
+                <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:faoliyat' %}">Faoliyat</a></li>
-      
-                <li class="sircl"></li>
-                <li><a href="{% url 'main:mf' %}">Moliyaviy faoliyat</a></li>
+                <li><a href="{% url 'main:talabalar' %}">Talabalar</a></li>
 
+                <li class="sircl"></li>
+                <li><a href="{% url 'main:T_Sirqi' %}">Sirqi ta'lim</a></li>
             </ul>
         </div>
         <div class="activity">
-            {% include "faoliyat/f_left.html" %}
+            
+            {% include "talabalar/t_left.html" %}
+            
             <div class="activity_right">
-            
-            
-     
-
-
-
-
+   
             </div>
         </div>
     </section>
