@@ -28,6 +28,9 @@ class HistoryView(TemplateView):
 class AboutView(TemplateView):
     template_name = "content/about.html"
 
+class StrukturaView(TemplateView):
+    template_name = "content/struktura.html"
+
 
 
 # ================= NEWS =================
@@ -36,7 +39,7 @@ class NewsView(ListView):
     template_name = "news/news.html"
     context_object_name = "news_articles"
     ordering = ["-created"] 
-    paginate_by = 2
+    paginate_by = 16
 
 
 
@@ -61,7 +64,7 @@ class ElonView(ListView):
     template_name = "news/elon.html"  
     context_object_name = "elon_articles"
     ordering = ["-created"]  
-    paginate_by = 2  
+    paginate_by = 16  
 
 
 
@@ -138,7 +141,7 @@ class MarkazDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["userMarkaz"] = MarkazInUserModel.objects.all()
+        context["userMarkaz"] = MarkazInUserModel.objects.filter(category=self.object)
         return context
 
 # ================= BULIM =================
@@ -147,6 +150,9 @@ class BulimView(ListView):
     context_object_name = 'bulim'
     template_name = "rektorat/bulim/bulim.html"
 
+    def get_queryset(self):
+        return BulimUserModel.objects.all() 
+    
 class BulimDetailView(DetailView):
     model = BulimUserModel
     context_object_name = 'bulim'
@@ -154,9 +160,10 @@ class BulimDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["userBulim"] = BulimInUserModel.objects.all()
+        # Joriy BulimUserModel ga tegishli ichki hodimlarni filter qilish
+        context["userBulim"] = BulimInUserModel.objects.filter(category=self.object)
         return context
-
+    
 # ================= KAFEDRA =================
 class KafedraView(ListView):
     model = KafedraUserModel
@@ -170,7 +177,7 @@ class KafedraDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["userKafedra"] = KafedraInUserModel.objects.all()
+        context["userKafedra"] = KafedraInUserModel.objects.filter(category=self.object)
         return context
 
 

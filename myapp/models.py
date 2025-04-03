@@ -346,7 +346,7 @@ class KafedraInUserModel(models.Model):
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")
-    category = models.ForeignKey(BulimUserModel, on_delete=models.CASCADE)
+    category = models.ForeignKey(KafedraUserModel, on_delete=models.CASCADE)
  
  
     class Meta:

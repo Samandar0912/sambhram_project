@@ -4,46 +4,43 @@
 {% block main %}
     <div class="bg_img_box">
         <section class="rektorat">
+            <!-- Breadcrumbs -->
             <div class="breadcrumbb">
                 <ul>
-                    <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
+                    <li>
+                        <a href="{% url 'main:index' %}">
+                            <img src="{% static 'img/Rektorat/home.png' %}" alt="Bosh sahifa">
+                        </a>
+                    </li>
                     <li class="sircl"></li>
-        
-                    <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                    <li>
+                        <a href="{% url 'main:rektorat_main' %}">Universitet</a>
+                    </li>
                     <li class="sircl"></li>
-                    
-                    <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
+                    <li>
+                        <a href="{% url 'main:bulim' %}">Bo'limlar</a>
+                    </li>
                 </ul>
             </div>
-            
-            <div class="rektorat_users">
-                
-                {% if rektorat %}
-                    {% with rektor=rektorat.0 %}
-                        <a href="{{ rektor.get_absolute_url }}" class="rektor_profile">
-                            <div class="rektor_card">
-                                <div class="left">
-                                    <img src="{{ rektor.photo.url }}">
-                                </div>
-                                <div class="right">
-                                    <p class="rang">REKTOR</p>
-                                    <p class="name">{{ rektor.name }}</p>
-                                    <p class="rang-2">texnika fanlari doktori, Professor</p>
-                                </div>
-                            </div>
-                        </a>
-                    {% endwith %}
-                {% endif %}
 
+            <!-- Bo‘limlar ro‘yxati -->
+            <div class="rektorat_users">
                 <div class="all_cards">
-                    {% for item in rektorat|slice:"1:" %}
-                        <a href="{{ item.get_absolute_url }}" class="card">
-                            <img src="{{ item.photo.url }}">
-                            <p class="user_title">{{ item.name }}</p>
-                            <p class="user_rang">{{ item.rang }}</p>
-                        </a>
-                    {% endfor %}
+                    {% if bulim %}
+                        {% for item in bulim %}
+                            <a href="{{ item.get_absolute_url }}" class="card">
+                                {% if item.photo %}
+                                    <img src="{{ item.photo.url }}" alt="{{ item.name }}">
+                                {% else %}
+                                    <img src="{% static 'img/default_user.png' %}" alt="Default rasm">
+                                {% endif %}
+                                <p class="user_title">{{ item.name }}</p>
+                                <p class="user_rang">{{ item.rang }}</p>
+                            </a>
+                        {% endfor %}
+                    {% else %}
+                        <p class="no-data">Hozirda bo‘limlar mavjud emas.</p>
+                    {% endif %}
                 </div>
             </div>
         </section>

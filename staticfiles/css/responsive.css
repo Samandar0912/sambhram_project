@@ -1,0 +1,40 @@
+@media screen and (max-width: 1280px) {
+    .rotate-img {
+        display: none !important;
+    }
+    .about-img-cards{
+        display: none !important;
+    }
+    .navbar_dropdown ul li a {
+        color: #23426b;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        margin-left: 0px;
+        padding: 5px 10px;
+    }
+
+    .col-top{
+        margin-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1315px) {
+    .rotate-img{
+        display: none;
+    }
+    .about-img-cards{
+        width: 00px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar-box{
+        /* border: 3px solid red !important; */
+    } 
+    .link-box{
+        display: none !important;
+    }
+}

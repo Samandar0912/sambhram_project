@@ -38,10 +38,11 @@
                 <p>{{ facultetUser.body }}</p>
                
             </div>
+            {% if userFakultet %}
             <h1 align="center" class="title_user-info">Hodimlar haqida ma’lumot</h1>
             <div class="plus-card">
             
-                {% if userFakultet %}
+                
                     {% for item in userFakultet %}      
                     <div class="cards">
                         <div class="img-box">

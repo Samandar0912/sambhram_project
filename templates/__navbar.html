@@ -1,6 +1,6 @@
 {% load static %}
 
-<div class="navbar_box">
+
     <section class="navbar-box">
         <nav class="navbar-top">
             <div class="link-box">
@@ -22,25 +22,26 @@
                 </ul>
             </div>
             <div class="link-box-button">
-                <a href="">Qabul</a>
+                <a href="{% url 'main:kunduzki' %}">Qabul</a>
                 <a href="">Admin</a>
             </div>
         </nav>
     </section>
 
-    <section class="navbar-box">
+    <section class="navbar-box-2">
         <nav class="navbar-center">
             <div class="logo-box">
-                <a href="{% url 'main:index' %}"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
-                <span>JIZZAX SAMBHRAM UNIVERSITETI</span>
+                <a href="{% url 'main:index' %}"><img src="{% static 'img/newLogo.png' %}" alt="logo"></a>
             </div>
             <div class="navbar_dropdown">
-                <ul>
+                <ul id="ul_1" class="ul_1">
+                    <button>&times;</button>
                     <li class="li_1">
                         <a href="#">SAMBHRAM Haqida <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
                             <li><a href="{% url 'main:about' %}">Universitet Haqida</a></li>
                             <li><a href="{% url 'main:history' %}">Universitet Tarixi</a></li>
+                            <li><a href="{% url 'main:struktura' %}">Universitet Strukturasi</a></li>
                         </ul>
                     </li> 
                         
@@ -102,8 +103,35 @@
                         </ul>
                     </li>
                 </ul>
+
+                <div class="gamburger">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+                
+                
             </div>
         </nav>
     </section>
-</div>
-<!-- Navbar-->
+
+<script>
+    
+    let ul_btn = document.querySelector(".ul_1 button");
+    let ul_1 = document.querySelector(".ul_1");
+    let gamburger = document.querySelector(".gamburger");
+
+    if (gamburger && ul_1) {
+        gamburger.addEventListener("click", () => {
+            ul_1.style.display = "block";
+            console.log("yoo");
+        });
+    }
+
+    if (ul_btn) {
+        ul_btn.addEventListener("click", () => {
+            ul_1.style.display = "none";
+        });
+    }
+
+</script>

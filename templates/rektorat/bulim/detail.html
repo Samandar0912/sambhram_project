@@ -2,46 +2,88 @@
 {% load static %}
 
 {% block main %}
-
 <div class="bg_img_box">
     <section class="rektorat">
+        <!-- Breadcrumbs -->
         <div class="breadcrumbb">
             <ul>
-                <li><a href="#"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
+                <li>
+                    <a href="{% url 'main:index' %}">
+                        <img src="{% static 'img/Rektorat/home.png' %}" alt="Bosh sahifa">
+                    </a>
+                </li>
                 <li class="sircl"></li>
-    
-                <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                <li>
+                    <a href="{% url 'main:rektorat_main' %}">Universitet</a>
+                </li>
                 <li class="sircl"></li>
-                
-                <li><a href="#">Fakultet</a></li>
-        
+                <li>
+                    <a href="{% url 'main:bulim' %}">Bo'limlar</a>
+                </li>
             </ul>
         </div>
-        
+
+        <!-- Bo‘lim haqida ma’lumot -->
         <div class="rektorat_users">
             <div class="rektor_card_in">
                 <div class="left">
-                    <img src="{{ rektoratUser.photo.url }}">
+                    {% if bulim.photo %}
+                        <img src="{{ bulim.photo.url }}" alt="{{ bulim.name }}">
+                    {% else %}
+                        <img src="{% static 'img/default_user.png' %}" alt="Default rasm">
+                    {% endif %}
                 </div>
                 <div class="right">
-                    <p class="name">  <span>F.I.SH</span>      {{ rektoratUser.name }}</p>
-                    <p class="rang">  <span>Lavozim</span>      {{ rektoratUser.rang }}</p>
-                    <p class="tell">  <span>Telefon</span>      {{ rektoratUser.number }}</p>
-                    <p class="email"> <span>E-pochta</span>     {{ rektoratUser.email }}</p>
-                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
+                    <p class="name"><span>F.I.Sh</span> {{ bulim.name }}</p>
+                    <p class="rang"><span>Lavozim</span> {{ bulim.rang }}</p>
+                    <p class="tell"><span>Telefon</span> {{ bulim.number }}</p>
+                    <p class="email"><span>E-pochta</span> {{ bulim.email }}</p>
+                    <p class="times"><span>Ish vaqti</span> Du - Ju 8:30 - 16:30, Sha 8:30 - 14:30</p>
                 </div>
             </div>
-      
+
+            <!-- Umumiy ma’lumot -->
             <div class="all_cards_in">
-                <p align="center">Umumiy ma’lumot </p>
-                <p>{{ rektoratUser.body }}</p>
+                <p style="text-align: center;">Umumiy ma’lumot</p>
+                <p>{{ bulim.body }}</p>
+            </div>
+
+            <!-- Ichki hodimlar -->
+            {% if userBulim %}
+            <h1 class="title_user-info" style="text-align: center;">Hodimlar haqida ma’lumot</h1>
+            <div class="plus-card">
+                    {% for item in userBulim %}
+                        <div class="cards">
+                            <div class="img-box">
+                                {% if item.photo %}
+                                    <img src="{{ item.photo.url }}" alt="{{ item.name }}">
+                                {% else %}
+                                    <img src="{% static 'img/default_user.png' %}" alt="Default rasm">
+                                {% endif %}
+                            </div>
+                            <div class="footer_card">
+                                <p class="user_title">{{ item.name }}</p>
+                                <p class="user_rang">{{ item.rang }}</p>
+                                <div class="link-btn">
+                                    <a href="tel:{{ item.number }}">
+                                        <img src="{% static 'img/Rektorat/icon-call.png' %}" alt="Telefon">
+                                        {{ item.number }}
+                                    </a>
+                                    <a href="mailto:{{ item.email }}">
+                                        <img src="{% static 'img/Rektorat/icon-sms.png' %}" alt="Email">
+                                        {{ item.email }}
+                                    </a>
+                                    <a href="{{ item.tg }}" target="_blank">
+                                        <img src="{% static 'img/Rektorat/icon-tg.png' %}" alt="Telegram">
+                                        {{ item.tg }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
-
-
-      
     </section>
 </div>
-
 {% endblock main %}

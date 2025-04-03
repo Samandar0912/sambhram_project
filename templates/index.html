@@ -70,7 +70,7 @@
 
     {% block elonlar %}
         <div class="bg_img_box">
-            <section class="news">
+            <section class="elon">
                 
                 <div class="section-info">
                     <div class="left">
@@ -102,7 +102,7 @@
     {% endblock elonlar %}
 
     {% block havola %}
-        <section class="news">
+        <section class="xavola">
         
             <div class="section-info havola-line">
                 <div class="left">
@@ -153,36 +153,35 @@
 
     {% block about_us %}
         <section class="about_us">
-            <div class="about-main">
-                <div class="about-img-cards">
-                    <img src="{% static 'img/universitet-haqida/bg-img-book.png' %}">
-                </div>
-                <div class="about-img-logo">
-                    <div class="line-box1">
-                        <span class="loader1"></span>
-                        <span class="loader2"></span>
-                        <span class="loader3"></span>
-                        <div class="img-card">
-                            <img src="{% static 'img/logo.png' %}">
+            <section class="about_us">
+                <div class="about-main">
+                    <div class="about-img-cards"></div>
+                    <div class="about-img-logo">
+                        <div class="line-box1">
+                            <span class="loader1"></span>
+                            <span class="loader2"></span>
+                            <span class="loader3"></span>
+                            <div class="img-card">
+                                <img src="{% static 'img/logo.png' %}" alt="">
+                            </div>
                         </div>
                     </div>
+                    <div class="about-img-title">
+                        <h3>Universitet haqida</h3>
+                        <p>“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.</p>
+                        <p>Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.</p>
+                        <p>Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.</p>
+            
+                        <a href="{% url 'main:about' %}">Batafsil</a>
+                        
+                    </div>
                 </div>
-                <div class="about-img-title">
-                    <h3>Universitet haqida</h3>
-                    <p>“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.</p>
-                    <p>Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.</p>
-                    <p>Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.</p>
-
-                    <a href="{% url 'main:about' %}">Batafsil</a>
-                    
-                </div>
-            </div>
-        </section>
+            </section>
     {% endblock about_us %}
 
     {% block statistika %}
         <div class="bg_img_box">
-            <section class="news">
+            <section class="statistika">
                 
                 <div class="section-info havola-line">
                     <div class="left">
@@ -194,7 +193,7 @@
 
                 <div class="container-fluid indicator">
                     <div class="indicator-left">
-                        <img src="{% static 'img/indicator/indicator.png' %}" alt="">
+                        <img src="{% static 'img/indicator/indicator1.jpg' %}" alt="">
                         <div class="indicator-top">
                             <p><img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-1.png' %}" alt="img">Jami hudud</p>
                             <h3>4 400 <span class="span-sup">m <sup>2</sup></span></h3>
@@ -211,86 +210,71 @@
                     </div>
                     
                     <div class="indicator-right">
-                        <div class="row">
-                            <div class="col col-top">
-                                <div class="col-box-img">
-                                    <h4>Fakultetlar</h4>
-                                    <img src="" alt="">
-                                </div>
-                                <div class="col-box">
-                                    <div class="col-box-left">
-                                        <p>Kofedra</p>
-                                        <h4>5</h4>
+                
+                        <div class="indicator-right-block-top">
+                            <div class="indicator-right-block">
+                                <div class="indicator-right-block-title">Fakultetlar</div>
+                                <div class="indicator-right-block-card">
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Kofedra</div>
+                                        <div class="cards-bottom">5</div>
                                     </div>
-                                    <div class="col-box-right">
-                                        <p>Fakultet</p>
-                                        <h4>3</h3>
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Fakultet</div>
+                                        <div class="cards-bottom">5</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col ">
-                                <div class="col-box-img">
-                                    <h4>Xodimlar soni</h4>
-                                    <img src="" alt="">
-                                </div>
-                                <div class="col-box">
-                                    <div class="col-box-left">
-                                        <p>Jami</p>
-                                        <h4>53</h4>
+                            <div class="indicator-right-block">
+                                <div class="indicator-right-block-title">Xodimlar soni</div>
+                                <div class="indicator-right-block-card">
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Jami</div>
+                                        <div class="cards-bottom">53</div>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="indicator-right-block">
+                                <div class="indicator-right-block-title">Talabalar soni</div>
+                                <div class="indicator-right-block-card">
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Jami</div>
+                                        <div class="cards-bottom">5122</div>
+                                    </div>
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Bakalavr</div>
+                                        <div class="cards-bottom">1 957</div>
+                                    </div>
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Magistratura</div>
+                                        <div class="cards-bottom">205</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="indicator-right-block">
+                                <div class="indicator-right-block-title">O’qituvchi va professorlar</div>
+                                <div class="indicator-right-block-card">
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Fan doktori</div>
+                                        <div class="cards-bottom">556</div>
+                                    </div>
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">Fan nomzodi</div>
+                                        <div class="cards-bottom">565</div>
+                                    </div>
+                                    <div class="indicator-right-block-cards">
+                                        <div class="cards-top">O’qituvchi</div>
+                                        <div class="cards-bottom">556</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col col-bottom col-bottom-border">
-                                <div class="col-box-img">
-                                    <h4>Talabalar soni</h4>
-                                    <img src="" alt="">
-                                </div>
-                                <div class="col-box">
-                                    <div class="col-box-left">
-                                        <p>Jami</p>
-                                        <h4>53</h5>
-                                    </div>
-                                    <div class="col-box-center">
-                                        <p>Bakalavr</p>
-                                        <h4>1 957</h4>
-                                    </div>
-                                    <div class="col-box-left">
-                                        <p>Magistratura</p>
-                                        <h4>20</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col col-bottom ">
-                                <div class="col-box-img">
-                                    <h4>O’qituvchi va professorlar</h4>
-                                    <img src="" alt="">
-                                </div>
-                                <div class="col-box">
-                                    <div class="col-box-left">
-                                        <p>Fan doktori</p>
-                                        <h4>53</h3>
-                                    </div>
-                                    <div class="col-box-center">
-                                        <p>Fan nomzodi</p>
-                                        <h4>27</h4>
-                                    </div>
-                                    <div class="col-box-left">
-                                        <p>O’qituvchi</p>
-                                        <h4>56</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row d-flex justify-content-between flex-column">
-                            <div class="col col-box-img col-box-img-2 ">
+        
+                        <div class="indicator-bottom-2">
+                            <div class="col-box-title">
                                 <h3>Talabalar to'g'risida qisqacha ma'lumot</h3>
                             </div>
-                            <div class="col call-boxs-info">
+                            <div class="call-boxs-info">
                                 <div class="call-boxs">
                                     <h3>35%</h3>
                                     <p>Moliyaviy yordam oladigan talabalar</p>

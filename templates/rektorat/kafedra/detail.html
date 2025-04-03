@@ -39,30 +39,12 @@
             </div>
         </div>
         <div class="rektorat_users">
-            <div class="rektor_card_in">
-                <div class="left">
-                    <img src="{{ facultetUser.photo.url }}">
-                </div>
-                <div class="right">
-                    <p class="name">  <span>F.I.SH</span>      {{ facultetUser.name }}</p>
-                    <p class="rang">  <span>Lavozim</span>      {{ facultetUser.rang }}</p>
-                    <p class="tell">  <span>Telefon</span>      {{ facultetUser.number }}</p>
-                    <p class="email"> <span>E-pochta</span>     {{ facultetUser.email }}</p>
-                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
-                </div>
-            </div>
-      
-            <div class="all_cards_in">
-                
-                <p align="center">Umumiy ma’lumot </p>
-                <p>{{ facultetUser.body }}</p>
-               
-            </div>
+            {% if userKafedra %}
             <h1 align="center" class="title_user-info">Hodimlar haqida ma’lumot</h1>
             <div class="plus-card">
             
-                {% if userFakultet %}
-                    {% for item in userFakultet %}      
+             
+                    {% for item in userKafedra %}      
                     <div class="cards">
                         <div class="img-box">
                             <img src="{{ item.photo.url }}">

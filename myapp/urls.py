@@ -6,6 +6,9 @@ app_name = "main"
 urlpatterns = [
     path('',views.IndexView.as_view(), name="index"),
     path('Aloqa',views.AloqaView.as_view(), name="aloqa"),
+    
+    path('Struktura',views.StrukturaView.as_view(), name="struktura"),
+    
     path('Universitet-Tarixi',views.HistoryView.as_view(), name="history"),
     path('Universitet-Haqida',views.AboutView.as_view(), name="about"),
     

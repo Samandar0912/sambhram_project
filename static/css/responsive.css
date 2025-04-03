@@ -1,0 +1,229 @@
+@media screen and (max-width: 1440px) {
+    .rotate-img{
+        display: none;
+    }
+
+    .about-img-cards img{
+        width: 400px !important;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #ul_1{display: none}
+}
+
+
+@media screen and (max-width: 1280px) {
+    .rotate-img {
+        display: none !important;
+    }
+    
+    #ul_1{display: none}
+
+    .about-img-cards img{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .about-main > .about-img-title{
+        height: 400px;
+        margin: 50px 0; 
+    }
+
+    .indicator-left{
+        display: none;
+    }
+
+    .navbar_dropdown ul li a {
+        color: #23426b;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        margin-left: 0px;
+        padding: 5px 10px;
+    }
+
+    .col-top{
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1087px) {
+    .link-box-search input{
+        border: none;
+        outline: none;
+        padding:4px 5px;
+        font-size: 14px;
+        border-radius: 6px;
+        width: 300px;
+        color: #6D6C6D;
+        
+    }
+    #ul_1{display: none}
+}
+
+
+
+@media screen and (max-width: 887px) {
+    .link-box-search input{display: none;}
+
+    .navbar-center{position: relative;}
+
+    .navbar_dropdown{display: flex; justify-content: flex-end;}
+    
+    .ul_1 button{display: block;}
+    
+    .navbar_dropdown .ul_1{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        display: flex;
+        background: #99c4fc;
+        flex-direction: column;
+        border-radius: 10px;
+        z-index: 999;
+    }
+
+    .navbar_dropdown .ul_1 .li_1{
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        border-bottom: 1px solid #EAF1FB;
+        width: 250px;
+        text-align: center;
+    }
+    
+    
+    #ul_1{display: none}
+
+    .gamburger{display: none}
+
+
+
+    .gamburger{
+        width: 50px;
+        height: 50px;
+        padding: 7px;
+        display: block;
+        margin-right: 10px;
+    }
+  
+}
+
+@media screen and (max-width: 588px) {
+    .navbar-top{display: none;}
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  
+}
+
+
+@media screen and (max-width: 944px) {
+
+    .navbar-box-2{
+        background: #EAF1FB;
+        border-bottom: 0px solid #D0D9FB;
+        position: sticky;
+        z-index: 1000;
+        top: 0px;
+
+    }
+
+    .logo-box > a > img{
+        height: 50px;
+    }
+
+
+    .about-img-logo{
+        display: none;
+    }
+  
+    .about-main > .about-img-title{
+        width: 100% !important;
+        height: 400px;
+        margin: 30px;
+    }
+
+    .about-main > .about-img-title p{
+        width: auto !important;
+        margin-bottom: 10px !important; 
+    }
+    .about-main > .about-img-title > p:nth-child(4){
+        margin-bottom: 50px;
+    }
+
+
+    .about-main > .about-img-title a{
+        display: block;
+        width: 300px;
+        text-align: center;
+        text-decoration: none;
+        color: #1b3557;
+        padding:7px 30px;
+        border-radius: 25px;
+        border: 2px solid #1b3557;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all .3s;
+        margin: auto;
+    }
+    .about-main > .about-img-title a:hover{
+        color: #fff;
+        background: #1b3557;
+        border: 2px solid #1b3557;
+        transition: all .3s;
+    }
+}
+
+
+@media screen and (max-width: 907px) {
+    .call-boxs:nth-child(1){
+        border: none;
+        border-bottom: 1px solid #727375;
+    }
+    .call-boxs:nth-child(2){
+        border: none;
+        border-bottom: 1px solid #727375;
+    }
+    .call-boxs:nth-child(3){
+        border: none;
+        border-bottom: 1px solid #727375;
+    }
+    
+
+
+
+}
+
+@media screen and (max-width: 856px) {
+    .indicator-right-block{
+        width: 100% !important;
+
+    }
+
+  
+}
+@media screen and (max-width: 400px) {
+    .footer_map iframe{
+        height: 300px;
+        width: 350px;
+    }
+
+  
+}

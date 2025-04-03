@@ -3,7 +3,7 @@
 {% block main %}
 
     <div class="bg_img_box">
-        <section class="news">
+        <section class="news-detail">
             
             <div class="section-info">
                 <div class="left">
@@ -15,7 +15,7 @@
 
             <div class="container-fluid news_card_in">
                 <div class="block_news row">
-                    <div class="block_news_card-left col-8">
+                    <div class="block_news_card-left  col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
                         
                         {% if elon.photo %}
                             <img class="news-img" src="{{ elon.photo.url }}" alt="Asosiy rasm">
@@ -40,7 +40,7 @@
 
                     </div>
                     
-                    <div class="block_news_card-right col-4">
+                    <div class="block_news_card-right col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                         <h6>Boshqa Elonlar</h6>
                         {% for other in related_elon %}
                             <a href="{% url 'main:elon_detail' slug=other.slug %}" class="card">
