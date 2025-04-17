@@ -1,0 +1,33 @@
+#: .\core\settings.py:118
+msgid "Uzbek"
+msgstr ""
+
+#: .\core\settings.py:119
+msgid "English"
+msgstr ""
+
+#: .\core\settings.py:120
+msgid "Russian"
+msgstr ""
+
+#: .\myapp\models.py:18
+msgid "Telefon raqami"
+msgstr ""
+
+#: .\myapp\models.py:23
+msgid "Tug'ilgan sana"
+msgstr ""
+
+#: .\myapp\models.py:27
+msgid "Foydalanuvchi"
+msgstr ""
+
+#: .\myapp\models.py:28
+msgid "Foydalanuvchilar"
+msgstr ""
+
+#~ msgid "Yangilik"
+#~ msgstr "News"
+
+#~ msgid "Sarlovha"
+#~ msgstr "Title"

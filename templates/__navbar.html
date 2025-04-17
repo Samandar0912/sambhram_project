@@ -1,11 +1,11 @@
 {% load static %}
-
+{% load i18n %}
 
     <section class="navbar-box">
         <nav class="navbar-top">
             <div class="link-box">
                 <img src="{% static "img/icon/call.png" %}" alt="call">
-                <a href="">+998 (90) 123 45 67</a>
+                <a href="">+998 (99) 557 77 49</a>
         &nbsp;
         &nbsp;
                 <img src="{% static 'img/icon/mail.png' %}" alt="main">
@@ -16,14 +16,22 @@
                     <input type="search" placeholder="Qidiruv">
                 </form>
             </div>
-            <div class="link-box-language">
-                <ul>
-                    
-                </ul>
-            </div>
+            <form action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <select name="language" onchange="this.form.submit()">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% for lang in LANGUAGES %}
+                        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                            {{ lang.1 }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </form>
+                         
             <div class="link-box-button">
-                <a href="{% url 'main:kunduzki' %}">Qabul</a>
-                <a href="">Admin</a>
+                <a href="{% url 'main:kunduzki' %}">{% blocktrans %}Qabul{% endblocktrans %}</a>
+                <a href="/admin">                         {% blocktrans %}Admin{% endblocktrans %}</a>
             </div>
         </nav>
     </section>
@@ -37,69 +45,69 @@
                 <ul id="ul_1" class="ul_1">
                     <button>&times;</button>
                     <li class="li_1">
-                        <a href="#">SAMBHRAM Haqida <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="#">                                {% blocktrans %}SAMBHRAM Haqida{% endblocktrans %} <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:about' %}">Universitet Haqida</a></li>
-                            <li><a href="{% url 'main:history' %}">Universitet Tarixi</a></li>
-                            <li><a href="{% url 'main:struktura' %}">Universitet Strukturasi</a></li>
+                            <li><a href="{% url 'main:about' %}">    {% blocktrans %}Universitet Haqida{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:history' %}">  {% blocktrans %}Universitet Tarixi{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:struktura' %}">{% blocktrans %}Universitet Strukturasi{% endblocktrans %}</a></li>
                         </ul>
                     </li> 
                         
                     <li class="li_1">
-                        <a href="#">Yangiliklar     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="#">                            {% blocktrans %}Yangiliklar{% endblocktrans %}     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:news' %}">Yangiliklar</a></li>
-                            <li><a href="{% url 'main:elon' %}">E'lonlar</a></li>
+                            <li><a href="{% url 'main:news' %}">{% blocktrans %}Yangiliklar{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:elon' %}">{% blocktrans %}E'lonlar{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                     
                     <li class="li_1">
-                        <a href="{% url 'main:rektorat_main' %}">Universitet     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
-                        <ul class="dropdown_2">
-                            <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
-                            <li><a href="{% url 'main:fakultet' %}">Fakultetlar</a></li>
-                            <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
-                            <li><a href="{% url 'main:bulim' %}">Bo'limlar</a></li>
-                            <li><a href="{% url 'main:kafedra' %}">Kafedralar</a></li>
+                        <a href="{% url 'main:rektorat_main' %}">   {% blocktrans %}Universitet{% endblocktrans %}     <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <ul class="dropdown_2"> 
+                            <li><a href="{% url 'main:rektorat' %}">{% blocktrans %}Rektorat{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:fakultet' %}">{% blocktrans %}Fakultetlar{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:markaz' %}">  {% blocktrans %}Markazlar{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:bulim' %}">   {% blocktrans %}Bo'limlar{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:kafedra' %}"> {% blocktrans %}Kafedralar{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                         
                     <li class="li_1">
-                        <a href="{% url 'main:faoliyat' %}">Faoliyat        <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:faoliyat' %}">  {% blocktrans %}Faoliyat{% endblocktrans %}        <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:if' %}">Ilmiy faoliyat</a></li>
-                            <li><a href="{% url 'main:of' %}">O'quv faoliyat</a></li>
-                            <li><a href="{% url 'main:xf' %}">Xalqaro faoliyat</a></li>
-                            <li><a href="{% url 'main:mf' %}">Moliyaviy faoliyat</a></li>
+                            <li><a href="{% url 'main:if' %}">{% blocktrans %}Ilmiy faoliyat{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:of' %}">{% blocktrans %}O'quv faoliyat{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:xf' %}">{% blocktrans %}Xalqaro faoliyat{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:mf' %}">{% blocktrans %}Moliyaviy faoliyat{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                         
                     <li class="li_1">
-                        <a href="{% url 'main:talim' %}">Ta'lim          <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:talim' %}">           {% blocktrans %}Ta'lim {% endblocktrans %}        <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:kunduzki' %}">Kunduzgi</a></li>
-                            <li><a href="{% url 'main:sirtqi' %}">Sirtqi Ta'lim</a></li>
-                            <li><a href="{% url 'main:2m' %}">2-Mutaxasislik</a></li>
-                            <li><a href="{% url 'main:bakalavr' %}">Bakalavr</a></li>
-                            <li><a href="{% url 'main:magistr' %}">Magistratura</a></li>
-                            <li><a href="{% url 'main:sirtqi' %}">Doktrantura</a></li>
+                            <li><a href="{% url 'main:kunduzki' %}">{% blocktrans %}Kunduzgi{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:sirtqi' %}">  {% blocktrans %}Sirtqi Ta'lim{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:2m' %}">      {% blocktrans %}2-Mutaxasislik{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:bakalavr' %}">{% blocktrans %}Bakalavr{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:magistr' %}"> {% blocktrans %}Magistratura{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:sirtqi' %}">  {% blocktrans %}Doktrantura{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                         
                     <li class="li_1">
-                        <a href="{% url 'main:talabalar' %}">Talabalar       <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:talabalar' %}">              {% blocktrans %}Talabalar{% endblocktrans %}       <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:T_Bakalavr' %}">Bakalavr</a></li>
-                            <li><a href="{% url 'main:T_Magistr' %}">Magistratura</a></li>
-                            <li><a href="{% url 'main:T_Sirqi' %}">Sirtqi Ta'lim</a></li>
-                            <li><a href="{% url 'main:T_qayta-tiklash' %}">O'qishni ko'chirish va qayta tiklash</a></li>
+                            <li><a href="{% url 'main:T_Bakalavr' %}">     {% blocktrans %}Bakalavr{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:T_Magistr' %}">      {% blocktrans %}Magistratura{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:T_Sirqi' %}">        {% blocktrans %}Sirtqi Ta'lim{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:T_qayta-tiklash' %}">{% blocktrans %}O'qishni ko'chirish va qayta tiklash{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                         
                     <li class="li_1">
-                        <a href="{% url 'main:aloqa' %}">Aloqa<img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:aloqa' %}">{% blocktrans %}Aloqa{% endblocktrans %}<img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                         <ul class="dropdown_2">
-                            <li><a href="{% url 'main:aloqa' %}">Aloqa</a></li>
+                            <li><a href="{% url 'main:aloqa' %}">{% blocktrans %}Aloqa{% endblocktrans %}</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -114,24 +122,3 @@
             </div>
         </nav>
     </section>
-
-<script>
-    
-    let ul_btn = document.querySelector(".ul_1 button");
-    let ul_1 = document.querySelector(".ul_1");
-    let gamburger = document.querySelector(".gamburger");
-
-    if (gamburger && ul_1) {
-        gamburger.addEventListener("click", () => {
-            ul_1.style.display = "block";
-            console.log("yoo");
-        });
-    }
-
-    if (ul_btn) {
-        ul_btn.addEventListener("click", () => {
-            ul_1.style.display = "none";
-        });
-    }
-
-</script>

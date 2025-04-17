@@ -1,0 +1,4 @@
+msgid "Yangilik"
+msgstr "Новость"
+msgid "Sarlovha"
+msgstr "Заголовок"

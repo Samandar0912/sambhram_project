@@ -10,7 +10,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 # Ekran Rasmi
 class EkranImages(models.Model):
     name = models.CharField(max_length=50)
-    img = models.ImageField(upload_to='Media/ekran_IMG/')
+    img = models.ImageField(upload_to='ekran_IMG/')
 
     class Meta:
         verbose_name = "Ekran Rasmi"
@@ -30,7 +30,7 @@ class EkranImages(models.Model):
 class NewsArticle(models.Model):
     title = models.CharField(max_length=250, verbose_name="Sarlovha")
     body = models.TextField(verbose_name="text")
-    photo = models.ImageField(upload_to="Media/news", verbose_name="Rasm")
+    photo = models.ImageField(upload_to="news", verbose_name="Rasm")
     created = models.DateTimeField(auto_now=True,)
     past_times = models.DateTimeField(auto_now_add=False, blank=True, verbose_name="eski yangilik bolsa sanasi") 
     views = models.PositiveIntegerField(default=0)    
@@ -64,7 +64,7 @@ class NewsArticle(models.Model):
 
 class NewsImage(models.Model):
     news = models.ForeignKey(NewsArticle, on_delete=models.CASCADE, related_name="images")
-    image = models.ImageField(upload_to="Media/news")
+    image = models.ImageField(upload_to="news/")
 
 
 
@@ -78,7 +78,7 @@ class ElonArticle(models.Model):
     name = models.CharField(max_length=100, verbose_name="vaziyat")
     title = models.CharField(max_length=250, verbose_name="Sarlovha")
     body = models.TextField(verbose_name="text")
-    photo = models.ImageField(upload_to="Media/news", verbose_name="Rasm")
+    photo = models.ImageField(upload_to="news/", verbose_name="Rasm")
     created = models.DateTimeField(auto_now=True,)
     past_times = models.DateTimeField(auto_now_add=True, blank=True, verbose_name="eski yangilik bolsa sanasi") 
     views = models.PositiveIntegerField(default=0)    
@@ -115,7 +115,7 @@ class ElonArticle(models.Model):
 
 class ElonImage(models.Model):
     news = models.ForeignKey(ElonArticle, on_delete=models.CASCADE, related_name="images")
-    image = models.ImageField(upload_to="Media/news")
+    image = models.ImageField(upload_to="Elon/")
 
 
 
@@ -123,7 +123,7 @@ class ElonImage(models.Model):
 
 class HavolaImages(models.Model):
     name = models.CharField(max_length=50)
-    img = models.ImageField(upload_to='Media/FH/')
+    img = models.ImageField(upload_to='Havola-img/')
     link = models.CharField(max_length=250, verbose_name="havola linki")
 
     class Meta:
@@ -154,8 +154,9 @@ class RectoratUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     body = models.TextField(verbose_name="Malumot")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
-    photo = models.ImageField(upload_to='Media/Rektorat/')
+    photo = models.ImageField(upload_to='Rektorat/')
     email = models.EmailField(max_length=254, verbose_name="email")
     category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
  
@@ -174,7 +175,7 @@ class RectoratUserModel(models.Model):
 class UserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
-    photo = models.ImageField(upload_to='Media/Rektorat/')
+    photo = models.ImageField(upload_to='Rektorat/')
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")
@@ -198,8 +199,9 @@ class FacultetUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     body = models.TextField(verbose_name="Malumot")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
-    photo = models.ImageField(upload_to='Media/Fakultet/')
+    photo = models.ImageField(upload_to='Fakultet/')
     email = models.EmailField(max_length=254, verbose_name="email")
     category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
  
@@ -218,7 +220,7 @@ class FacultetUserModel(models.Model):
 class FacultetInUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
-    photo = models.ImageField(upload_to='Media/Fakultet/')
+    photo = models.ImageField(upload_to='Fakultet/')
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")
@@ -239,8 +241,9 @@ class MarkazUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     body = models.TextField(verbose_name="Malumot")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
-    photo = models.ImageField(upload_to='Media/markaz/')
+    photo = models.ImageField(upload_to='Markaz/')
     email = models.EmailField(max_length=254, verbose_name="email")
     category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
  
@@ -259,7 +262,7 @@ class MarkazUserModel(models.Model):
 class MarkazInUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
-    photo = models.ImageField(upload_to='Media/Markaz/')
+    photo = models.ImageField(upload_to='Markaz/')
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")
@@ -281,8 +284,9 @@ class BulimUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     body = models.TextField(verbose_name="Malumot")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
-    photo = models.ImageField(upload_to='Media/Bulim/')
+    photo = models.ImageField(upload_to='Bulim/')
     email = models.EmailField(max_length=254, verbose_name="email")
     category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
  
@@ -301,7 +305,7 @@ class BulimUserModel(models.Model):
 class BulimInUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
-    photo = models.ImageField(upload_to='Media/Bulim/')
+    photo = models.ImageField(upload_to='Bulim/')
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")
@@ -322,8 +326,9 @@ class KafedraUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     body = models.TextField(verbose_name="Malumot")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
-    photo = models.ImageField(upload_to='Media/Kafedra/')
+    photo = models.ImageField(upload_to='Kafedra/')
     email = models.EmailField(max_length=254, verbose_name="email")
     category = models.ForeignKey(RektoratCategory, on_delete=models.CASCADE)
  
@@ -342,7 +347,7 @@ class KafedraUserModel(models.Model):
 class KafedraInUserModel(models.Model):
     name = models.CharField(max_length=150, verbose_name="F.I.SH")
     rang = models.CharField(max_length=150, verbose_name="lavozim")
-    photo = models.ImageField(upload_to='Media/Kafedra/')
+    photo = models.ImageField(upload_to='Kafedra/')
     number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
     email = models.EmailField(max_length=254, verbose_name="email")
     tg = models.CharField(max_length=150, verbose_name="tg manzil")

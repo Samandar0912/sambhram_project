@@ -1,9 +1,22 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import DetailView, DeleteView, UpdateView, CreateView, TemplateView, ListView
 from myapp.models import *
+from django.utils import translation
+from django.conf import settings
+
 
 
 # Create your views here.
+def set_language(request):
+    user_language = request.GET.get('language', 'uz')
+    if user_language not in dict(settings.LANGUAGES):
+        user_language = 'uz'
+    translation.activate(user_language)
+    response = redirect('/')
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
+    return response
+
+
 
 # ================= INDEX =================
 class IndexView(TemplateView):

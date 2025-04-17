@@ -8,6 +8,29 @@
 /* CSS Design Navbar ============================= */
 /* =============================================== */
 /* =============================================== */
+.link-box-language ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.link-box-language ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #004080;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.link-box-language ul li a:hover {
+    background-color: #0066cc;
+}
+
 
 .gamburger{display: none}
 .gamburger{
@@ -16,6 +39,7 @@
     padding: 7px;
     position: absolute;
     top: 10px;
+    right: 10px;
 }
 .ul_1 button{
     width: 60px;
@@ -100,8 +124,6 @@
     padding:4px 5px;
     font-size: 14px;
     border-radius: 6px;
-    max-width: 500px;
-    min-width: 300px;
     width: 500px;
     color: #6D6C6D;
     
@@ -267,6 +289,15 @@
     max-width: 1440px;
 
 }
+
+.rektorat{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
 .news{
     margin-bottom: 50px;
     margin: auto;
@@ -898,21 +929,21 @@
 .owl-carousel .item{
     width: 200px;
     height: 180px;
-    box-shadow: 0 0 15px #e2e1e1;
+    box-shadow: 0 0 15px #ffffff;
 }
 .owl-carousel .item a{
     text-decoration: none;
     color: #11456B;
 }
 .owl-carousel .item img{
-    background: #fff;
+    /* background: #fff; */
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: contain;
     mix-blend-mode: color-burn;
 }
 .owl-carousel .item p{
-    background: #fff;
+    /* background: #fff; */
     font-size: 18px;
     text-align: center;
 }
@@ -1091,7 +1122,6 @@
     font-size: 22px;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border: 1px solid red;
     /* border-bottom: 1px solid #72737552;     */
 }
 

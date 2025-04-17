@@ -8,14 +8,64 @@
 /* CSS Design Navbar ============================= */
 /* =============================================== */
 /* =============================================== */
+.link-box-language ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+.link-box-language ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #004080;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.link-box-language ul li a:hover {
+    background-color: #0066cc;
+}
+
+
+.gamburger{display: none}
 .gamburger{
     width: 50px;
     height: 50px;
     padding: 7px;
     position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.ul_1 button{
+    width: 60px;
+    padding: 0 15px;
+    font-size: 32px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    color: #11456B;
+    margin-left: -35px;
+    transform: scale(1.5);
     display: none;
 }
+
+
+/* =============================================== */
+/* =============================================== */
+/* footer */
+.footer_map iframe{
+    height: 300px;
+    width: 400px;
+}
+
+/* =============================================== */
+/* =============================================== */
+
 .lines{
     width: 100%;
     height: 5px;
@@ -23,20 +73,33 @@
     border-radius: 5px;
     background: #11456B;
 }
-.ul_1{
-    border: 1px solid red;
-}
+
 
 .navbar-box{
     background: #EAF1FB;
     border-bottom: 2px solid #D0D9FB;
+    /* display: none; */
 
 }
-.navbar-box:last-child{
+
+
+/* =============================================== */
+/* Qushilgan asosiy css */
+
+.navbar-box-2{
     background: #EAF1FB;
     border-bottom: 0px solid #D0D9FB;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    /* display: none; */
 
 }
+
+
+/* =============================================== */
+
+
 .navbar-top{
     margin: auto;
     width: 100%;
@@ -61,8 +124,6 @@
     padding:4px 5px;
     font-size: 14px;
     border-radius: 6px;
-    max-width: 500px;
-    min-width: 300px;
     width: 500px;
     color: #6D6C6D;
     
@@ -221,12 +282,54 @@
 }
 
 
-.news, .rektorat{
+.news-detail{
     margin-bottom: 50px;
     margin: auto;
     width: 100%;
     max-width: 1440px;
+
 }
+
+.rektorat{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+.news{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    height: 787px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.statistika{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    /* border: 3px solid yellowgreen; */
+}
+
+.elon{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    /* border: 1px solid blue; */
+}
+.xavola{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    /* border: 1px solid green; */
+}
+
 
 
 
@@ -450,21 +553,32 @@
 }
 
 
-.about-img-cards img{
-    width: 600px;
-    height: 500px;
-    object-fit: cover;
-}
+
+
+
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+
 
 .about_us{
     background: #EAF1FB;
 }
 
 .about-main{
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
 
+.about-img-cards{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/universitet-haqida/bg-img-book.png);
+}
 
 
 .about-img-logo{
@@ -502,9 +616,10 @@
 
 
 .about-main > .about-img-title{
-    width: 600px !important;
+    width: 400px !important;
     height: 400px;
     margin: 50px;
+
 
 }
 
@@ -575,6 +690,14 @@
 }
 
 
+
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+
+
+
+
 .indicator-page{
     margin-bottom: 50px;
     margin: auto;
@@ -585,7 +708,7 @@
 
 .indicator{
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     margin-top: 50px;
     display: flex;
     margin-left: -10px;
@@ -618,6 +741,7 @@
     background: #11456B;
     color: #fff;
     width: 320px;
+    height: 500px;
 }
 .indicator-left img{
     width: 320px;
@@ -627,6 +751,7 @@
 .indicator-top, .indicator-bottom{
     margin: 10px 0;
 }
+
 .indicator-top{
     margin-top: 30px !important;
 }
@@ -657,6 +782,7 @@
 .indicator-bottom{
     position: relative;
 }
+
 .indicator-bottom > .indicator-forest{
     position: absolute;
     width: 150px;
@@ -681,103 +807,103 @@
     height: 25px !important;
 
 }
-
 .indicator-right{
-    margin-left: 50px;
+    width: 900px;
 }
 
-.col-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    color: #727375;
-}
-
-.col-box-left{
+.indicator-right-block-top{
     margin-left: 10px;
-    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-
-.col-box-center{
-    text-align: center;
-    margin-right: 50px;
-    margin-left: 50px !important;
+.indicator-right-block{
+    border: 1px solid rgb(221, 221, 221);
+    width: 400px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.indicator-right-block:nth-child(1){
+    margin-top: 0 !important;
+}
+.indicator-right-block:nth-child(2){
+    margin-top: 0 !important;
 }
 
-.col-box-left{
-    text-align: center;
-    margin-right: 50px;
+.indicator-right-block-card{
+    display: flex;
 }
-
-
-.col-bottom-border{
-    border-right: 1px solid #727375;
+.indicator-right-block-cards{
+    margin: 20px 30px;
+    margin-right: 0;
+    color: #6D6C6D;
 }
-
-.col-top{
-    border-right: 1px solid #727375;
-    border: 1px solid red;
-    width: 200px !important;
+.cards-top{
+    margin-bottom: 5px;
+    font-size: 16px;
 }
-
-
-.col-box-center h3 .col-box-left h3{
-    font-size: 18px !important;
-    margin-top: -5px;
-    text-align: center;
-}
-
-.col-box-center p, .col-box-left p{
-    font-size: 15px;
-    text-align: center;
-}
-
-
-
-.col-box-img h4{
-    padding-top: 20px;
+.cards-bottom{
     font-size: 22px;
-    color: #727375;
-    margin-bottom: 20px;
-}
-
-.col-box-img-2{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    border-top: 1px solid #727375;
-
-}
-
-
-.col-box-img-2 h3{
-    margin: 10px auto;
-    text-align: center;
     font-weight: 600;
-    color: #727375;
+}
+
+.indicator-right-block-title{
+    font-size: 22px;
+    color: #6D6C6D;
+    font-weight: 600;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.col-box-title{
+    text-align: center;
+    color: #6D6C6D;
+    margin-left: 10px;
+    
+}
+
+.col-box-title h3{
+    display: inline-block;
+    width: 400px;
+}
 .call-boxs-info{
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .call-boxs{
     color: #727375;
-    width: 300px;
+    margin: 20px;
+    padding: 0 10px;
 }
+
 .call-boxs h3{
     font-size: 33px;
     color: #12456D;
     font-weight: 700;
 }
 
-.call-boxs:nth-child(2){
-    border-left: 1px solid #727375;
+.call-boxs:nth-child(1){
     border-right: 1px solid #727375;
+}
+
+.call-boxs:nth-child(3){
+    border-left: 1px solid #727375;
 }
 
 
@@ -803,21 +929,21 @@
 .owl-carousel .item{
     width: 200px;
     height: 180px;
-    box-shadow: 0 0 15px #e2e1e1;
+    box-shadow: 0 0 15px #ffffff;
 }
 .owl-carousel .item a{
     text-decoration: none;
     color: #11456B;
 }
 .owl-carousel .item img{
-    background: #fff;
+    /* background: #fff; */
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: contain;
     mix-blend-mode: color-burn;
 }
 .owl-carousel .item p{
-    background: #fff;
+    /* background: #fff; */
     font-size: 18px;
     text-align: center;
 }
@@ -1237,7 +1363,6 @@
 }
 
 .link-btn a{
-    /* border: 1px solid red; */
     display: flex;
     margin:0 20px;
     border-radius: 100%;
