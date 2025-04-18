@@ -41,12 +41,12 @@
                 
                 <div class="section-info ">
                     <div class="left">
-                        <h2>Yangiliklar</h2>
+                        <h2>{% blocktrans %}Yangiliklar{% endblocktrans %}</h2>
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
                     <div class="right">
-                        <a href="{% url 'main:news' %}">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:news' %}">{% blocktrans %}O'qishda davom eting{% endblocktrans %} <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                         <span class="line"></span>
                     </div>
                     <div class="right">
-                        <a href="{% url 'main:elon' %}">O'qishda davom eting <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
+                        <a href="{% url 'main:elon' %}">{% blocktrans %}O'qishda davom eting{% endblocktrans %} <img class="rotate-img" src="{% static 'img/icon/right.png' %}" alt="right"></a>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
         
             <div class="section-info havola-line">
                 <div class="left">
-                    <h2>Havolalar</h2>
+                    <h2>{% blocktrans %}Havolalar{% endblocktrans %}</h2>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
@@ -118,7 +118,7 @@
                     <img src="{% static 'img/havola/Link1.png' %}" alt="rasm1">
                     <div class="box">
                         <img src="{% static 'img/havola/pedagogika.png' %}" alt="rasm1">
-                        <p class="title_p">Pedagogika</p>
+                        <p class="title_p">{% blocktrans %}Pedagogika{% endblocktrans %}</p>
                     </div>
                 </a>
             
@@ -126,7 +126,7 @@
                     <img src="{% static 'img/havola/Link2.png' %}" alt="rasm1">
                     <div class="box">
                         <img src="{% static 'img/havola/student.png' %}" alt="rasm1">
-                        <p class="title_p">Sambhram.uz</p>
+                        <p class="title_p">{% blocktrans %}Sambhram.uz{% endblocktrans %}</p>
                     </div>
                 </a>
             
@@ -134,7 +134,7 @@
                     <img src="{% static 'img/havola/Link3.png' %}" alt="rasm1">
                     <div class="box">
                         <img src="{% static 'img/havola/jadval.png' %}" alt="rasm1">
-                        <p class="title_p">Dars jadvali</p>
+                        <p class="title_p">{% blocktrans %}Dars jadvali{% endblocktrans %}</p>
                     </div>
                 </a>
             
@@ -142,7 +142,7 @@
                     <img src="{% static 'img/havola/Link4.png' %}" alt="rasm1">
                     <div class="box">
                         <img src="{% static 'img/havola/Masofaviy-talim.png' %}" alt="rasm1">
-                        <p class="title_p">Masofaviy ta'lim</p>
+                        <p class="title_p">{% blocktrans %}Masofaviy ta'lim{% endblocktrans %}</p>
                     </div>
                 </a>
             
@@ -168,12 +168,12 @@
                         </div>
                     </div>
                     <div class="about-img-title">
-                        <h3>Universitet haqida</h3>
-                        <p>“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.</p>
-                        <p>Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.</p>
-                        <p>Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.</p>
+                        <h3>{% blocktrans %}Universitet haqida{% endblocktrans %}</h3>
+                        <p>{% blocktrans %}“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.{% endblocktrans %}</p>
+                        <p>{% blocktrans %}Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.{% endblocktrans %}</p>
+                        <p>{% blocktrans %}Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.{% endblocktrans %}</p>
             
-                        <a href="{% url 'main:about' %}">Batafsil</a>
+                        <a href="{% url 'main:about' %}">{% blocktrans %}Batafsil{% endblocktrans %}</a>
                         
                     </div>
                 </div>
@@ -186,7 +186,7 @@
                 
                 <div class="section-info havola-line">
                     <div class="left">
-                        <h2>Universitetning asosiy ko'rsatkichlari</h2>
+                        <h2>{% blocktrans %}Universitetning asosiy ko'rsatkichlari{% endblocktrans %}</h2>
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
@@ -196,14 +196,14 @@
                     <div class="indicator-left">
                         <img src="{% static 'img/indicator/indicator1.jpg' %}" alt="">
                         <div class="indicator-top">
-                            <p><img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-1.png' %}" alt="img">Jami hudud</p>
+                            <p><img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-1.png' %}" alt="img">{% blocktrans %}Jami hudud{% endblocktrans %}</p>
                             <h3>4 400 <span class="span-sup">m <sup>2</sup></span></h3>
                         </div>
                         
                         <div class="indicator-line"></div>
                         
                         <div class="indicator-bottom">
-                            <p> <img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-2.png' %}" alt="forest">Yashil maydon</p>
+                            <p> <img class="indicator-icon" src="{% static 'img/indicator/indicator-icon-2.png' %}" alt="forest">{% blocktrans %}Yashil maydon{% endblocktrans %}</p>
                             <h3>1 140 <span class="span-sup">m <sup>2</sup></span></h3>
                             <img class="indicator-forest" src="{% static 'img/indicator/forest.png' %}">
                         </div>
@@ -214,23 +214,23 @@
                 
                         <div class="indicator-right-block-top">
                             <div class="indicator-right-block">
-                                <div class="indicator-right-block-title">Fakultetlar</div>
+                                <div class="indicator-right-block-title">{% blocktrans %}Fakultetlar{% endblocktrans %}</div>
                                 <div class="indicator-right-block-card">
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Kofedra</div>
+                                        <div class="cards-top">{% blocktrans %}Kofedra{% endblocktrans %}</div>
                                         <div class="cards-bottom">5</div>
                                     </div>
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Fakultet</div>
+                                        <div class="cards-top">{% blocktrans %}Fakultet{% endblocktrans %}</div>
                                         <div class="cards-bottom">5</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="indicator-right-block">
-                                <div class="indicator-right-block-title">Xodimlar soni</div>
+                                <div class="indicator-right-block-title">{% blocktrans %}Xodimlar soni{% endblocktrans %}</div>
                                 <div class="indicator-right-block-card">
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Jami</div>
+                                        <div class="cards-top">{% blocktrans %}Jami{% endblocktrans %}</div>
                                         <div class="cards-bottom">53</div>
                                     </div>
                                 </div>
@@ -239,32 +239,32 @@
                                 <div class="indicator-right-block-title">Talabalar soni</div>
                                 <div class="indicator-right-block-card">
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Jami</div>
+                                        <div class="cards-top">{% blocktrans %}Jami{% endblocktrans %}</div>
                                         <div class="cards-bottom">5122</div>
                                     </div>
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Bakalavr</div>
+                                        <div class="cards-top">{% blocktrans %}Bakalavr{% endblocktrans %}</div>
                                         <div class="cards-bottom">1 957</div>
                                     </div>
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Magistratura</div>
+                                        <div class="cards-top">{% blocktrans %}Magistratura{% endblocktrans %}</div>
                                         <div class="cards-bottom">205</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="indicator-right-block">
-                                <div class="indicator-right-block-title">O’qituvchi va professorlar</div>
+                                <div class="indicator-right-block-title">{% blocktrans %}O’qituvchi va professorlar{% endblocktrans %}</div>
                                 <div class="indicator-right-block-card">
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Fan doktori</div>
+                                        <div class="cards-top">{% blocktrans %}Fan doktori{% endblocktrans %}</div>
                                         <div class="cards-bottom">556</div>
                                     </div>
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">Fan nomzodi</div>
+                                        <div class="cards-top">{% blocktrans %}Fan nomzodi{% endblocktrans %}</div>
                                         <div class="cards-bottom">565</div>
                                     </div>
                                     <div class="indicator-right-block-cards">
-                                        <div class="cards-top">O’qituvchi</div>
+                                        <div class="cards-top">{% blocktrans %}O’qituvchi{% endblocktrans %}</div>
                                         <div class="cards-bottom">556</div>
                                     </div>
                                 </div>
@@ -273,20 +273,20 @@
         
                         <div class="indicator-bottom-2">
                             <div class="col-box-title">
-                                <h3>Talabalar to'g'risida qisqacha ma'lumot</h3>
+                                <h3>{% blocktrans %}Talabalar to'g'risida qisqacha ma'lumot{% endblocktrans %}</h3>
                             </div>
                             <div class="call-boxs-info">
                                 <div class="call-boxs">
                                     <h3>35%</h3>
-                                    <p>Moliyaviy yordam oladigan talabalar</p>
+                                    <p>{% blocktrans %}Moliyaviy yordam oladigan talabalar{% endblocktrans %}</p>
                                 </div>
                                 <div class="call-boxs">
                                     <h3>46%</h3>
-                                    <p>Talaba o'qituvchilar</p>
+                                    <p>{% blocktrans %}Talaba o'qituvchilar{% endblocktrans %}</p>
                                 </div>
                                 <div class="call-boxs">
                                     <h3>89%</h3>
-                                    <p>Bitiruvdan keyin bir yil ichida ishga joylashish</p>
+                                    <p>{% blocktrans %}Bitiruvdan keyin bir yil ichida ishga joylashish{% endblocktrans %}</p>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
             
             <div class="section-info havola-line">
                 <div class="left">
-                    <h2>Foydali Havolalar</h2>
+                    <h2>{% blocktrans %}Foydali Havolalar{% endblocktrans %}</h2>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
@@ -326,7 +326,7 @@
 
             <div class="title">
                 <div class="title-line"></div>
-                <h6 class="title-text">Sambhram Universiteti</h6>
+                <h6 class="title-text">{% blocktrans %}Sambhram Universiteti{% endblocktrans %}</h6>
                 <div class="title-line"></div>
             </div>
         </section>

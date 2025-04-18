@@ -21,15 +21,14 @@
 
     <title>{% block title %}Sambhram{% endblock title %}</title>
 
-
-
+    
 </head>
 <body>
     
 
     {% include "__navbar.html" %}
         <marquee width="100%" direction="left">
-            <h5>Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz</h5>
+            <h5>{% blocktrans %}Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz{% endblocktrans %}</h5>
         </marquee>
     {% block bg-img %}{% endblock bg-img %}
     
@@ -51,6 +50,18 @@
     <script src="{% static 'js/bootstrap5.3.js' %}"></script>
     <script src="{% static 'js/swiper.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-
+    <script>
+        function toggleDropdown() {
+            const menu = document.getElementById('languageMenu');
+            menu.classList.toggle('show');
+        }
+        // Dropdownni yopish uchun tashqariga bosilganda
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.language-dropdown');
+            if (!dropdown.contains(event.target)) {
+                document.getElementById('languageMenu').classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>

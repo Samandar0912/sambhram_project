@@ -16,19 +16,40 @@
                     <input type="search" placeholder="Qidiruv">
                 </form>
             </div>
-            <form action="{% url 'set_language' %}" method="post">
-                {% csrf_token %}
-                <select name="language" onchange="this.form.submit()">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
+
+
+            <div class="language-dropdown fade-in">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+            
+                <div class="dropdown-toggle" onclick="toggleDropdown()">
                     {% for lang in LANGUAGES %}
-                        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                        {% if lang.0 == LANGUAGE_CODE %}
                             {{ lang.1 }}
-                        </option>
+                        {% endif %}
                     {% endfor %}
-                </select>
-            </form>
-                         
+                </div>
+            
+                <ul class="dropdown-menu" id="languageMenu">
+                    {% for lang in LANGUAGES %}
+                        <li class="language-item">
+                            <form action="{% url 'set_language' %}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="language" value="{{ lang.0 }}">
+                                <a href="javascript:void(0);"
+                                   onclick="this.closest('form').submit()"
+                                   class="{% if lang.0 == LANGUAGE_CODE %}active{% endif %}">
+                                    {{ lang.1 }}
+                                </a>
+                            </form>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            
+            
+            
             <div class="link-box-button">
                 <a href="{% url 'main:kunduzki' %}">{% blocktrans %}Qabul{% endblocktrans %}</a>
                 <a href="/admin">                         {% blocktrans %}Admin{% endblocktrans %}</a>

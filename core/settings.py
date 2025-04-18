@@ -24,7 +24,11 @@ INSTALLED_APPS = [
     'rosetta',  # For translation management
 ]
 
-# Jazzmin admin customization
+
+
+ROSETTA_STORAGE_CLASS = 'rosetta.storage.CacheRosettaStorage'
+ROSETTA_ENABLE_TRANSLATION_SUGGESTIONS = True 
+
 JAZZMIN_SETTINGS = {
     'site_title': 'Mening Admin Panelim',
     'site_header': 'Mening Saytim',
