@@ -1,4 +1,513 @@
-msgid "Yangilik"
-msgstr "Новость"
-msgid "Sarlovha"
-msgstr "Заголовок"
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-19 16:08+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\templates\__footer.html:8
+msgid "JIZZAX SAMBHRAM UNIVERSITETI"
+msgstr ""
+
+#: .\templates\__footer.html:13
+msgid "BIZ BILAN BOG’LANISH"
+msgstr ""
+
+#: .\templates\__footer.html:16
+msgid "Murojat yuborish"
+msgstr ""
+
+#: .\templates\__footer.html:19
+msgid "BIZNI IJTIMOIY TARMOQ"
+msgstr ""
+
+#: .\templates\__footer.html:20
+msgid "Facebook"
+msgstr ""
+
+#: .\templates\__footer.html:21
+msgid "Instagram"
+msgstr ""
+
+#: .\templates\__footer.html:22
+msgid "Youtobe"
+msgstr ""
+
+#: .\templates\__footer.html:23
+msgid "Telegram"
+msgstr ""
+
+#: .\templates\__footer.html:27
+msgid "UNIVERSITET JOYLASHUVI"
+msgstr ""
+
+#: .\templates\__footer.html:37
+msgid ""
+"Barcha huquqlar himoyalangan. Saytdan olingan ma'lumotlar chop etilganda veb-"
+"saytga havola qilish majburiy."
+msgstr ""
+
+#: .\templates\__footer.html:40
+msgid "Jizzax viloyati, Jizzax shahri, Sh.Rashidov shoh ko‘chasi,  83-uy"
+msgstr ""
+
+#: .\templates\__navbar.html:54
+msgid "Qabul"
+msgstr ""
+
+#: .\templates\__navbar.html:55
+msgid "Admin"
+msgstr ""
+
+#: .\templates\__navbar.html:69
+msgid "SAMBHRAM Haqida"
+msgstr ""
+
+#: .\templates\__navbar.html:71
+msgid "Universitet Haqida"
+msgstr ""
+
+#: .\templates\__navbar.html:72
+msgid "Universitet Tarixi"
+msgstr ""
+
+#: .\templates\__navbar.html:73
+msgid "Universitet Strukturasi"
+msgstr ""
+
+#: .\templates\__navbar.html:78 .\templates\__navbar.html:80
+#: .\templates\index.html:44
+msgid "Yangiliklar"
+msgstr ""
+
+#: .\templates\__navbar.html:81
+msgid "E'lonlar"
+msgstr ""
+
+#: .\templates\__navbar.html:86
+msgid "Universitet"
+msgstr ""
+
+#: .\templates\__navbar.html:88
+msgid "Rektorat"
+msgstr ""
+
+#: .\templates\__navbar.html:89 .\templates\index.html:217
+msgid "Fakultetlar"
+msgstr ""
+
+#: .\templates\__navbar.html:90
+msgid "Markazlar"
+msgstr ""
+
+#: .\templates\__navbar.html:91
+msgid "Bo'limlar"
+msgstr ""
+
+#: .\templates\__navbar.html:92
+msgid "Kafedralar"
+msgstr ""
+
+#: .\templates\__navbar.html:97
+msgid "Faoliyat"
+msgstr ""
+
+#: .\templates\__navbar.html:99
+msgid "Ilmiy faoliyat"
+msgstr ""
+
+#: .\templates\__navbar.html:100
+msgid "O'quv faoliyat"
+msgstr ""
+
+#: .\templates\__navbar.html:101
+msgid "Xalqaro faoliyat"
+msgstr ""
+
+#: .\templates\__navbar.html:102
+msgid "Moliyaviy faoliyat"
+msgstr ""
+
+#: .\templates\__navbar.html:107
+msgid "Ta'lim "
+msgstr ""
+
+#: .\templates\__navbar.html:109
+msgid "Kunduzgi"
+msgstr ""
+
+#: .\templates\__navbar.html:110 .\templates\__navbar.html:123
+msgid "Sirtqi Ta'lim"
+msgstr ""
+
+#: .\templates\__navbar.html:111
+msgid "2-Mutaxasislik"
+msgstr ""
+
+#: .\templates\__navbar.html:112 .\templates\__navbar.html:121
+#: .\templates\index.html:246
+msgid "Bakalavr"
+msgstr ""
+
+#: .\templates\__navbar.html:113 .\templates\__navbar.html:122
+#: .\templates\index.html:250
+msgid "Magistratura"
+msgstr ""
+
+#: .\templates\__navbar.html:114
+msgid "Doktrantura"
+msgstr ""
+
+#: .\templates\__navbar.html:119
+msgid "Talabalar"
+msgstr ""
+
+#: .\templates\__navbar.html:124
+msgid "O'qishni ko'chirish va qayta tiklash"
+msgstr ""
+
+#: .\templates\__navbar.html:129 .\templates\__navbar.html:131
+msgid "Aloqa"
+msgstr ""
+
+#: .\templates\base.html:31
+msgid "Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz"
+msgstr ""
+
+#: .\templates\content\about.html:16
+msgid ""
+" 1. Jizzax viloyati hokimligi, O‘zbekiston Respublikasi Oliy va o‘rta maxsus "
+"ta’lim vazirligi hamda “Sambhram Group” kompaniyasi, “Sambhram” universiteti "
+"(Hindiston) o‘rtasida 2021-yil 16-aprelda Jizzax shahrida “Sambhram” "
+"universitetini tashkil etish bo‘yicha hamkorlikdagi harakatlarning asosiy "
+"tamoyillari to‘g‘risida kelishuv (keyingi o‘rinlarda — kelishuv) "
+"imzolanganligi ma’lumot uchun qabul qilinsin."
+msgstr ""
+
+#: .\templates\content\about.html:17
+msgid ""
+"       O‘zbekiston Respublikasi Prezidentining “O‘zbekistonning yangi "
+"taraqqiyot davrida ta’lim-tarbiya va ilm-fan sohalarini rivojlantirish chora-"
+"tadbirlari to‘g‘risida” 2020-yil 6-noyabrdagi PF-6108-son Farmonida "
+"belgilangan vazifalar hamda Jizzax viloyatida xalqaro talab va standartlarga "
+"muvofiq yuqori malakali raqobatbardosh kadrlar tayyorlash, ilmiy va "
+"innovatsion faoliyatni samarali tashkil etish, xalqaro hamkorlikni, shu "
+"jumladan, xorijiy mamlakatlarning yetakchi oliy ta’lim muassasalari bilan "
+"uzoq muddatli aloqalarni rivojlantirish maqsadida Vazirlar Mahkamasi qaror "
+"qiladi:"
+msgstr ""
+
+#: .\templates\content\about.html:19
+msgid ""
+" 2. Jizzax viloyati hokimligi, O‘zbekiston Respublikasi Oliy va o‘rta maxsus "
+"ta’lim vazirligi hamda “Sambhram Group” kompaniyasi, “Sambhram” "
+"universitetining (Hindiston) Jizzax shahrida nodavlat oliy ta’lim tashkiloti "
+"shaklidagi “Sambhram” universitetini (keyingi o‘rinlarda — Universitet) "
+"tashkil etish to‘g‘risidagi taklifiga rozilik berilsin.\n"
+"                           Bunda Jizzax viloyati hokimligi va “Sambhram "
+"Group” kompaniyasi (Hindiston) Universitetning ta’sischilari (keyingi "
+"o‘rinlarda — Muassis) hisoblanadi."
+msgstr ""
+
+#: .\templates\content\about.html:23
+msgid ""
+" 3. Quyidagilar Universitetning asosiy vazifalari va faoliyati yo‘nalishlari "
+"etib belgilansin:\n"
+"                             \n"
+"                            Jizzax viloyatining ijtimoiy soha va iqtisodiyot "
+"tarmoqlarining rivojlanish istiqbollari va ustuvor vazifalarini, zamonaviy "
+"tadbirkorlikning rivojlanish tendensiyalarini inobatga olgan holda, axborot-"
+"kommunikatsiya texnologiyalari sohasi bo‘yicha oliy ma’lumotli kadrlarni "
+"xalqaro standartlar darajasida sifatli tayyorlashni ta’minlash;\n"
+"                            axborot-kommunikatsiya texnologiyalari, dasturiy "
+"ta’minotni ishlab chiqish, axborot tizimi va kompyuter tarmoqlarini "
+"boshqarish kabi yo‘nalishlarda ta’lim dasturlarini amalga oshirish;\n"
+"                            Universitet o‘quv jarayoniga ilg‘or xorijiy "
+"tajribani, zamonaviy texnologiyalarni joriy etish, ta’lim jarayonini "
+"zamonaviy o‘quv adabiyotlari va ta’lim resurslari bilan ta’minlash;\n"
+"                            ta’lim jarayoniga “Sambhram” universiteti "
+"(Hindiston), shuningdek, yetakchi xorijiy oliy ta’lim muassasalarining "
+"malakali professor-o‘qituvchilari, olim va mutaxassislarini keng jalb qilish "
+"orqali zamonaviy pedagogik va axborot-kommunikatsiya texnologiyalarini, ilm-"
+"fan va texnikaning so‘nggi yutuqlarini joriy etish;\n"
+"                            Jizzax viloyatining iqtisodiyot tarmoqlariga "
+"istiqbolli loyihalar, innovatsiyalarni joriy qilishda ko‘maklashish, "
+"viloyatdagi mavjud ehtiyojdan kelib chiqib, o‘tkazilgan ilmiy tadqiqotlar va "
+"yaratilgan ishlanmalar natijalarini amaliyotga joriy etish;\n"
+"                            ta’lim va ilm-fan sohalarida xorijiy "
+"mamlakatlarning, xususan, Hindistonning yetakchi oliy ta’lim muassasalari, "
+"ilmiy-tadqiqot markazlari hamda biznes hamjamiyatlari bilan uzoq muddatli "
+"aloqalarni rivojlantirish."
+msgstr ""
+
+#: .\templates\content\about.html:32
+msgid ""
+"4. Belgilab qo‘yilsinki:\n"
+"                            Universitetda o‘qitish O‘zbekiston Respublikasi "
+"davlat ta’lim standartlari talablarini inobatga olgan holda, “Sambhram” "
+"universiteti (Hindiston) tomonidan tasdiqlanadigan o‘quv rejalari va fan "
+"dasturlariga muvofiq kunduzgi ta’lim shaklida ingliz, rus tillari va davlat "
+"tilida to‘lov-kontrakt asosida amalga oshiriladi;\n"
+"                            Universitetga abituriyentlarni qabul qilish va "
+"bitiruvchilarni attestatsiyadan o‘tkazish Muassis hamda O‘zbekiston "
+"Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi bilan kelishilgan holda, "
+"Universitet tomonidan belgilanadigan talablar, tartib va muddatlarga muvofiq "
+"amalga oshiriladi;\n"
+"                            Universitetning bakalavriat ta’lim yo‘nalishlari "
+"va magistratura mutaxassisliklariga qabul parametrlari respublika mehnat "
+"bozori ehtiyojlari hamda Universitetning moddiy-texnik imkoniyatidan kelib "
+"chiqib, O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi bilan "
+"kelishilgan holda Universitet tomonidan belgilanadi;\n"
+"                            Universitetda talabalar o‘qishi uchun to‘lov-"
+"kontrakt miqdori Muassis tomonidan belgilanadi;\n"
+"                            Universitetga Muassis tomonidan lavozimga "
+"tayinlanadigan va lavozimdan ozod etiladigan rektor rahbarlik qiladi;\n"
+"                            Universitet bitiruvchilariga O‘zbekiston "
+"Respublikasi va Hindiston Respublikasida oliy ta’lim to‘g‘risidagi hujjat "
+"sifatida tan olinadigan belgilangan namunadagi diplom beriladi;\n"
+"                            Universitetga belgilangan tartibda O‘zbekiston "
+"Respublikasi Vazirlar Mahkamasi huzuridagi Ta’lim sifatini nazorat qilish "
+"davlat inspeksiyasidan litsenziya olingandan so‘ng ta’lim faoliyati bilan "
+"shug‘ullanishga ruxsat etiladi."
+msgstr ""
+
+#: .\templates\content\about.html:41
+msgid ""
+" 5. “Sambhram Group” kompaniyasining (Hindiston) quyidagi majburiyatlarni "
+"olish to‘g‘risidagi takliflari ma’qullansin:\n"
+"                           kelishuvda ko‘rsatib o‘tilgan shartlarga muvofiq "
+"to‘rt yil davomida jami uch million AQSh dollari miqdorida investitsiya "
+"kiritish;\n"
+"                           Universitetga har yili qabul qilinadigan "
+"talabalarning 20 foizini o‘qitish uchun imtiyozli ta’lim grantlari ajratish, "
+"bunda talabalarning 5 foizini bepul o‘qitish, 5 foiziga 50 foizli, 10 "
+"foiziga 25 foizli to‘lov-kontrakt miqdorini to‘lab berish bo‘yicha "
+"imtiyozlar taqdim etish;\n"
+"                           Universitetda ta’lim berish va o‘quv jarayonini "
+"tashkil etish uchun 60 foizdan kam bo‘lmagan malakali xorijiy professor-"
+"o‘qituvchilarni jalb qilish;\n"
+"                           Universitet professor-o‘qituvchilari malakasini "
+"oshirish va ularni qayta tayyorlash, shu jumladan, nufuzli xorijiy oliy "
+"ta’lim va ilmiy-tadqiqot muassasalarida ularning stajirovkasini tashkil "
+"etish;\n"
+"                           har yili Universitet bitiruvchilarining 25 "
+"foizidan kam bo‘lmagan qismini tegishli mutaxassisliklar bo‘yicha ishga "
+"joylashtirishga ko‘maklashish;\n"
+"                           Universitetning kutubxona fondini shakllantirish "
+"va zamonaviy o‘quv, o‘quv-metodik hamda ilmiy adabiyotlar bilan to‘ldirish;\n"
+"                           Universitetning o‘quv-laboratoriya bazasini "
+"shakllantirish, shuningdek, maxsus fanlarni o‘qitish uchun zamonaviy o‘quv "
+"vositalari bilan jihozlash;\n"
+"                           “Sambhram” universitetining (Hindiston) yagona "
+"elektron bazasiga Universitetda tahsil olayotgan talabalar haqida "
+"ma’lumotlar hamda talabalarga beriladigan diplomlarning qayd raqamlarini "
+"kiritish;\n"
+"                           Universitet o‘z faoliyatini tugatgan taqdirda, "
+"Universitetda tahsil olayotgan talabalarga o‘z yo‘nalishlari bo‘yicha "
+"o‘qishini davom ettirib, “Sambhram” universitetining (Hindiston) belgilangan "
+"namunadagi diplomini olishga imkoniyat yaratish;"
+msgstr ""
+
+#: .\templates\content\history.html:18
+msgid ""
+"     Jizzax Sambhram Universiteti O‘zbekiston Respublikasi Vazirlar "
+"Mahkamasining 2021-yil 29-iyundagi 401-sonli qarori asosida tashkil etilgan. "
+"Bu qaror Jizzax viloyati hokimligi, O‘zbekiston Oliy va o‘rta maxsus ta’lim "
+"vazirligi (hozirgi Oliy ta’lim, fan va innovatsiyalar vazirligi) hamda "
+"Sambhram Group o‘rtasidagi kelishuvdan so‘ng qabul qilingan. Kelishuv 2021-"
+"yil 16-fevralda O‘zbekiston bosh vaziri o‘rinbosari Aziz Abduhakimov "
+"boshchiligidagi delegatsiyaning Hindistonga tashrifi chog‘ida erishilgan "
+"bo‘lib, memorandum Jizzax viloyati hokimi Ergash Soliyev va Sambhram Group "
+"rahbari Dr. Nagraj Venkatesh tomonidan imzolangan "
+msgstr ""
+
+#: .\templates\content\history.html:21
+msgid ""
+" Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari (IT) "
+"sohasida oliy ma’lumotli kadrlarni tayyorlash bo‘lib, zamonaviy professional "
+"ta’limni axloqiy qadriyatlar va xarakter tarbiyasi bilan birlashtirishga "
+"e’tibor beradi. Sambhram Groupning 30 yillik tajribasi va dunyo bo‘ylab 7 ta "
+"xalqaro kampusga ega bo‘lgan tarmog‘i ushbu loyihada muhim rol o‘ynagan. "
+"Universitet o‘qitishni kunduzgi shaklda o‘zbek, ingliz va rus tillarida "
+"to‘lov-kontrakt asosida olib boradi"
+msgstr ""
+
+#: .\templates\content\history.html:28
+#, python-format
+msgid ""
+" 2021-yil: Universitet tashkil etilgandan so‘ng, Sambhram Group tomonidan "
+"dastlabki investitsiyalar rejalashtirildi. Ular 4 yil davomida jami 3 "
+"million AQSh dollari miqdorida sarmoya kiritish majburiyatini olgan. "
+"Shuningdek, har yili qabul qilinadigan talabalarning 20 foiziga imtiyozli "
+"ta’lim grantlari ajratish (5 foiz bepul, 5 foiz 50%% chegirma, 10 foiz 25%% "
+"chegirma) va bitiruvchilarning 25 foizini ishga joylashtirishga "
+"ko‘maklashish kabi majburiyatlar belgilandi"
+msgstr ""
+
+#: .\templates\content\history.html:32
+msgid ""
+" 2022-yil: Jizzax Davlat Pedagogika Universiteti (JDPU) bilan hamkorlik "
+"aloqalari o‘rnatildi. Chet tillar fakultetining Ingliz tili o‘qitish "
+"metodikasi kafedrasi va Sambhram Universitetining “Bachelor of Information "
+"Technology” kafedrasi o‘rtasida memorandum imzolandi. Ushbu hamkorlik ilmiy-"
+"tadqiqot faoliyati, xalqaro tajriba almashinuvi va IT ko‘nikmalarini "
+"rivojlantirishga qaratildi. Tadbirda Sambhram Universiteti rektori S.O. "
+"Tovboev JDPU vakillariga esdalik sovg‘alari topshirdi"
+msgstr ""
+
+#: .\templates\content\history.html:36
+msgid ""
+"Universitet dastlabki yillarida o‘z infratuzilmasini rivojlantirishga "
+"e’tibor qaratdi. Rasmiy veb-sayti (sambhram.uz) 2020-2021-yillarda “qurilish "
+"jarayonida” holatida bo‘lgan, bu esa universitetning dastlabki bosqichda o‘z "
+"platformasini shakllantirayotganidan dalolat beradi [Web ID: 3] [Web ID: 5]. "
+"2022-yilga kelib, universitet o‘z faoliyatini kengaytirib, mahalliy va "
+"xalqaro hamkorlik aloqalarini mustahkamlashga kirishdi"
+msgstr ""
+
+#: .\templates\content\history.html:40
+msgid ""
+" Ta’lim tizimi va diplomlar\n"
+"                            Universitet bakalavriat va magistratura "
+"dasturlarini taklif qiladi, qabul parametrlari esa o‘z mustaqil tizimi "
+"asosida belgilanadi. Bitiruvchilarga O‘zbekiston va Hindistonda oliy ta’lim "
+"hujjati sifatida tan olinadigan diplomlar beriladi\n"
+"                            Jizzax Sambhram Universiteti 2021-yilda tashkil "
+"etilib, qisqa muddat ichida IT sohasida kadrlarni tayyorlash va xalqaro "
+"hamkorlikni rivojlantirish bo‘yicha muhim qadamlar tashladi. Sambhram "
+"Groupning tajribasi va investitsiyalari, shuningdek, mahalliy hokimiyat "
+"bilan hamkorlik universitetning dastlabki rivojlanishida muhim rol o‘ynadi. "
+"2024-yildan keyingi yangiliklar haqida ma’lumotim yo‘q, ammo universitetning "
+"rasmiy sayti (sambhram.uz) yoki ijtimoiy tarmoqlardagi sahifalarida so‘nggi "
+"yangiliklarni topishingiz mumkin.\n"
+"                            Agar qo‘shimcha ma’lumot yoki boshqa jihatlar "
+"haqida bilmoqchi bo‘lsangiz, ayting!"
+msgstr ""
+
+#: .\templates\index.html:49 .\templates\index.html:83
+msgid "O'qishda davom eting"
+msgstr ""
+
+#: .\templates\index.html:110
+msgid "Havolalar"
+msgstr ""
+
+#: .\templates\index.html:121
+msgid "Pedagogika"
+msgstr ""
+
+#: .\templates\index.html:129
+msgid "Sambhram.uz"
+msgstr ""
+
+#: .\templates\index.html:137
+msgid "Dars jadvali"
+msgstr ""
+
+#: .\templates\index.html:145
+msgid "Masofaviy ta'lim"
+msgstr ""
+
+#: .\templates\index.html:171
+msgid "Universitet haqida"
+msgstr ""
+
+#: .\templates\index.html:172
+msgid ""
+"“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda "
+"tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport "
+"zali mavjud."
+msgstr ""
+
+#: .\templates\index.html:173
+msgid ""
+"Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari "
+"kitoblari mavjud."
+msgstr ""
+
+#: .\templates\index.html:174
+msgid ""
+"Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim "
+"yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda "
+"magistracy 20 nafar talabalar oqimokda."
+msgstr ""
+
+#: .\templates\index.html:176
+msgid "Batafsil"
+msgstr ""
+
+#: .\templates\index.html:189
+msgid "Universitetning asosiy ko'rsatkichlari"
+msgstr ""
+
+#: .\templates\index.html:199
+msgid "Jami hudud"
+msgstr ""
+
+#: .\templates\index.html:206
+msgid "Yashil maydon"
+msgstr ""
+
+#: .\templates\index.html:220
+msgid "Kofedra"
+msgstr ""
+
+#: .\templates\index.html:224
+msgid "Fakultet"
+msgstr ""
+
+#: .\templates\index.html:230
+msgid "Xodimlar soni"
+msgstr ""
+
+#: .\templates\index.html:233 .\templates\index.html:242
+msgid "Jami"
+msgstr ""
+
+#: .\templates\index.html:256
+msgid "O’qituvchi va professorlar"
+msgstr ""
+
+#: .\templates\index.html:259
+msgid "Fan doktori"
+msgstr ""
+
+#: .\templates\index.html:263
+msgid "Fan nomzodi"
+msgstr ""
+
+#: .\templates\index.html:267
+msgid "O’qituvchi"
+msgstr ""
+
+#: .\templates\index.html:276
+msgid "Talabalar to'g'risida qisqacha ma'lumot"
+msgstr ""
+
+#: .\templates\index.html:281
+msgid "Moliyaviy yordam oladigan talabalar"
+msgstr ""
+
+#: .\templates\index.html:285
+msgid "Talaba o'qituvchilar"
+msgstr ""
+
+#: .\templates\index.html:289
+msgid "Bitiruvdan keyin bir yil ichida ishga joylashish"
+msgstr ""
+
+#: .\templates\index.html:306
+msgid "Foydali Havolalar"
+msgstr ""
+
+#: .\templates\index.html:329
+msgid "Sambhram Universiteti"
+msgstr ""

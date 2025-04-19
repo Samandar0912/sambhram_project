@@ -1,45 +1,62 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block main %}
 
     <div class="bg_img_box">
-        <section class="news">
+        <section class="news-detail">
 
             <div class="container-fluid news_card_in">
                 <div class="block_news row">
                     <div class="block_news_card-left col">
                         
-                        <img class="news-img" src="{% static 'img/bg-img-1.jpg' %}" alt="Asosiy rasm">
+                        <img class="his-img" src="{% static 'img/universitet-haqida/sambhram1.jpg' %}" alt="Asosiy rasm">
 
-                        <h4>Jizzax Sambhram Universitet haqida </h4>
-                        
-                        <p>“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.
-                            4,49 ga, bino va inshotlar maydoni
-                            4400 kv. meter, hududda 2 ta o'quv binosi, 1 ta talabalar turadi zhoyi, 1 ta 200 o'rinli oshxona, 1 ta yopik sports hall va 1 ta kurilishi tugallanmagan yangi o'quv binosi mavzhud.
-                            
-                            Universitetda:
-                            -1800 o'ringa mo'ljallangan o'qish xonalari 24 ta, 260 o'rinli 7 ta kompyuterlashtirilgan laboratoriya xonalari.
-                            - axborot resurs markazi mavjud.
-                            - AWP yes 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavzhud.
-                            - 180 o'rinli faollar zali.
-                            -184 o'rinli talabalar turadi-joyi mavzhud.
-                            Faoliyati: Fakultetlar 3 ta, Katedral 5 ta.
-                            Talim yo'nalishlari: 3 ta.
-                            Magistratura mutahassisliklari: 2 ta.
-                            Contingent: University of Jami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.
-                        </p>
-                        
+                        <h4>Jizzax shahrida “Sambhram” universitetini tashkil etish chora-tadbirlari to‘g‘risida</h4>
+                        <p>{% blocktrans %} 1. Jizzax viloyati hokimligi, O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi hamda “Sambhram Group” kompaniyasi, “Sambhram” universiteti (Hindiston) o‘rtasida 2021-yil 16-aprelda Jizzax shahrida “Sambhram” universitetini tashkil etish bo‘yicha hamkorlikdagi harakatlarning asosiy tamoyillari to‘g‘risida kelishuv (keyingi o‘rinlarda — kelishuv) imzolanganligi ma’lumot uchun qabul qilinsin.{% endblocktrans %}</p>
+                        <p> {% blocktrans %}       O‘zbekiston Respublikasi Prezidentining “O‘zbekistonning yangi taraqqiyot davrida ta’lim-tarbiya va ilm-fan sohalarini rivojlantirish chora-tadbirlari to‘g‘risida” 2020-yil 6-noyabrdagi PF-6108-son Farmonida belgilangan vazifalar hamda Jizzax viloyatida xalqaro talab va standartlarga muvofiq yuqori malakali raqobatbardosh kadrlar tayyorlash, ilmiy va innovatsion faoliyatni samarali tashkil etish, xalqaro hamkorlikni, shu jumladan, xorijiy mamlakatlarning yetakchi oliy ta’lim muassasalari bilan uzoq muddatli aloqalarni rivojlantirish maqsadida Vazirlar Mahkamasi qaror qiladi:{% endblocktrans %}</p>
                         <p>
-                            Universitetda jami 53 nafar professor oʻqituvchilar faoliyatini yuritishda, 24 nafari Hohindiston davlatidan kelgan professor-oʻqituvchilar hamda 29 nafar mahalla professor-oʻqituvchilari (2 nafar fan doktorlari (DSc), 19 nafar falsafa doktorlari (PhD)), faoliyat juritmoda. Ilmiy bahosi40 foiz.
-                            Universitetning halkaro professorlar bilan hamkorligi mavjud. Zhami 7 nafar, 3 nafari Hindustonning nufuzli universitetidan, 1 nafari Italiyaning nufuzli universitetidan, 1 nafari Kozogistonning nufuzli universitetidan, 2 nafari Rossiyaning nufuzli universitetidan onlayn va offline faoliyatini davom ettirmoqdalar.
+                            {% blocktrans %} 2. Jizzax viloyati hokimligi, O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi hamda “Sambhram Group” kompaniyasi, “Sambhram” universitetining (Hindiston) Jizzax shahrida nodavlat oliy ta’lim tashkiloti shaklidagi “Sambhram” universitetini (keyingi o‘rinlarda — Universitet) tashkil etish to‘g‘risidagi taklifiga rozilik berilsin.
+                           Bunda Jizzax viloyati hokimligi va “Sambhram Group” kompaniyasi (Hindiston) Universitetning ta’sischilari (keyingi o‘rinlarda — Muassis) hisoblanadi.{% endblocktrans %}
+                        </p>
+                        <p> 
+                            {% blocktrans %} 3. Quyidagilar Universitetning asosiy vazifalari va faoliyati yo‘nalishlari etib belgilansin:
+                             
+                            Jizzax viloyatining ijtimoiy soha va iqtisodiyot tarmoqlarining rivojlanish istiqbollari va ustuvor vazifalarini, zamonaviy tadbirkorlikning rivojlanish tendensiyalarini inobatga olgan holda, axborot-kommunikatsiya texnologiyalari sohasi bo‘yicha oliy ma’lumotli kadrlarni xalqaro standartlar darajasida sifatli tayyorlashni ta’minlash;
+                            axborot-kommunikatsiya texnologiyalari, dasturiy ta’minotni ishlab chiqish, axborot tizimi va kompyuter tarmoqlarini boshqarish kabi yo‘nalishlarda ta’lim dasturlarini amalga oshirish;
+                            Universitet o‘quv jarayoniga ilg‘or xorijiy tajribani, zamonaviy texnologiyalarni joriy etish, ta’lim jarayonini zamonaviy o‘quv adabiyotlari va ta’lim resurslari bilan ta’minlash;
+                            ta’lim jarayoniga “Sambhram” universiteti (Hindiston), shuningdek, yetakchi xorijiy oliy ta’lim muassasalarining malakali professor-o‘qituvchilari, olim va mutaxassislarini keng jalb qilish orqali zamonaviy pedagogik va axborot-kommunikatsiya texnologiyalarini, ilm-fan va texnikaning so‘nggi yutuqlarini joriy etish;
+                            Jizzax viloyatining iqtisodiyot tarmoqlariga istiqbolli loyihalar, innovatsiyalarni joriy qilishda ko‘maklashish, viloyatdagi mavjud ehtiyojdan kelib chiqib, o‘tkazilgan ilmiy tadqiqotlar va yaratilgan ishlanmalar natijalarini amaliyotga joriy etish;
+                            ta’lim va ilm-fan sohalarida xorijiy mamlakatlarning, xususan, Hindistonning yetakchi oliy ta’lim muassasalari, ilmiy-tadqiqot markazlari hamda biznes hamjamiyatlari bilan uzoq muddatli aloqalarni rivojlantirish.{% endblocktrans %}</p>
+                        
+                        <p>{% blocktrans %}4. Belgilab qo‘yilsinki:
+                            Universitetda o‘qitish O‘zbekiston Respublikasi davlat ta’lim standartlari talablarini inobatga olgan holda, “Sambhram” universiteti (Hindiston) tomonidan tasdiqlanadigan o‘quv rejalari va fan dasturlariga muvofiq kunduzgi ta’lim shaklida ingliz, rus tillari va davlat tilida to‘lov-kontrakt asosida amalga oshiriladi;
+                            Universitetga abituriyentlarni qabul qilish va bitiruvchilarni attestatsiyadan o‘tkazish Muassis hamda O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi bilan kelishilgan holda, Universitet tomonidan belgilanadigan talablar, tartib va muddatlarga muvofiq amalga oshiriladi;
+                            Universitetning bakalavriat ta’lim yo‘nalishlari va magistratura mutaxassisliklariga qabul parametrlari respublika mehnat bozori ehtiyojlari hamda Universitetning moddiy-texnik imkoniyatidan kelib chiqib, O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligi bilan kelishilgan holda Universitet tomonidan belgilanadi;
+                            Universitetda talabalar o‘qishi uchun to‘lov-kontrakt miqdori Muassis tomonidan belgilanadi;
+                            Universitetga Muassis tomonidan lavozimga tayinlanadigan va lavozimdan ozod etiladigan rektor rahbarlik qiladi;
+                            Universitet bitiruvchilariga O‘zbekiston Respublikasi va Hindiston Respublikasida oliy ta’lim to‘g‘risidagi hujjat sifatida tan olinadigan belgilangan namunadagi diplom beriladi;
+                            Universitetga belgilangan tartibda O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Ta’lim sifatini nazorat qilish davlat inspeksiyasidan litsenziya olingandan so‘ng ta’lim faoliyati bilan shug‘ullanishga ruxsat etiladi.{% endblocktrans %}</p>
+                        <p>
+                           {% blocktrans %} 5. “Sambhram Group” kompaniyasining (Hindiston) quyidagi majburiyatlarni olish to‘g‘risidagi takliflari ma’qullansin:
+                           kelishuvda ko‘rsatib o‘tilgan shartlarga muvofiq to‘rt yil davomida jami uch million AQSh dollari miqdorida investitsiya kiritish;
+                           Universitetga har yili qabul qilinadigan talabalarning 20 foizini o‘qitish uchun imtiyozli ta’lim grantlari ajratish, bunda talabalarning 5 foizini bepul o‘qitish, 5 foiziga 50 foizli, 10 foiziga 25 foizli to‘lov-kontrakt miqdorini to‘lab berish bo‘yicha imtiyozlar taqdim etish;
+                           Universitetda ta’lim berish va o‘quv jarayonini tashkil etish uchun 60 foizdan kam bo‘lmagan malakali xorijiy professor-o‘qituvchilarni jalb qilish;
+                           Universitet professor-o‘qituvchilari malakasini oshirish va ularni qayta tayyorlash, shu jumladan, nufuzli xorijiy oliy ta’lim va ilmiy-tadqiqot muassasalarida ularning stajirovkasini tashkil etish;
+                           har yili Universitet bitiruvchilarining 25 foizidan kam bo‘lmagan qismini tegishli mutaxassisliklar bo‘yicha ishga joylashtirishga ko‘maklashish;
+                           Universitetning kutubxona fondini shakllantirish va zamonaviy o‘quv, o‘quv-metodik hamda ilmiy adabiyotlar bilan to‘ldirish;
+                           Universitetning o‘quv-laboratoriya bazasini shakllantirish, shuningdek, maxsus fanlarni o‘qitish uchun zamonaviy o‘quv vositalari bilan jihozlash;
+                           “Sambhram” universitetining (Hindiston) yagona elektron bazasiga Universitetda tahsil olayotgan talabalar haqida ma’lumotlar hamda talabalarga beriladigan diplomlarning qayd raqamlarini kiritish;
+                           Universitet o‘z faoliyatini tugatgan taqdirda, Universitetda tahsil olayotgan talabalarga o‘z yo‘nalishlari bo‘yicha o‘qishini davom ettirib, “Sambhram” universitetining (Hindiston) belgilangan namunadagi diplomini olishga imkoniyat yaratish;{% endblocktrans %}
                         </p>
                         
+{% comment %}               
 
                             <div class="img-box d-flex justify-content-beetwen">
                                 <img style="width:45%; d-block" src="{% static 'img/bg-img-1.jpg' %}" alt="Asosiy rasm">&nbsp;
                                 <img style="width:45%; d-block" src="{% static 'img/bg-img-1.jpg' %}" alt="Asosiy rasm">
 
-                            </div>
+                            </div> {% endcomment %}
             
 
                     </div>
