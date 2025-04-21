@@ -1,10 +1,11 @@
 {% load static %}
+{% load i18n %}
 
 <div class="activity_left">
     <ul>
-        <li><a href="{% url 'main:of' %}">O’QUV FAOLIYAT</a></li>
-        <li><a href="{% url 'main:xf' %}">XALQARO FAOLIYAT</a></li>
-        <li><a href="{% url 'main:if' %}">ILMIY FAOLIYAT</a></li>
-        <li><a href="{% url 'main:mf' %}">MOLIYAVIY FAOLIYAT</a></li>
+        <li><a href="{% url 'main:of' %}">{% blocktrans %}O’QUV FAOLIYAT{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:xf' %}">{% blocktrans %}XALQARO FAOLIYAT{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:if' %}">{% blocktrans %}ILMIY FAOLIYAT{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:mf' %}">{% blocktrans %}MOLIYAVIY FAOLIYAT{% endblocktrans %}</a></li>
     </ul>
 </div>

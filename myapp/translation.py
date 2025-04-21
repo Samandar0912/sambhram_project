@@ -3,7 +3,7 @@ from myapp.models import (
     NewsArticle, ElonArticle, HavolaImages, RectoratUserModel,
     UserModel, FacultetUserModel, FacultetInUserModel, MarkazUserModel,
     MarkazInUserModel, BulimUserModel, BulimInUserModel, KafedraUserModel,
-    KafedraInUserModel
+    KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel
 )
 
 class NewsArticleTranslationOptions(TranslationOptions):
@@ -12,6 +12,18 @@ class NewsArticleTranslationOptions(TranslationOptions):
 class ElonArticleTranslationOptions(TranslationOptions):
     fields = ('name', 'title', 'body')
 
+# HistoryUniversity uchun tarjima sozlamalari
+class HistoryUniversityTranslationOptions(TranslationOptions):
+    fields = ('name', 'body')
+
+# AboutUsUniversity uchun tarjima sozlamalari
+class AboutUsUniversityTranslationOptions(TranslationOptions):
+    fields = ('name', 'body')
+
+# CallUserModel uchun tarjima sozlamalari
+class CallUserModelTranslationOptions(TranslationOptions):
+    fields = ('name', 'body', 'rang', 'qabul_day')
+    
 class HavolaImagesTranslationOptions(TranslationOptions):
     fields = ('name',)
 
@@ -58,3 +70,6 @@ translator.register(BulimUserModel, BulimUserModelTranslationOptions)
 translator.register(BulimInUserModel, BulimInUserModelTranslationOptions)
 translator.register(KafedraUserModel, KafedraUserModelTranslationOptions)
 translator.register(KafedraInUserModel, KafedraInUserModelTranslationOptions)
+translator.register(HistoryUniversity, HistoryUniversityTranslationOptions)
+translator.register(AboutUsUniversity, AboutUsUniversityTranslationOptions)
+translator.register(CallUserModel, CallUserModelTranslationOptions)

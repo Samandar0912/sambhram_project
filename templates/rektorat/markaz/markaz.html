@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load i18n %}
 {% block main %}
     <div class="bg_img_box">
         <section class="rektorat">
@@ -8,12 +8,9 @@
                 <ul>
                     <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
                     <li class="sircl"></li>
-        
-                    <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                    <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
                     <li class="sircl"></li>
-                    
-                    <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
+                    <li><a href="{% url 'main:markaz' %}">{% blocktrans %}Markazlar{% endblocktrans %}</a></li>
                 </ul>
             </div>
             

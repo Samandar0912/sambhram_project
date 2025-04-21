@@ -4,7 +4,7 @@ from .models import (
     EkranImages, NewsArticle, NewsImage, ElonArticle, ElonImage, HavolaImages,
     RektoratCategory, RectoratUserModel, UserModel, FacultetUserModel,
     FacultetInUserModel, MarkazUserModel, MarkazInUserModel, BulimUserModel,
-    BulimInUserModel, KafedraUserModel, KafedraInUserModel
+    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel
 )
 
 # Ekran Rasmi (tarjima qilinmaydi)
@@ -259,5 +259,58 @@ class KafedraInUserModelAdmin(TranslationAdmin):
         }),
         ('Aloqa ma\'lumotlari', {
             'fields': ('number', 'email', 'tg_uz', 'tg_en', 'tg_ru')
+        }),
+    )
+
+
+
+
+@admin.register(HistoryUniversity)
+class HistoryUniversityAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    list_display_links = ('name',)
+    fieldsets = (
+        ('Umumiy ma\'lumotlar', {
+            'fields':(
+                ('name_uz', 'name_en', 'name_ru'),
+                ('body_uz', 'body_en', 'body_ru'),
+                ('body', 'photo'),
+            ) 
+        }),
+    )
+    
+
+@admin.register(AboutUsUniversity)
+class AboutUsUniversityAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    list_display_links = ('name',)
+    
+    fieldsets = (
+        ('Umumiy ma\'lumotlar', {
+            'fields':(
+                ('name_uz', 'name_en', 'name_ru'),
+                ('body_uz', 'body_en', 'body_ru'),
+                ('body', 'photo'),
+            ) 
+        }),
+    )
+    
+
+
+@admin.register(CallUserModel)
+class CallUserModelAdmin(admin.ModelAdmin):
+    list_display = ('name_uz', 'number', 'email')
+    fieldsets = (
+        ('Umumiy ma\'lumotlar', {
+            'fields': (
+                ('name_uz', 'name_en', 'name_ru'),
+                ('body_uz', 'body_en', 'body_ru'),
+                ('rang_uz', 'rang_en', 'rang_ru'),
+                ('qabul_day_uz', 'qabul_day_en', 'qabul_day_ru'),
+                'photo'
+            )
+        }),
+        ('Aloqa ma\'lumotlari', {
+            'fields': ('number', 'email')
         }),
     )

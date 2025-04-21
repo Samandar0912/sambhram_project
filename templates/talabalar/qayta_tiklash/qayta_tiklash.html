@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 <div class="bg_img_box">
@@ -8,10 +9,10 @@
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:talabalar' %}">Talabalar</a></li>
+                <li><a href="{% url 'main:talabalar' %}">{% blocktrans %}Talabalar{% endblocktrans %}</a></li>
 
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:T_qayta-tiklash' %}">O'qishni ko'chirish va qayta tiklash</a></li>
+                <li><a href="{% url 'main:T_qayta-tiklash' %}">{% blocktrans %}O'qishni ko'chirish va qayta tiklash{% endblocktrans %}</a></li>
             </ul>
         </div>
         <div class="activity">

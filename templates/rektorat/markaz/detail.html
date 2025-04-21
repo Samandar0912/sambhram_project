@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 
@@ -9,15 +10,12 @@
             <ul>
                 <li><a href="#"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
                 <li class="sircl"></li>
-    
-                <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
+                <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
+                <li class="sircl"></li>
+                <li><a href="{% url 'main:markaz' %}">{% blocktrans %}Markazlar{% endblocktrans %}</a></li>
+                <li class="sircl"></li>
+                <li><a href="{% url "main:markaz" %}">{{ markaz.name }}</a></li>
 
-                <li class="sircl"></li>
-                
-                <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
-                <li class="sircl"></li>
-                <li><a href="#">{{ markaz.name }}</a></li>
-        
             </ul>
         </div>
         
@@ -28,22 +26,22 @@
                     <img src="{{ markaz.photo.url }}">
                 </div>
                 <div class="right">
-                    <p class="name">  <span>F.I.SH</span>      {{ markaz.name }}</p>
-                    <p class="rang">  <span>Lavozim</span>      {{ markaz.rang }}</p>
-                    <p class="tell">  <span>Telefon</span>      {{ markaz.number }}</p>
-                    <p class="email"> <span>E-pochta</span>     {{ markaz.email }}</p>
-                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
+                    <p class="name">  <span>{% blocktrans %}F.I.SH{% endblocktrans %}</span>     {{ markaz.name }}</p>
+                    <p class="rang">  <span>{% blocktrans %}Lavozim{% endblocktrans %}</span>    {{ markaz.rang }}</p>
+                    <p class="tell">  <span>{% blocktrans %}Telefon{% endblocktrans %}</span>    {{ markaz.number }}</p>
+                    <p class="email"> <span>{% blocktrans %}E-pochta{% endblocktrans %}</span>   {{ markaz.email }}</p>
+                    <p class="times"> <span>{% blocktrans %}Ish-vaqti{% endblocktrans %}</span>  {{ markaz.qabul_day }}</p>
                 </div>
             </div>
       
             <div class="all_cards_in">
                 
-                <p align="center">Umumiy ma’lumot </p>
+                <p align="center">{% blocktrans %}Umumiy ma’lumot{% endblocktrans %} </p>
                 <p  style="white-space: pre-wrap;">{{ markaz.body }}</p>
                
             </div>
             {% if userMarkaz %}
-                <h1 align="center" class="title_user-info">Hodimlar haqida ma’lumot</h1>
+                <h1 align="center" class="title_user-info">{% blocktrans %}Hodimlar haqida ma’lumot{% endblocktrans %}</h1>
                 <div class="plus-card">
             
                 

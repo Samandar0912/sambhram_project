@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 <div class="bg_img_box">
@@ -8,7 +9,7 @@
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:talim' %}">Ta'lim</a></li>
+                <li><a href="{% url 'main:talim' %}">{% blocktrans %}Ta'lim{% endblocktrans %}</a></li>
             </ul>
         </div>
         <div class="activity">
@@ -17,12 +18,12 @@
             
             <div class="activity_right">
                 <ul>
-                    <li><a href="{% url 'main:kunduzki' %}">Kunduzgi</a></li>
-                    <li><a href="{% url 'main:sirtqi' %}">Sirtqi ta'lim</a></li>
-                    <li><a href="{% url 'main:bakalavr' %}">Bakalavr</a></li>
-                    <li><a href="{% url 'main:magistr' %}">Magistratura</a></li>
-                    <li><a href="{% url 'main:2m' %}">2-Mutaxasislik</a></li>
-                    <li><a href="{% url 'main:doc' %}">Doktarantura</a></li>
+                    <li><a href="{% url 'main:kunduzki' %}">{% blocktrans %}Kunduzgi{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:sirtqi' %}">  {% blocktrans %}Sirtqi ta'lim{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:bakalavr' %}">{% blocktrans %}Bakalavr{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:magistr' %}"> {% blocktrans %}Magistratura{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:doc' %}">     {% blocktrans %}Doktarantura{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:2m' %}">      {% blocktrans %}2-Mutaxasislik{% endblocktrans %}</a></li>
 
                 </ul>
             </div>

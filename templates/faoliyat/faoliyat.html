@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 <div class="bg_img_box">
@@ -8,7 +9,7 @@
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:faoliyat' %}">Faoliyat</a></li>
+                <li><a href="{% url 'main:faoliyat' %}">{% blocktrans %}Faoliyat{% endblocktrans %}</a></li>
             </ul>
         </div>
         <div class="activity">
@@ -17,10 +18,10 @@
             
             <div class="activity_right">
                 <ul>
-                    <li><a href="{% url 'main:of' %}">O’QUV FAOLIYAT</a></li>
-                    <li><a href="{% url 'main:xf' %}">XALQARO FAOLIYAT</a></li>
-                    <li><a href="{% url 'main:if' %}">ILMIY FAOLIYAT</a></li>
-                    <li><a href="{% url 'main:mf' %}">MOLIYAVIY FAOLIYAT</a></li>
+                    <li><a href="{% url 'main:of' %}">{% blocktrans %}O’QUV FAOLIYAT{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:xf' %}">{% blocktrans %}XALQARO FAOLIYAT{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:if' %}">{% blocktrans %}ILMIY FAOLIYAT{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:mf' %}">{% blocktrans %}MOLIYAVIY FAOLIYAT{% endblocktrans %}</a></li>
                 </ul>
             </div>
         </div>

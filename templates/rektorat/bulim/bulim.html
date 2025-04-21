@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
     <div class="bg_img_box">
@@ -7,19 +8,11 @@
             <!-- Breadcrumbs -->
             <div class="breadcrumbb">
                 <ul>
-                    <li>
-                        <a href="{% url 'main:index' %}">
-                            <img src="{% static 'img/Rektorat/home.png' %}" alt="Bosh sahifa">
-                        </a>
-                    </li>
+                    <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}" alt="Bosh sahifa"></a></li>
                     <li class="sircl"></li>
-                    <li>
-                        <a href="{% url 'main:rektorat_main' %}">Universitet</a>
-                    </li>
+                    <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
                     <li class="sircl"></li>
-                    <li>
-                        <a href="{% url 'main:bulim' %}">Bo'limlar</a>
-                    </li>
+                    <li><a href="{% url 'main:bulim' %}">{% blocktrans %}{% endblocktrans %}</a></li>
                 </ul>
             </div>
 
@@ -39,7 +32,7 @@
                             </a>
                         {% endfor %}
                     {% else %}
-                        <p class="no-data">Hozirda bo‘limlar mavjud emas.</p>
+                        <p class="no-data">{% blocktrans %}Hozirda bo‘limlar mavjud emas.{% endblocktrans %}</p>
                     {% endif %}
                 </div>
             </div>

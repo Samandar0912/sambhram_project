@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
     <div class="bg_img_box">
@@ -8,18 +9,13 @@
                 <ul>
                     <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
                     <li class="sircl"></li>
-        
-                    <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                    <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
                     <li class="sircl"></li>
-                    
-                    <li><a href="{% url 'main:kafedra' %}">Kafedralar</a></li>
+                    <li><a href="{% url 'main:kafedra' %}">{% blocktrans %}Kafedra{% endblocktrans %}</a></li>
                 </ul>
             </div>
             
             <div class="rektorat_users">
-         
-
                 <div class="all_cards">
                     {% for item in kafedra %}
                         <a href="{{ item.get_absolute_url }}" class="card">

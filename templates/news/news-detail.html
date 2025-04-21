@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
+
 {% block main %}
 
     <div class="bg_img_box">
@@ -7,7 +9,7 @@
             
             <div class="section-info">
                 <div class="left">
-                    <h2>Yangiliklar</h2>
+                    <h2>{% blocktrans %}Yangiliklar{% endblocktrans %}</h2>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
@@ -41,7 +43,7 @@
                     </div>
                     
                     <div class="block_news_card-right col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-                        <h6>Boshqa Yangiliklar</h6>
+                        <h6>{% blocktrans %}Boshqa Yangiliklar{% endblocktrans %}</h6>
                         {% for other in related_news %}
                             <a href="{% url 'main:news_detail' slug=other.slug %}" class="card">
                                 {% if other.photo %}

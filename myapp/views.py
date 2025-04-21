@@ -3,19 +3,26 @@ from django.views.generic import DetailView, DeleteView, UpdateView, CreateView,
 from myapp.models import *
 from django.utils import translation
 from django.conf import settings
+import logging
 
+logger = logging.getLogger(__name__)
 
-
-# Create your views here.
 def set_language(request):
-    user_language = request.GET.get('language', 'uz')
+    # POST yoki GET dan tilni olish
+    user_language = request.POST.get('language') or request.GET.get('language', 'uz')
+    logger.debug("Attempting to set language: %s", user_language)
+    
+    # Agar til mavjud bo'lmasa, standart 'uz' ni ishlatish
     if user_language not in dict(settings.LANGUAGES):
         user_language = 'uz'
+    
+    # Tilni faollashtirish
     translation.activate(user_language)
+    
+    # Cookie'ga tilni saqlash va redirect qilish
     response = redirect('/')
     response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
     return response
-
 
 
 # ================= INDEX =================
@@ -34,12 +41,26 @@ class IndexView(TemplateView):
 
 class AloqaView(TemplateView):
     template_name = "content/aloqa.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['call'] = CallUserModel.objects.all()
+        return context
 
 class HistoryView(TemplateView):
     template_name = "content/history.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['history'] = HistoryUniversity.objects.all()
+        return context
+
+    
 
 class AboutView(TemplateView):
     template_name = "content/about.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['about'] = AboutUsUniversity.objects.all()
+        return context
 
 class StrukturaView(TemplateView):
     template_name = "content/struktura.html"

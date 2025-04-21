@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 <div class="bg_img_box">
@@ -8,7 +9,7 @@
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
+                <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
             </ul>
         </div>
         <div class="activity">
@@ -17,12 +18,11 @@
             
             <div class="activity_right">
                 <ul>
-                    <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
-                    <li><a href="{% url 'main:fakultet' %}">Fakultetlar</a></li>
-                    <li><a href="{% url 'main:markaz' %}">Markazlar</a></li>
-                    <li><a href="{% url 'main:bulim' %}">Bo'limlar</a></li>
-                    <li><a href="{% url 'main:kafedra' %}">Kafedralar</a></li>
-
+                    <li><a href="{% url 'main:rektorat' %}">{% blocktrans %}Rektorat{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:fakultet' %}">{% blocktrans %}Fakultetlar{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:markaz' %}">  {% blocktrans %}Markazlar{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:bulim' %}">   {% blocktrans %}Bo'limlar{% endblocktrans %}</a></li>
+                    <li><a href="{% url 'main:kafedra' %}"> {% blocktrans %}Kafedralar{% endblocktrans %}</a></li>
                 </ul>
             </div>
         </div>

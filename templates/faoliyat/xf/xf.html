@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
 <div class="bg_img_box">
@@ -8,10 +9,10 @@
             <ul>
                 <li><a href="#"><img src="{% static "img/Rektorat/home.png" %}"></a></li>
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:faoliyat' %}">Faoliyat</a></li>
+                <li><a href="{% url 'main:faoliyat' %}">{% blocktrans %}Faoliyat{% endblocktrans %}</a></li>
       
                 <li class="sircl"></li>
-                <li><a href="{% url 'main:xf' %}">Xalqaro faoliyat</a></li>
+                <li><a href="{% url 'main:xf' %}">{% blocktrans %}Xalqaro faoliyat{% endblocktrans %}</a></li>
 
             </ul>
         </div>

@@ -1,5 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 from pathlib import Path
+import os
+os.environ["PYTHONIOENCODING"] = "utf-8"
 
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -7,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security settings
 SECRET_KEY = 'django-insecure-2*)vfpz0bkomk$co@%ysvr6#f0@#r74di)n_0r&_t0rwi3ge4m'  # Move to env variable in production
 DEBUG = True
-ALLOWED_HOSTS = []  # Add specific hosts in production, e.g., ['example.com']
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 INSTALLED_APPS = [

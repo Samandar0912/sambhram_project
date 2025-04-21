@@ -360,3 +360,54 @@ class KafedraInUserModel(models.Model):
 
     def __str__(self):
         return self.name
+    
+    
+    
+    
+    
+class HistoryUniversity(models.Model):
+    name = models.CharField(max_length=450, verbose_name="sarlovha")
+    body = models.TextField(default="hozircha malumot yoq", blank=True)
+    photo = models.ImageField(upload_to="media/about-us")
+    
+    class Meta:
+        ordering = ["-id"]
+        verbose_name = "Universitet Tarixi"
+        verbose_name_plural = "Universitet Tarixi"
+
+    def __str__(self):
+        return self.name
+    
+    
+class AboutUsUniversity(models.Model):
+    name = models.CharField(max_length=450, verbose_name="sarlovha")
+    body = models.TextField(default="hozircha malumot yoq", blank=True)
+    photo = models.ImageField(upload_to="media/about-us")
+    
+    class Meta:
+        ordering = ["-id"]
+        verbose_name = "Universitet Haqida"
+        verbose_name_plural = "Universitet haqida"
+
+    def __str__(self):
+        return self.name
+
+
+
+class CallUserModel(models.Model):
+    name = models.CharField(max_length=150, verbose_name="F.I.SH")
+    body = models.TextField(verbose_name="Malumot")
+    rang = models.CharField(max_length=150, verbose_name="lavozim")
+    qabul_day = models.CharField(max_length=150, blank=True, verbose_name="qabul kuni")
+    number = PhoneNumberField(unique=True, blank=False, null=False, verbose_name="Tell number")
+    photo = models.ImageField(upload_to='media/call')
+    email = models.EmailField(max_length=254, verbose_name="email")
+ 
+
+    class Meta:
+        verbose_name = "Aloqa Hodimi"
+        verbose_name_plural = "Aloqa Hodimi"
+
+    def __str__(self):
+        return self.name
+

@@ -5,46 +5,15 @@
 
     <div class="bg_img_box">
         <section class="news-detail">
-
             <div class="container-fluid news_card_in">
                 <div class="block_news row">
+                    {% for item in history %}
                     <div class="block_news_card-left col">
-                        
-                        <img class="his-img" src="{% static 'img/universitet-haqida/sambhram.jpg' %}" alt="Asosiy rasm">
-
-                        <h4>Jizzax shahrida “Sambhram” universitetini tashkil etish chora-tadbirlari to‘g‘risida</h4>
-                        
-                        <p>
-                            {% blocktrans %}     Jizzax Sambhram Universiteti O‘zbekiston Respublikasi Vazirlar Mahkamasining 2021-yil 29-iyundagi 401-sonli qarori asosida tashkil etilgan. Bu qaror Jizzax viloyati hokimligi, O‘zbekiston Oliy va o‘rta maxsus ta’lim vazirligi (hozirgi Oliy ta’lim, fan va innovatsiyalar vazirligi) hamda Sambhram Group o‘rtasidagi kelishuvdan so‘ng qabul qilingan. Kelishuv 2021-yil 16-fevralda O‘zbekiston bosh vaziri o‘rinbosari Aziz Abduhakimov boshchiligidagi delegatsiyaning Hindistonga tashrifi chog‘ida erishilgan bo‘lib, memorandum Jizzax viloyati hokimi Ergash Soliyev va Sambhram Group rahbari Dr. Nagraj Venkatesh tomonidan imzolangan {% endblocktrans %}
-                        </p>                            
-                        <p>
-                           {% blocktrans %} Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari (IT) sohasida oliy ma’lumotli kadrlarni tayyorlash bo‘lib, zamonaviy professional ta’limni axloqiy qadriyatlar va xarakter tarbiyasi bilan birlashtirishga e’tibor beradi. Sambhram Groupning 30 yillik tajribasi va dunyo bo‘ylab 7 ta xalqaro kampusga ega bo‘lgan tarmog‘i ushbu loyihada muhim rol o‘ynagan. Universitet o‘qitishni kunduzgi shaklda o‘zbek, ingliz va rus tillarida to‘lov-kontrakt asosida olib boradi{% endblocktrans %}
-                        </p>
-
-                        <h4>Dastlabki qadamlar va hamkorlik<h4>
-                         
-                            
-                        <p>
-                           {% blocktrans %} 2021-yil: Universitet tashkil etilgandan so‘ng, Sambhram Group tomonidan dastlabki investitsiyalar rejalashtirildi. Ular 4 yil davomida jami 3 million AQSh dollari miqdorida sarmoya kiritish majburiyatini olgan. Shuningdek, har yili qabul qilinadigan talabalarning 20 foiziga imtiyozli ta’lim grantlari ajratish (5 foiz bepul, 5 foiz 50% chegirma, 10 foiz 25% chegirma) va bitiruvchilarning 25 foizini ishga joylashtirishga ko‘maklashish kabi majburiyatlar belgilandi{% endblocktrans %}
-                        </p>
-
-                        <p>
-                           {% blocktrans %} 2022-yil: Jizzax Davlat Pedagogika Universiteti (JDPU) bilan hamkorlik aloqalari o‘rnatildi. Chet tillar fakultetining Ingliz tili o‘qitish metodikasi kafedrasi va Sambhram Universitetining “Bachelor of Information Technology” kafedrasi o‘rtasida memorandum imzolandi. Ushbu hamkorlik ilmiy-tadqiqot faoliyati, xalqaro tajriba almashinuvi va IT ko‘nikmalarini rivojlantirishga qaratildi. Tadbirda Sambhram Universiteti rektori S.O. Tovboev JDPU vakillariga esdalik sovg‘alari topshirdi{% endblocktrans %}
-                        </p>
-                        
-                        <p>
-                            {% blocktrans %}Universitet dastlabki yillarida o‘z infratuzilmasini rivojlantirishga e’tibor qaratdi. Rasmiy veb-sayti (sambhram.uz) 2020-2021-yillarda “qurilish jarayonida” holatida bo‘lgan, bu esa universitetning dastlabki bosqichda o‘z platformasini shakllantirayotganidan dalolat beradi [Web ID: 3] [Web ID: 5]. 2022-yilga kelib, universitet o‘z faoliyatini kengaytirib, mahalliy va xalqaro hamkorlik aloqalarini mustahkamlashga kirishdi{% endblocktrans %}
-                        </p>
-                            
-                        <p>
-                            {% blocktrans %} Ta’lim tizimi va diplomlar
-                            Universitet bakalavriat va magistratura dasturlarini taklif qiladi, qabul parametrlari esa o‘z mustaqil tizimi asosida belgilanadi. Bitiruvchilarga O‘zbekiston va Hindistonda oliy ta’lim hujjati sifatida tan olinadigan diplomlar beriladi
-                            Jizzax Sambhram Universiteti 2021-yilda tashkil etilib, qisqa muddat ichida IT sohasida kadrlarni tayyorlash va xalqaro hamkorlikni rivojlantirish bo‘yicha muhim qadamlar tashladi. Sambhram Groupning tajribasi va investitsiyalari, shuningdek, mahalliy hokimiyat bilan hamkorlik universitetning dastlabki rivojlanishida muhim rol o‘ynadi. 2024-yildan keyingi yangiliklar haqida ma’lumotim yo‘q, ammo universitetning rasmiy sayti (sambhram.uz) yoki ijtimoiy tarmoqlardagi sahifalarida so‘nggi yangiliklarni topishingiz mumkin.
-                            Agar qo‘shimcha ma’lumot yoki boshqa jihatlar haqida bilmoqchi bo‘lsangiz, ayting!{% endblocktrans %}
-                        </p>
-            
-
+                        <img class="his-img" src="{{ item.photo.url }}" alt="Asosiy rasm">
+                        <h4>{{ item.name }}</h4>
+                        <p style="white-space: pre-wrap;">{{ item.body }}</p>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>

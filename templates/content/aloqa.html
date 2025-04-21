@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block main %}
 
 <div class="bg_img_box">
@@ -7,36 +8,32 @@
         <div class="breadcrumbb">
             <ul>
                 <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
-                <li class="sircl"></li>
-    
-                <li><a href="#">Aloqa</a></li>
-            
-                
-        
+                <li class="sircl"></li><li><a href="{% url 'main:aloqa' %}">{% blocktrans %}Aloqa{% endblocktrans %}</a></li>
             </ul>
         </div>
-        
+        {% for item in call  %}
         <div class="rektorat_users">
             <div class="rektor_card_in">
                 <div class="left">
-                    <img src="rasm">
+                    <img src="{{ item.photo.url }}">
                 </div>
                 <div class="right">
-                    <p class="name">  <span>F.I.SH</span>     lorem5</p>
-                    <p class="rang">  <span>Lavozim</span>    lorem5</p>
-                    <p class="tell">  <span>Telefon</span>    lorem5</p>
-                    <p class="email"> <span>E-pochta</span>   lorem5</p>
-                    <p class="times"> <span>Ish-vaqti</span>    Du - Ju 8:30 - 16: 30, Sha 8:30 - 14: 30</p>
+                    <p class="name">  <span>{% blocktrans %}F.I.SH{% endblocktrans %}</span>     {{ item.name }}</p>
+                    <p class="rang">  <span>{% blocktrans %}Lavozim{% endblocktrans %}</span>    {{ item.rang }}</p>
+                    <p class="tell">  <span>{% blocktrans %}Telefon{% endblocktrans %}</span>    {{ item.number }}</p>
+                    <p class="email"> <span>{% blocktrans %}E-pochta{% endblocktrans %}</span>   {{ item.email }}</p>
+                    <p class="times"> <span>{% blocktrans %}Ish-vaqti{% endblocktrans %}</span>  {{ item.qabul_day }}</p>
                 </div>
             </div>
-      
+            
             <div class="all_cards_in">
                 
-                <p align="center">Umumiy ma’lumot </p>
-                <p>{{ facultetUser.body }}</p>
-               
+                <p align="center">{% blocktrans %}Umumiy ma’lumot{% endblocktrans %} </p>
+                <p>{{ item.body }}</p>
+                
             </div>
         </div>
+        {% endfor %}
     </section>
 </div>
    

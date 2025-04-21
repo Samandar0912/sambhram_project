@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block main %}
     <div class="bg_img_box">
@@ -8,12 +9,9 @@
                 <ul>
                     <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
                     <li class="sircl"></li>
-        
-                    <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                    <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
                     <li class="sircl"></li>
-                    
-                    <li><a href="{% url 'main:rektorat' %}">Rektorat</a></li>
+                    <li><a href="{% url 'main:rektorat' %}">{% blocktrans %}Rektorat{% endblocktrans %}</a></li>
                 </ul>
             </div>
             
@@ -27,9 +25,9 @@
                                     <img src="{{ rektor.photo.url }}">
                                 </div>
                                 <div class="right">
-                                    <p class="rang">REKTOR</p>
+                                    <p class="rang">{% blocktrans %}REKTOR{% endblocktrans %}</p>
                                     <p class="name">{{ rektor.name }}</p>
-                                    <p class="rang-2">texnika fanlari doktori, Professor</p>
+                                    <p class="rang-2">{{ rektor.rang }}</p>
                                 </div>
                             </div>
                         </a>

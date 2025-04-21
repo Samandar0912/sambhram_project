@@ -9,13 +9,9 @@
                     <ul>
                         <li><a href="{% url 'main:index' %}"><img src="{% static 'img/Rektorat/home.png' %}"></a></li>
                         <li class="sircl"></li>
-            
-                        <li><a href="{% url 'main:rektorat_main' %}">Universitet</a></li>
-
+                        <li><a href="{% url 'main:rektorat_main' %}">{% blocktrans %}Universitet{% endblocktrans %}</a></li>
                         <li class="sircl"></li>
-                        
-                        <li><a href="{% url 'main:rektorat' %}">Fakultet</a></li>
-                
+                        <li><a href="{% url 'main:rektorat' %}">{% blocktrans %}Fakultet{% endblocktrans %}</a></li>
                     </ul>
                 </div>
                 
@@ -31,14 +27,8 @@
                             </a>
                         {% endfor %}
                     
-             
-                    
-        
                     </div>
                 </div>
-        
-        
-            
             </section>
         </div>
    

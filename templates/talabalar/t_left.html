@@ -1,11 +1,12 @@
 {% load static %}
+{% load i18n %}
 
 <div class="activity_left">
     <ul>
-        <li><a href="{% url 'main:T_Bakalavr' %}">Bakalavr</a></li>
-        <li><a href="{% url 'main:T_Magistr' %}">Magistratura</a></li>
-        <li><a href="{% url 'main:T_Sirqi' %}">Sirtqi Ta'lim</a></li>
-        <li><a href="{% url 'main:T_qayta-tiklash' %}">O'qishni ko'chirish va qayta tiklash</a></li>
+        <li><a href="{% url 'main:T_Bakalavr' %}">     {% blocktrans %}Bakalavr{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:T_Magistr' %}">      {% blocktrans %}Magistratura{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:T_Sirqi' %}">        {% blocktrans %}Sirtqi Ta'lim{% endblocktrans %}</a></li>
+        <li><a href="{% url 'main:T_qayta-tiklash' %}">{% blocktrans %}O'qishni ko'chirish va qayta tiklash{% endblocktrans %}</a></li>
     
     </ul>
 </div>
