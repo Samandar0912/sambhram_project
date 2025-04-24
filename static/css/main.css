@@ -1152,6 +1152,14 @@
 
 }
 
+.block_news_card-left img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+
 .block_news_card-left .img-box img{
     width: 300px;
     height: 200px;

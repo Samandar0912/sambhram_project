@@ -4,9 +4,14 @@ from .models import (
     EkranImages, NewsArticle, NewsImage, ElonArticle, ElonImage, HavolaImages,
     RektoratCategory, RectoratUserModel, UserModel, FacultetUserModel,
     FacultetInUserModel, MarkazUserModel, MarkazInUserModel, BulimUserModel,
-    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel
+    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel, Video
 )
 
+@admin.register(Video)
+class EkranImagesAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+    
 # Ekran Rasmi (tarjima qilinmaydi)
 @admin.register(EkranImages)
 class EkranImagesAdmin(admin.ModelAdmin):

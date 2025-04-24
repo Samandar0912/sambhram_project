@@ -411,3 +411,14 @@ class CallUserModel(models.Model):
     def __str__(self):
         return self.name
 
+
+
+
+class Video(models.Model):
+    title = models.CharField(max_length=300)
+    video_file = models.FileField(upload_to='videos/')
+    poster = models.ImageField(upload_to='news/')
+
+
+    def __str__(self):
+        return self.title

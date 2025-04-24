@@ -1,0 +1,25 @@
+.video-detail{
+    margin-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video-box{
+    width: 410px;
+    margin: 10px;
+    background: #87b1ec11;
+    padding: 5px;
+    border-radius: 10px;
+}
+.video-box .video{
+    width: 100%;
+    max-width: 560px;
+
+}
+.video-box p{
+    margin-top: 20px;
+}

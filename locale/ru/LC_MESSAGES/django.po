@@ -1,9 +1,10 @@
 #
+#: .\templates\rektorat\bulim\bulim.html:15
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 14:32+0500\n"
+"POT-Creation-Date: 2025-04-24 18:54+0500\n"
 "PO-Revision-Date: 2025-04-21 15:12-0500\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Translated-Using: django-rosetta 0.10.2\n"
 
 #: .\templates\__footer.html:8
@@ -52,8 +54,8 @@ msgstr "РАСПОЛОЖЕНИЕ УНИВЕРСИТЕТА"
 
 #: .\templates\__footer.html:37
 msgid ""
-"Barcha huquqlar himoyalangan. Saytdan olingan ma'lumotlar chop etilganda "
-"veb-saytga havola qilish majburiy."
+"Barcha huquqlar himoyalangan. Saytdan olingan ma'lumotlar chop etilganda veb-"
+"saytga havola qilish majburiy."
 msgstr ""
 "Все права защищены. При публикации информации, взятой с сайта, ссылка на "
 "сайт обязательна."
@@ -86,17 +88,23 @@ msgstr "История университета"
 msgid "Universitet Strukturasi"
 msgstr "Структура университета"
 
-#: .\templates\__navbar.html:78 .\templates\__navbar.html:80
+#: .\templates\__navbar.html:74
+#, fuzzy
+#| msgid "Foydali Havolalar"
+msgid "Foto Lavhalar"
+msgstr "Полезные ссылки"
+
+#: .\templates\__navbar.html:79 .\templates\__navbar.html:81
 #: .\templates\index.html:44 .\templates\news\news-detail.html:12
 #: .\templates\news\news.html:11
 msgid "Yangiliklar"
 msgstr "Новости"
 
-#: .\templates\__navbar.html:81
+#: .\templates\__navbar.html:82
 msgid "E'lonlar"
 msgstr "Объявления"
 
-#: .\templates\__navbar.html:86 .\templates\rektorat\bulim\bulim.html:13
+#: .\templates\__navbar.html:87 .\templates\rektorat\bulim\bulim.html:13
 #: .\templates\rektorat\bulim\detail.html:13
 #: .\templates\rektorat\fakultet\detail.html:11
 #: .\templates\rektorat\fakultet\fakultet.html:12
@@ -110,76 +118,76 @@ msgstr "Объявления"
 msgid "Universitet"
 msgstr "Университет"
 
-#: .\templates\__navbar.html:88 .\templates\rektorat\r_left.html:6
+#: .\templates\__navbar.html:89 .\templates\rektorat\r_left.html:6
 #: .\templates\rektorat\rektorat\rektorat-detail.html:15
 #: .\templates\rektorat\rektorat\rektorat.html:14
 #: .\templates\rektorat\rekttorat.html:21
 msgid "Rektorat"
 msgstr "Ректорат"
 
-#: .\templates\__navbar.html:89 .\templates\index.html:217
+#: .\templates\__navbar.html:90 .\templates\index.html:217
 #: .\templates\rektorat\r_left.html:7 .\templates\rektorat\rekttorat.html:22
 msgid "Fakultetlar"
 msgstr "Факультеты"
 
-#: .\templates\__navbar.html:90 .\templates\rektorat\markaz\detail.html:15
+#: .\templates\__navbar.html:91 .\templates\rektorat\markaz\detail.html:15
 #: .\templates\rektorat\markaz\markaz.html:13
 #: .\templates\rektorat\r_left.html:8 .\templates\rektorat\rekttorat.html:23
 msgid "Markazlar"
 msgstr "Центры"
 
-#: .\templates\__navbar.html:91 .\templates\rektorat\bulim\detail.html:15
+#: .\templates\__navbar.html:92 .\templates\rektorat\bulim\detail.html:15
 #: .\templates\rektorat\r_left.html:9 .\templates\rektorat\rekttorat.html:24
 msgid "Bo'limlar"
 msgstr "Разделы"
 
-#: .\templates\__navbar.html:92 .\templates\rektorat\r_left.html:10
+#: .\templates\__navbar.html:93 .\templates\rektorat\r_left.html:10
 #: .\templates\rektorat\rekttorat.html:25
 msgid "Kafedralar"
 msgstr "Отделы"
 
-#: .\templates\__navbar.html:97 .\templates\faoliyat\faoliyat.html:12
+#: .\templates\__navbar.html:98 .\templates\faoliyat\faoliyat.html:12
 #: .\templates\faoliyat\if\if.html:12 .\templates\faoliyat\mf\mf.html:12
 #: .\templates\faoliyat\of\of.html:12 .\templates\faoliyat\xf\xf.html:12
 msgid "Faoliyat"
 msgstr "Активность"
 
-#: .\templates\__navbar.html:99 .\templates\faoliyat\if\if.html:15
+#: .\templates\__navbar.html:100 .\templates\faoliyat\if\if.html:15
 msgid "Ilmiy faoliyat"
 msgstr "Научная деятельность"
 
-#: .\templates\__navbar.html:100 .\templates\faoliyat\of\of.html:15
+#: .\templates\__navbar.html:101 .\templates\faoliyat\of\of.html:15
 msgid "O'quv faoliyat"
 msgstr "Образовательная деятельность"
 
-#: .\templates\__navbar.html:101 .\templates\faoliyat\xf\xf.html:15
+#: .\templates\__navbar.html:102 .\templates\faoliyat\xf\xf.html:15
 msgid "Xalqaro faoliyat"
 msgstr "Международная деятельность"
 
-#: .\templates\__navbar.html:102 .\templates\faoliyat\mf\mf.html:15
+#: .\templates\__navbar.html:103 .\templates\faoliyat\mf\mf.html:15
 msgid "Moliyaviy faoliyat"
 msgstr "Финансовая деятельность"
 
-#: .\templates\__navbar.html:107
+#: .\templates\__navbar.html:108
 msgid "Ta'lim "
 msgstr "Образование"
 
-#: .\templates\__navbar.html:109 .\templates\talim\t_left.html:6
+#: .\templates\__navbar.html:110 .\templates\talim\t_left.html:6
 #: .\templates\talim\talim.html:21
 msgid "Kunduzgi"
 msgstr "Дневное время"
 
-#: .\templates\__navbar.html:110 .\templates\__navbar.html:123
+#: .\templates\__navbar.html:111 .\templates\__navbar.html:124
 #: .\templates\talabalar\t_left.html:8 .\templates\talabalar\talabalar.html:23
 msgid "Sirtqi Ta'lim"
 msgstr "Дистанционное обучение"
 
-#: .\templates\__navbar.html:111 .\templates\talim\2_mustaxasis\2m.html:15
+#: .\templates\__navbar.html:112 .\templates\talim\2_mustaxasis\2m.html:15
 #: .\templates\talim\t_left.html:11 .\templates\talim\talim.html:26
 msgid "2-Mutaxasislik"
 msgstr "2-Специализация"
 
-#: .\templates\__navbar.html:112 .\templates\__navbar.html:121
+#: .\templates\__navbar.html:113 .\templates\__navbar.html:122
 #: .\templates\index.html:246 .\templates\talabalar\bakalavr\bakalavr.html:15
 #: .\templates\talabalar\t_left.html:6 .\templates\talabalar\talabalar.html:21
 #: .\templates\talim\bakalavr\bakalavr.html:15 .\templates\talim\t_left.html:8
@@ -187,7 +195,7 @@ msgstr "2-Специализация"
 msgid "Bakalavr"
 msgstr "Холостяк"
 
-#: .\templates\__navbar.html:113 .\templates\__navbar.html:122
+#: .\templates\__navbar.html:114 .\templates\__navbar.html:123
 #: .\templates\index.html:250 .\templates\talabalar\magistr\magistr.html:15
 #: .\templates\talabalar\t_left.html:7 .\templates\talabalar\talabalar.html:22
 #: .\templates\talim\magistr\magistr.html:15 .\templates\talim\t_left.html:9
@@ -195,11 +203,11 @@ msgstr "Холостяк"
 msgid "Magistratura"
 msgstr "Степень магистра"
 
-#: .\templates\__navbar.html:114
+#: .\templates\__navbar.html:115
 msgid "Doktrantura"
 msgstr "Докторская степень"
 
-#: .\templates\__navbar.html:119
+#: .\templates\__navbar.html:120
 #: .\templates\talabalar\bakalavr\bakalavr.html:12
 #: .\templates\talabalar\magistr\magistr.html:12
 #: .\templates\talabalar\qayta_tiklash\qayta_tiklash.html:12
@@ -208,13 +216,13 @@ msgstr "Докторская степень"
 msgid "Talabalar"
 msgstr "Студенты"
 
-#: .\templates\__navbar.html:124
+#: .\templates\__navbar.html:125
 #: .\templates\talabalar\qayta_tiklash\qayta_tiklash.html:15
 #: .\templates\talabalar\t_left.html:9 .\templates\talabalar\talabalar.html:24
 msgid "O'qishni ko'chirish va qayta tiklash"
 msgstr "Копировать и восстановить чтение"
 
-#: .\templates\__navbar.html:129 .\templates\__navbar.html:131
+#: .\templates\__navbar.html:130 .\templates\__navbar.html:132
 #: .\templates\content\aloqa.html:11
 msgid "Aloqa"
 msgstr "Контакт"
@@ -342,8 +350,8 @@ msgstr ""
 
 #: .\templates\index.html:174
 msgid ""
-"Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim"
-" yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda "
+"Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim "
+"yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda "
 "magistracy 20 nafar talabalar oqimokda."
 msgstr ""
 "Всего в университете обучается 1977 студентов. Из них 857 студентов очной "

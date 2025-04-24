@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block main %}
+    <div class="bg_img_box">
+        <section class="video-detail">
+            {% for video in videos %}
+                <div class="video-box">
+                    <video poster="{{ video.poster.url }}" class="video" controls>
+                        <source src="{{ video.video_file.url }}" type="video/mp4">
+                        {% trans "Brauzeringiz video teglarini qo'llab-quvvatlamaydi." %}
+                    </video>
+                    <p>{{ video.title }}</p>
+                </div>
+            {% empty %}
+                <p>{% trans "Hozircha videolar mavjud emas." %}</p>
+            {% endfor %}
+        </section>
+    </div>
+{% endblock main %}

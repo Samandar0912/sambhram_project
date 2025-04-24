@@ -46,6 +46,15 @@ class AloqaView(TemplateView):
         context['call'] = CallUserModel.objects.all()
         return context
 
+
+class GalareyaView(TemplateView):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['videos'] = Video.objects.all()
+        return context
+    template_name = "content/galateya.html"
+
+
 class HistoryView(TemplateView):
     template_name = "content/history.html"
     def get_context_data(self, **kwargs):

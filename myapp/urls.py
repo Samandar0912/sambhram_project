@@ -8,6 +8,7 @@ urlpatterns = (
     path('', views.IndexView.as_view(), name="index"),
     path('set_language/', views.set_language, name='set_language'),
     path('Aloqa/', views.AloqaView.as_view(), name="aloqa"),
+    path('Galareya/', views.GalareyaView.as_view(), name="galareya"),
     
     path('Struktura/', views.StrukturaView.as_view(), name="struktura"),
     path('Universitet-Tarixi/', views.HistoryView.as_view(), name="history"),
