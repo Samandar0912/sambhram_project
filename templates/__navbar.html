@@ -2,66 +2,76 @@
 {% load i18n %}
 
     <section class="navbar-box">
+        <marquee width="100%" direction="left">
+            <h6>{% blocktrans %}Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz{% endblocktrans %}</h6>
+        </marquee>
         <nav class="navbar-top">
+            <div class="logo-box">
+                <a href="{% url 'main:index' %}">
+                    <img src="{% static 'img/logo.png' %}" alt="logo">
+                    <p>Jizzax sambhram Universiteti</p>
+                </a>
+            </div>
+            
             <div class="link-box">
-                <img src="{% static "img/icon/call.png" %}" alt="call">
-                <a href="">+998 (72) 72 221 58 68</a>
-        &nbsp;
-        &nbsp;
-                <img src="{% static 'img/icon/mail.png' %}" alt="main">
-                <a href="">contact@sambhram.uz</a>
-            </div>
-            <div class="link-box-search">
-                <form>
-                    <input type="search" placeholder="Qidiruv">
-                </form>
-            </div>
-
-
-            <div class="language-dropdown fade-in">
-                {% get_current_language as LANGUAGE_CODE %}
-                {% get_available_languages as LANGUAGES %}
-            
-                <div class="dropdown-toggle" onclick="toggleDropdown()">
-                    {% for lang in LANGUAGES %}
-                        {% if lang.0 == LANGUAGE_CODE %}
-                            {{ lang.1 }}
-                        {% endif %}
-                    {% endfor %}
+                <div>
+                    <img src="{% static "img/icon/call.png" %}" alt="call">
+                    <a href="">+998 (72) 72 221 58 68</a>
                 </div>
-            
-                <ul class="dropdown-menu" id="languageMenu">
-                    {% for lang in LANGUAGES %}
-                        <li class="language-item">
-                            <form action="{% url 'set_language' %}" method="post">
-                                {% csrf_token %}
-                                <input type="hidden" name="language" value="{{ lang.0 }}">
-                                <a href="javascript:void(0);"
-                                   onclick="this.closest('form').submit()"
-                                   class="{% if lang.0 == LANGUAGE_CODE %}active{% endif %}">
-                                    {{ lang.1 }}
-                                </a>
-                            </form>
-                        </li>
-                    {% endfor %}
-                </ul>
+                <div>
+                    <img src="{% static 'img/icon/mail.png' %}" alt="main">
+                    <a href="">contact@sambhram.uz</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/icon/location.png' %}" alt="main">
+                    <a href="">Жиззах вилояти, Жиззах шаҳри, Ш.Рашидов шоҳ кўчаси, 83-уй</a>
+                </div>
+            </div>
+
+            <div class="links-browser">
+                <a href="#"><img src="{% static 'img/icon/Vector1.png' %}"> </a>
+                <a href="#"><img src="{% static 'img/icon/Vector2.png' %}"> </a>
+                <a href="#"><img src="{% static 'img/icon/Vector3.png' %}"> </a>
+                <a href="#"><img src="{% static 'img/icon/Vector4.png' %}"> </a>
             </div>
             
-            
-            
-            
-            <div class="link-box-button">
-                <a href="{% url 'main:kunduzki' %}">{% blocktrans %}Qabul{% endblocktrans %}</a>
-                <a href="/admin">                         {% blocktrans %}Admin{% endblocktrans %}</a>
+            <div class="admin-language-block">
+                <a href="/admin" class="admin">{% blocktrans %}Admin{% endblocktrans %}</a>
+
+                <div class="language-dropdown fade-in">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                
+                    <div class="dropdown-toggle" onclick="toggleDropdown()">
+                        {% for lang in LANGUAGES %}
+                            {% if lang.0 == LANGUAGE_CODE %}
+                                {{ lang.1 }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                
+                    <ul class="dropdown-menu" id="languageMenu">
+                        {% for lang in LANGUAGES %}
+                            <li class="language-item">
+                                <form action="{% url 'set_language' %}" method="post">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="language" value="{{ lang.0 }}">
+                                    <a href="javascript:void(0);"
+                                       onclick="this.closest('form').submit()"
+                                       class="{% if lang.0 == LANGUAGE_CODE %}active{% endif %}">
+                                        {{ lang.1 }}
+                                    </a>
+                                </form>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </nav>
     </section>
 
     <section class="navbar-box-2">
         <nav class="navbar-center">
-            <div class="logo-box">
-                <a href="{% url 'main:index' %}"><img src="{% static 'img/newLogo.png' %}" alt="logo"></a>
-            </div>
             <div class="navbar_dropdown">
                 <ul id="ul_1" class="ul_1">
                     <button>&times;</button>
@@ -71,7 +81,7 @@
                             <li><a href="{% url 'main:about' %}">    {% blocktrans %}Universitet Haqida{% endblocktrans %}</a></li>
                             <li><a href="{% url 'main:history' %}">  {% blocktrans %}Universitet Tarixi{% endblocktrans %}</a></li>
                             <li><a href="{% url 'main:struktura' %}">{% blocktrans %}Universitet Strukturasi{% endblocktrans %}</a></li>
-                            <li><a href="{% url 'main:galareya' %}">{% blocktrans %}Foto Lavhalar{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'main:galareya' %}">{% blocktrans %}Video Lavhalar{% endblocktrans %}</a></li>
                         </ul>
                     </li> 
                         
