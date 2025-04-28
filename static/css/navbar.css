@@ -264,11 +264,10 @@
     width: 60px;
     padding: 0 15px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 800;
     border: none;
     background: none;
     color: #11456B;
-    margin-left: -35px;
     transform: scale(1.5);
     display: none;
 }

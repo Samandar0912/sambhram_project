@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: .\templates\rektorat\bulim\bulim.html:15
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-24 18:54+0500\n"
-"PO-Revision-Date: 2025-04-21 14:36-0500\n"
+"POT-Creation-Date: 2025-04-28 14:42+0500\n"
+"PO-Revision-Date: 2025-04-28 14:46-0500\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -58,8 +57,8 @@ msgstr "UNIVERSITY LOCATION"
 
 #: .\templates\__footer.html:37
 msgid ""
-"Barcha huquqlar himoyalangan. Saytdan olingan ma'lumotlar chop etilganda veb-"
-"saytga havola qilish majburiy."
+"Barcha huquqlar himoyalangan. Saytdan olingan ma'lumotlar chop etilganda "
+"veb-saytga havola qilish majburiy."
 msgstr ""
 "All rights reserved. When reprinting information from the site, a link to "
 "the website is mandatory."
@@ -68,47 +67,53 @@ msgstr ""
 msgid "Jizzax viloyati, Jizzax shahri, Sh.Rashidov shoh ko‘chasi,  83-uy"
 msgstr "Jizzakh region, Jizzakh city, Sh. Rashidov avenue, house 83"
 
-#: .\templates\__navbar.html:54
-msgid "Qabul"
-msgstr "Reception"
+#: .\templates\__navbar.html:6
+msgid "Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz"
+msgstr ""
+"The site is currently in TEST mode, we apologize for any inconvenience."
 
-#: .\templates\__navbar.html:55
+#: .\templates\__navbar.html:27
+#| msgid ""
+#| "Jizzax viloyati, Jizzax shahri, Sh.Rashidov shoh ko‘chasi,  83-uy"
+msgid "Jizzax viloyati, Jizzax shahri, Sh. Rashidov ko‘chasi, 83-uy"
+msgstr "Jizzakh region, Jizzakh city, Sh. Rashidov avenue, house 83"
+
+#: .\templates\__navbar.html:39
 msgid "Admin"
 msgstr "Admin"
 
-#: .\templates\__navbar.html:69
+#: .\templates\__navbar.html:79
 msgid "SAMBHRAM Haqida"
 msgstr "About SAMBHRAM"
 
-#: .\templates\__navbar.html:71
+#: .\templates\__navbar.html:81
 msgid "Universitet Haqida"
 msgstr "About the University"
 
-#: .\templates\__navbar.html:72
+#: .\templates\__navbar.html:82
 msgid "Universitet Tarixi"
 msgstr "University History"
 
-#: .\templates\__navbar.html:73
+#: .\templates\__navbar.html:83
 msgid "Universitet Strukturasi"
 msgstr "University Structure"
 
-#: .\templates\__navbar.html:74
-#, fuzzy
-#| msgid "Foydali Havolalar"
-msgid "Foto Lavhalar"
+#: .\templates\__navbar.html:84
+#| msgid "Foto Lavhalar"
+msgid "Video Lavhalar"
 msgstr "Useful Links"
 
-#: .\templates\__navbar.html:79 .\templates\__navbar.html:81
+#: .\templates\__navbar.html:89 .\templates\__navbar.html:91
 #: .\templates\index.html:44 .\templates\news\news-detail.html:12
 #: .\templates\news\news.html:11
 msgid "Yangiliklar"
 msgstr "News"
 
-#: .\templates\__navbar.html:82
+#: .\templates\__navbar.html:92
 msgid "E'lonlar"
 msgstr "Announcements"
 
-#: .\templates\__navbar.html:87 .\templates\rektorat\bulim\bulim.html:13
+#: .\templates\__navbar.html:97 .\templates\rektorat\bulim\bulim.html:13
 #: .\templates\rektorat\bulim\detail.html:13
 #: .\templates\rektorat\fakultet\detail.html:11
 #: .\templates\rektorat\fakultet\fakultet.html:12
@@ -122,76 +127,76 @@ msgstr "Announcements"
 msgid "Universitet"
 msgstr "University"
 
-#: .\templates\__navbar.html:89 .\templates\rektorat\r_left.html:6
+#: .\templates\__navbar.html:99 .\templates\rektorat\r_left.html:6
 #: .\templates\rektorat\rektorat\rektorat-detail.html:15
 #: .\templates\rektorat\rektorat\rektorat.html:14
 #: .\templates\rektorat\rekttorat.html:21
 msgid "Rektorat"
 msgstr "Rectorate"
 
-#: .\templates\__navbar.html:90 .\templates\index.html:217
+#: .\templates\__navbar.html:100 .\templates\index.html:217
 #: .\templates\rektorat\r_left.html:7 .\templates\rektorat\rekttorat.html:22
 msgid "Fakultetlar"
 msgstr "Faculties"
 
-#: .\templates\__navbar.html:91 .\templates\rektorat\markaz\detail.html:15
+#: .\templates\__navbar.html:101 .\templates\rektorat\markaz\detail.html:15
 #: .\templates\rektorat\markaz\markaz.html:13
 #: .\templates\rektorat\r_left.html:8 .\templates\rektorat\rekttorat.html:23
 msgid "Markazlar"
 msgstr "Centers"
 
-#: .\templates\__navbar.html:92 .\templates\rektorat\bulim\detail.html:15
+#: .\templates\__navbar.html:102 .\templates\rektorat\bulim\detail.html:15
 #: .\templates\rektorat\r_left.html:9 .\templates\rektorat\rekttorat.html:24
 msgid "Bo'limlar"
 msgstr "Sections"
 
-#: .\templates\__navbar.html:93 .\templates\rektorat\r_left.html:10
+#: .\templates\__navbar.html:103 .\templates\rektorat\r_left.html:10
 #: .\templates\rektorat\rekttorat.html:25
 msgid "Kafedralar"
 msgstr "Departments"
 
-#: .\templates\__navbar.html:98 .\templates\faoliyat\faoliyat.html:12
+#: .\templates\__navbar.html:108 .\templates\faoliyat\faoliyat.html:12
 #: .\templates\faoliyat\if\if.html:12 .\templates\faoliyat\mf\mf.html:12
 #: .\templates\faoliyat\of\of.html:12 .\templates\faoliyat\xf\xf.html:12
 msgid "Faoliyat"
 msgstr "Activity"
 
-#: .\templates\__navbar.html:100 .\templates\faoliyat\if\if.html:15
+#: .\templates\__navbar.html:110 .\templates\faoliyat\if\if.html:15
 msgid "Ilmiy faoliyat"
 msgstr "Scientific activity"
 
-#: .\templates\__navbar.html:101 .\templates\faoliyat\of\of.html:15
+#: .\templates\__navbar.html:111 .\templates\faoliyat\of\of.html:15
 msgid "O'quv faoliyat"
 msgstr "Educational activity"
 
-#: .\templates\__navbar.html:102 .\templates\faoliyat\xf\xf.html:15
+#: .\templates\__navbar.html:112 .\templates\faoliyat\xf\xf.html:15
 msgid "Xalqaro faoliyat"
 msgstr "International activities"
 
-#: .\templates\__navbar.html:103 .\templates\faoliyat\mf\mf.html:15
+#: .\templates\__navbar.html:113 .\templates\faoliyat\mf\mf.html:15
 msgid "Moliyaviy faoliyat"
 msgstr "Financial activities"
 
-#: .\templates\__navbar.html:108
+#: .\templates\__navbar.html:118
 msgid "Ta'lim "
 msgstr "Education"
 
-#: .\templates\__navbar.html:110 .\templates\talim\t_left.html:6
+#: .\templates\__navbar.html:120 .\templates\talim\t_left.html:6
 #: .\templates\talim\talim.html:21
 msgid "Kunduzgi"
 msgstr "Daytime"
 
-#: .\templates\__navbar.html:111 .\templates\__navbar.html:124
+#: .\templates\__navbar.html:121 .\templates\__navbar.html:134
 #: .\templates\talabalar\t_left.html:8 .\templates\talabalar\talabalar.html:23
 msgid "Sirtqi Ta'lim"
 msgstr "Distance Learning"
 
-#: .\templates\__navbar.html:112 .\templates\talim\2_mustaxasis\2m.html:15
+#: .\templates\__navbar.html:122 .\templates\talim\2_mustaxasis\2m.html:15
 #: .\templates\talim\t_left.html:11 .\templates\talim\talim.html:26
 msgid "2-Mutaxasislik"
 msgstr "2-Specialization"
 
-#: .\templates\__navbar.html:113 .\templates\__navbar.html:122
+#: .\templates\__navbar.html:123 .\templates\__navbar.html:132
 #: .\templates\index.html:246 .\templates\talabalar\bakalavr\bakalavr.html:15
 #: .\templates\talabalar\t_left.html:6 .\templates\talabalar\talabalar.html:21
 #: .\templates\talim\bakalavr\bakalavr.html:15 .\templates\talim\t_left.html:8
@@ -199,7 +204,7 @@ msgstr "2-Specialization"
 msgid "Bakalavr"
 msgstr "Bachelor"
 
-#: .\templates\__navbar.html:114 .\templates\__navbar.html:123
+#: .\templates\__navbar.html:124 .\templates\__navbar.html:133
 #: .\templates\index.html:250 .\templates\talabalar\magistr\magistr.html:15
 #: .\templates\talabalar\t_left.html:7 .\templates\talabalar\talabalar.html:22
 #: .\templates\talim\magistr\magistr.html:15 .\templates\talim\t_left.html:9
@@ -207,11 +212,11 @@ msgstr "Bachelor"
 msgid "Magistratura"
 msgstr "Master's degree"
 
-#: .\templates\__navbar.html:115
+#: .\templates\__navbar.html:125
 msgid "Doktrantura"
 msgstr "Doctorate"
 
-#: .\templates\__navbar.html:120
+#: .\templates\__navbar.html:130
 #: .\templates\talabalar\bakalavr\bakalavr.html:12
 #: .\templates\talabalar\magistr\magistr.html:12
 #: .\templates\talabalar\qayta_tiklash\qayta_tiklash.html:12
@@ -220,21 +225,16 @@ msgstr "Doctorate"
 msgid "Talabalar"
 msgstr "Students"
 
-#: .\templates\__navbar.html:125
+#: .\templates\__navbar.html:135
 #: .\templates\talabalar\qayta_tiklash\qayta_tiklash.html:15
 #: .\templates\talabalar\t_left.html:9 .\templates\talabalar\talabalar.html:24
 msgid "O'qishni ko'chirish va qayta tiklash"
 msgstr "Copy and restore reading"
 
-#: .\templates\__navbar.html:130 .\templates\__navbar.html:132
+#: .\templates\__navbar.html:140 .\templates\__navbar.html:142
 #: .\templates\content\aloqa.html:11
 msgid "Aloqa"
 msgstr "Contact"
-
-#: .\templates\base.html:31
-msgid "Sayt hozir TEST rejmda ishlamoqda kamchiliklar uchun uzur so'raymiz"
-msgstr ""
-"The site is currently in TEST mode, we apologize for any inconvenience."
 
 #: .\templates\content\aloqa.html:21 .\templates\rektorat\bulim\detail.html:30
 #: .\templates\rektorat\fakultet\detail.html:23
@@ -283,6 +283,15 @@ msgstr "Working hours"
 #: .\templates\rektorat\rektorat\rektorat-detail.html:34
 msgid "Umumiy ma’lumot"
 msgstr "General information"
+
+#: .\templates\content\galateya.html:12
+msgid "Brauzeringiz video teglarini qo'llab-quvvatlamaydi."
+msgstr "Your browser does not support video tags."
+
+#: .\templates\content\galateya.html:17
+#| msgid "Hozirda bo‘limlar mavjud emas."
+msgid "Hozircha videolar mavjud emas."
+msgstr "There are currently no sections."
 
 #: .\templates\faoliyat\f_left.html:6 .\templates\faoliyat\faoliyat.html:21
 msgid "O’QUV FAOLIYAT"
@@ -353,13 +362,13 @@ msgstr ""
 
 #: .\templates\index.html:174
 msgid ""
-"Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim "
-"yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda "
+"Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim"
+" yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda "
 "magistracy 20 nafar talabalar oqimokda."
 msgstr ""
 "A total of 1,977 students are studying at the university. Of these, 857 are "
-"studying full-time in 3 areas of study, 1,100 are studying part-time, and 20 "
-"are studying for a master's degree."
+"studying full-time in 3 areas of study, 1,100 are studying part-time, and 20"
+" are studying for a master's degree."
 
 #: .\templates\index.html:176
 msgid "Batafsil"
@@ -489,284 +498,151 @@ msgstr "Daytime"
 msgid "Sirtqi ta'lim"
 msgstr "Distance Learning"
 
+#~ msgid "Qabul"
+#~ msgstr "Reception"
+
 #~ msgid ""
-#~ " 1. Jizzax viloyati hokimligi, Ozbekiston Respublikasi Oliy va orta "
-#~ "maxsus talim vazirligi hamda Sambhram Group kompaniyasi, Sambhram "
-#~ "universiteti (Hindiston) ortasida 2021-yil 16-aprelda Jizzax shahrida "
-#~ "Sambhram universitetini tashkil etish boyicha hamkorlikdagi "
-#~ "harakatlarning asosiy tamoyillari togrisida kelishuv (keyingi orinlarda  "
-#~ "kelishuv) imzolanganligi malumot uchun qabul qilinsin."
+#~ " 1. Jizzax viloyati hokimligi, Ozbekiston Respublikasi Oliy va orta maxsus "
+#~ "talim vazirligi hamda Sambhram Group kompaniyasi, Sambhram universiteti "
+#~ "(Hindiston) ortasida 2021-yil 16-aprelda Jizzax shahrida Sambhram "
+#~ "universitetini tashkil etish boyicha hamkorlikdagi harakatlarning asosiy "
+#~ "tamoyillari togrisida kelishuv (keyingi orinlarda  kelishuv) imzolanganligi "
+#~ "malumot uchun qabul qilinsin."
 #~ msgstr ""
-#~ "1. It is hereby notified that an agreement (hereinafter referred to as "
-#~ "the Agreement) was signed on April 16, 2021 between the Jizzakh regional "
-#~ "administration, the Ministry of Higher and Secondary Specialized "
-#~ "Education of the Republic of Uzbekistan, and Sambhram Group Company, "
-#~ "Sambhram University (India) on the basic principles of joint actions to "
-#~ "establish Sambhram University in the city of Jizzakh (hereinafter "
-#~ "referred to as the Agreement)."
+#~ "1. It is hereby notified that an agreement (hereinafter referred to as the "
+#~ "Agreement) was signed on April 16, 2021 between the Jizzakh regional "
+#~ "administration, the Ministry of Higher and Secondary Specialized Education "
+#~ "of the Republic of Uzbekistan, and Sambhram Group Company, Sambhram "
+#~ "University (India) on the basic principles of joint actions to establish "
+#~ "Sambhram University in the city of Jizzakh (hereinafter referred to as the "
+#~ "Agreement)."
 
 #~ msgid ""
 #~ "       Ozbekiston Respublikasi Prezidentining Ozbekistonning yangi "
-#~ "taraqqiyot davrida talim-tarbiya va ilm-fan sohalarini rivojlantirish "
-#~ "chora-tadbirlari togrisida 2020-yil 6-noyabrdagi PF-6108-son Farmonida "
-#~ "belgilangan vazifalar hamda Jizzax viloyatida xalqaro talab va "
-#~ "standartlarga muvofiq yuqori malakali raqobatbardosh kadrlar tayyorlash, "
-#~ "ilmiy va innovatsion faoliyatni samarali tashkil etish, xalqaro "
-#~ "hamkorlikni, shu jumladan, xorijiy mamlakatlarning yetakchi oliy talim "
-#~ "muassasalari bilan uzoq muddatli aloqalarni rivojlantirish maqsadida "
-#~ "Vazirlar Mahkamasi qaror qiladi:"
+#~ "taraqqiyot davrida talim-tarbiya va ilm-fan sohalarini rivojlantirish chora-"
+#~ "tadbirlari togrisida 2020-yil 6-noyabrdagi PF-6108-son Farmonida belgilangan"
+#~ " vazifalar hamda Jizzax viloyatida xalqaro talab va standartlarga muvofiq "
+#~ "yuqori malakali raqobatbardosh kadrlar tayyorlash, ilmiy va innovatsion "
+#~ "faoliyatni samarali tashkil etish, xalqaro hamkorlikni, shu jumladan, "
+#~ "xorijiy mamlakatlarning yetakchi oliy talim muassasalari bilan uzoq muddatli"
+#~ " aloqalarni rivojlantirish maqsadida Vazirlar Mahkamasi qaror qiladi:"
 #~ msgstr ""
-#~ "In order to fulfill the tasks set out in the Decree of the President of "
-#~ "the Republic of Uzbekistan No. PF-6108 dated November 6, 2020 on measures "
-#~ "to develop the spheres of education and science in the new period of "
-#~ "development of Uzbekistan, as well as to train highly qualified "
-#~ "competitive personnel in the Jizzakh region in accordance with "
-#~ "international requirements and standards, effectively organize scientific "
-#~ "and innovative activities, and develop international cooperation, "
-#~ "including long-term ties with leading higher educational institutions of "
-#~ "foreign countries, the Cabinet of Ministers decides:"
+#~ "In order to fulfill the tasks set out in the Decree of the President of the "
+#~ "Republic of Uzbekistan No. PF-6108 dated November 6, 2020 on measures to "
+#~ "develop the spheres of education and science in the new period of "
+#~ "development of Uzbekistan, as well as to train highly qualified competitive "
+#~ "personnel in the Jizzakh region in accordance with international "
+#~ "requirements and standards, effectively organize scientific and innovative "
+#~ "activities, and develop international cooperation, including long-term ties "
+#~ "with leading higher educational institutions of foreign countries, the "
+#~ "Cabinet of Ministers decides:"
 
 #~ msgid ""
-#~ " 2. Jizzax viloyati hokimligi, Ozbekiston Respublikasi Oliy va orta "
-#~ "maxsus talim vazirligi hamda Sambhram Group kompaniyasi, Sambhram "
-#~ "universitetining (Hindiston) Jizzax shahrida nodavlat oliy talim "
-#~ "tashkiloti shaklidagi Sambhram universitetini (keyingi orinlarda  "
-#~ "Universitet) tashkil etish togrisidagi taklifiga rozilik berilsin.\n"
-#~ "                           Bunda Jizzax viloyati hokimligi va Sambhram "
-#~ "Group kompaniyasi (Hindiston) Universitetning tasischilari (keyingi "
-#~ "orinlarda  Muassis) hisoblanadi."
+#~ " 2. Jizzax viloyati hokimligi, Ozbekiston Respublikasi Oliy va orta maxsus talim vazirligi hamda Sambhram Group kompaniyasi, Sambhram universitetining (Hindiston) Jizzax shahrida nodavlat oliy talim tashkiloti shaklidagi Sambhram universitetini (keyingi orinlarda  Universitet) tashkil etish togrisidagi taklifiga rozilik berilsin.\n"
+#~ "                           Bunda Jizzax viloyati hokimligi va Sambhram Group kompaniyasi (Hindiston) Universitetning tasischilari (keyingi orinlarda  Muassis) hisoblanadi."
 #~ msgstr ""
-#~ "2. The Jizzakh regional administration, the Ministry of Higher and "
-#~ "Secondary Specialized Education of the Republic of Uzbekistan and the "
-#~ "Sambhram Group company, Sambhram University (India) to approve the "
-#~ "proposal to establish Sambhram University (hereinafter referred to as the "
-#~ "University) in the form of a non-governmental higher education "
-#~ "organization in the city of Jizzakh.\n"
-#~ "In this regard, the Jizzakh regional administration and the Sambhram "
-#~ "Group company (India) are the founders (hereinafter referred to as the "
-#~ "Founders) of the University."
+#~ "2. The Jizzakh regional administration, the Ministry of Higher and Secondary Specialized Education of the Republic of Uzbekistan and the Sambhram Group company, Sambhram University (India) to approve the proposal to establish Sambhram University (hereinafter referred to as the University) in the form of a non-governmental higher education organization in the city of Jizzakh.\n"
+#~ "In this regard, the Jizzakh regional administration and the Sambhram Group company (India) are the founders (hereinafter referred to as the Founders) of the University."
 
 #~ msgid ""
-#~ " 3. Quyidagilar Universitetning asosiy vazifalari va faoliyati "
-#~ "yonalishlari etib belgilansin:\n"
+#~ " 3. Quyidagilar Universitetning asosiy vazifalari va faoliyati yonalishlari etib belgilansin:\n"
 #~ "                             \n"
-#~ "                            Jizzax viloyatining ijtimoiy soha va "
-#~ "iqtisodiyot tarmoqlarining rivojlanish istiqbollari va ustuvor "
-#~ "vazifalarini, zamonaviy tadbirkorlikning rivojlanish tendensiyalarini "
-#~ "inobatga olgan holda, axborot-kommunikatsiya texnologiyalari sohasi "
-#~ "boyicha oliy malumotli kadrlarni xalqaro standartlar darajasida sifatli "
-#~ "tayyorlashni taminlash;\n"
-#~ "                            axborot-kommunikatsiya texnologiyalari, "
-#~ "dasturiy taminotni ishlab chiqish, axborot tizimi va kompyuter "
-#~ "tarmoqlarini boshqarish kabi yonalishlarda talim dasturlarini amalga "
-#~ "oshirish;\n"
-#~ "                            Universitet oquv jarayoniga ilgor xorijiy "
-#~ "tajribani, zamonaviy texnologiyalarni joriy etish, talim jarayonini "
-#~ "zamonaviy oquv adabiyotlari va talim resurslari bilan taminlash;\n"
-#~ "                            talim jarayoniga Sambhram universiteti "
-#~ "(Hindiston), shuningdek, yetakchi xorijiy oliy talim muassasalarining "
-#~ "malakali professor-oqituvchilari, olim va mutaxassislarini keng jalb "
-#~ "qilish orqali zamonaviy pedagogik va axborot-kommunikatsiya "
-#~ "texnologiyalarini, ilm-fan va texnikaning songgi yutuqlarini joriy "
-#~ "etish;\n"
-#~ "                            Jizzax viloyatining iqtisodiyot tarmoqlariga "
-#~ "istiqbolli loyihalar, innovatsiyalarni joriy qilishda komaklashish, "
-#~ "viloyatdagi mavjud ehtiyojdan kelib chiqib, otkazilgan ilmiy tadqiqotlar "
-#~ "va yaratilgan ishlanmalar natijalarini amaliyotga joriy etish;\n"
-#~ "                            talim va ilm-fan sohalarida xorijiy "
-#~ "mamlakatlarning, xususan, Hindistonning yetakchi oliy talim muassasalari, "
-#~ "ilmiy-tadqiqot markazlari hamda biznes hamjamiyatlari bilan uzoq muddatli "
-#~ "aloqalarni rivojlantirish."
+#~ "                            Jizzax viloyatining ijtimoiy soha va iqtisodiyot tarmoqlarining rivojlanish istiqbollari va ustuvor vazifalarini, zamonaviy tadbirkorlikning rivojlanish tendensiyalarini inobatga olgan holda, axborot-kommunikatsiya texnologiyalari sohasi boyicha oliy malumotli kadrlarni xalqaro standartlar darajasida sifatli tayyorlashni taminlash;\n"
+#~ "                            axborot-kommunikatsiya texnologiyalari, dasturiy taminotni ishlab chiqish, axborot tizimi va kompyuter tarmoqlarini boshqarish kabi yonalishlarda talim dasturlarini amalga oshirish;\n"
+#~ "                            Universitet oquv jarayoniga ilgor xorijiy tajribani, zamonaviy texnologiyalarni joriy etish, talim jarayonini zamonaviy oquv adabiyotlari va talim resurslari bilan taminlash;\n"
+#~ "                            talim jarayoniga Sambhram universiteti (Hindiston), shuningdek, yetakchi xorijiy oliy talim muassasalarining malakali professor-oqituvchilari, olim va mutaxassislarini keng jalb qilish orqali zamonaviy pedagogik va axborot-kommunikatsiya texnologiyalarini, ilm-fan va texnikaning songgi yutuqlarini joriy etish;\n"
+#~ "                            Jizzax viloyatining iqtisodiyot tarmoqlariga istiqbolli loyihalar, innovatsiyalarni joriy qilishda komaklashish, viloyatdagi mavjud ehtiyojdan kelib chiqib, otkazilgan ilmiy tadqiqotlar va yaratilgan ishlanmalar natijalarini amaliyotga joriy etish;\n"
+#~ "                            talim va ilm-fan sohalarida xorijiy mamlakatlarning, xususan, Hindistonning yetakchi oliy talim muassasalari, ilmiy-tadqiqot markazlari hamda biznes hamjamiyatlari bilan uzoq muddatli aloqalarni rivojlantirish."
 #~ msgstr ""
-#~ "3. The following are determined as the main tasks and directions of the "
-#~ "University's activities:\n"
+#~ "3. The following are determined as the main tasks and directions of the University's activities:\n"
 #~ "\n"
-#~ "Taking into account the prospects and priority tasks of the development "
-#~ "of the social sphere and economic sectors of the Jizzakh region, as well "
-#~ "as the development trends of modern entrepreneurship, to ensure high-"
-#~ "quality training of highly educated personnel in the field of information "
-#~ "and communication technologies at the level of international standards;\n"
-#~ "To implement educational programs in such areas as information and "
-#~ "communication technologies, software development, information system and "
-#~ "computer network management;\n"
-#~ "To introduce advanced foreign experience, modern technologies into the "
-#~ "university's educational process, to provide the educational process with "
-#~ "modern educational literature and educational resources;\n"
-#~ "To introduce modern pedagogical and information and communication "
-#~ "technologies, the latest achievements of science and technology through "
-#~ "the wide involvement of qualified professors, teachers, scientists and "
-#~ "specialists from Sambhram University (India), as well as leading foreign "
-#~ "higher educational institutions in the educational process;\n"
-#~ "To assist in the implementation of promising projects and innovations in "
-#~ "the economic sectors of the Jizzakh region, to implement the results of "
-#~ "scientific research and developments based on the existing needs in the "
-#~ "region;\n"
-#~ "to develop long-term relations with leading higher educational "
-#~ "institutions, research centers and business communities of foreign "
-#~ "countries, in particular India, in the fields of education and science."
+#~ "Taking into account the prospects and priority tasks of the development of the social sphere and economic sectors of the Jizzakh region, as well as the development trends of modern entrepreneurship, to ensure high-quality training of highly educated personnel in the field of information and communication technologies at the level of international standards;\n"
+#~ "To implement educational programs in such areas as information and communication technologies, software development, information system and computer network management;\n"
+#~ "To introduce advanced foreign experience, modern technologies into the university's educational process, to provide the educational process with modern educational literature and educational resources;\n"
+#~ "To introduce modern pedagogical and information and communication technologies, the latest achievements of science and technology through the wide involvement of qualified professors, teachers, scientists and specialists from Sambhram University (India), as well as leading foreign higher educational institutions in the educational process;\n"
+#~ "To assist in the implementation of promising projects and innovations in the economic sectors of the Jizzakh region, to implement the results of scientific research and developments based on the existing needs in the region;\n"
+#~ "to develop long-term relations with leading higher educational institutions, research centers and business communities of foreign countries, in particular India, in the fields of education and science."
 
 #~ msgid ""
 #~ "4. Belgilab qoyilsinki:\n"
-#~ "                            Universitetda oqitish Ozbekiston Respublikasi "
-#~ "davlat talim standartlari talablarini inobatga olgan holda, Sambhram "
-#~ "universiteti (Hindiston) tomonidan tasdiqlanadigan oquv rejalari va fan "
-#~ "dasturlariga muvofiq kunduzgi talim shaklida ingliz, rus tillari va "
-#~ "davlat tilida tolov-kontrakt asosida amalga oshiriladi;\n"
-#~ "                            Universitetga abituriyentlarni qabul qilish "
-#~ "va bitiruvchilarni attestatsiyadan otkazish Muassis hamda Ozbekiston "
-#~ "Respublikasi Oliy va orta maxsus talim vazirligi bilan kelishilgan holda, "
-#~ "Universitet tomonidan belgilanadigan talablar, tartib va muddatlarga "
-#~ "muvofiq amalga oshiriladi;\n"
-#~ "                            Universitetning bakalavriat talim "
-#~ "yonalishlari va magistratura mutaxassisliklariga qabul parametrlari "
-#~ "respublika mehnat bozori ehtiyojlari hamda Universitetning moddiy-texnik "
-#~ "imkoniyatidan kelib chiqib, Ozbekiston Respublikasi Oliy va orta maxsus "
-#~ "talim vazirligi bilan kelishilgan holda Universitet tomonidan "
-#~ "belgilanadi;\n"
-#~ "                            Universitetda talabalar oqishi uchun tolov-"
-#~ "kontrakt miqdori Muassis tomonidan belgilanadi;\n"
-#~ "                            Universitetga Muassis tomonidan lavozimga "
-#~ "tayinlanadigan va lavozimdan ozod etiladigan rektor rahbarlik qiladi;\n"
-#~ "                            Universitet bitiruvchilariga Ozbekiston "
-#~ "Respublikasi va Hindiston Respublikasida oliy talim togrisidagi hujjat "
-#~ "sifatida tan olinadigan belgilangan namunadagi diplom beriladi;\n"
-#~ "                            Universitetga belgilangan tartibda Ozbekiston "
-#~ "Respublikasi Vazirlar Mahkamasi huzuridagi Talim sifatini nazorat qilish "
-#~ "davlat inspeksiyasidan litsenziya olingandan song talim faoliyati bilan "
-#~ "shugullanishga ruxsat etiladi."
+#~ "                            Universitetda oqitish Ozbekiston Respublikasi davlat talim standartlari talablarini inobatga olgan holda, Sambhram universiteti (Hindiston) tomonidan tasdiqlanadigan oquv rejalari va fan dasturlariga muvofiq kunduzgi talim shaklida ingliz, rus tillari va davlat tilida tolov-kontrakt asosida amalga oshiriladi;\n"
+#~ "                            Universitetga abituriyentlarni qabul qilish va bitiruvchilarni attestatsiyadan otkazish Muassis hamda Ozbekiston Respublikasi Oliy va orta maxsus talim vazirligi bilan kelishilgan holda, Universitet tomonidan belgilanadigan talablar, tartib va muddatlarga muvofiq amalga oshiriladi;\n"
+#~ "                            Universitetning bakalavriat talim yonalishlari va magistratura mutaxassisliklariga qabul parametrlari respublika mehnat bozori ehtiyojlari hamda Universitetning moddiy-texnik imkoniyatidan kelib chiqib, Ozbekiston Respublikasi Oliy va orta maxsus talim vazirligi bilan kelishilgan holda Universitet tomonidan belgilanadi;\n"
+#~ "                            Universitetda talabalar oqishi uchun tolov-kontrakt miqdori Muassis tomonidan belgilanadi;\n"
+#~ "                            Universitetga Muassis tomonidan lavozimga tayinlanadigan va lavozimdan ozod etiladigan rektor rahbarlik qiladi;\n"
+#~ "                            Universitet bitiruvchilariga Ozbekiston Respublikasi va Hindiston Respublikasida oliy talim togrisidagi hujjat sifatida tan olinadigan belgilangan namunadagi diplom beriladi;\n"
+#~ "                            Universitetga belgilangan tartibda Ozbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Talim sifatini nazorat qilish davlat inspeksiyasidan litsenziya olingandan song talim faoliyati bilan shugullanishga ruxsat etiladi."
 #~ msgstr ""
 #~ "4. It is stipulated that:\n"
-#~ "Teaching at the University is carried out in full-time education in "
-#~ "English, Russian and the state language in accordance with the curricula "
-#~ "and subject programs approved by Sambhram University (India), taking into "
-#~ "account the requirements of the state educational standards of the "
-#~ "Republic of Uzbekistan, on a fee-for-service basis;\n"
-#~ "Admission of applicants to the University and certification of graduates "
-#~ "is carried out in accordance with the requirements, procedures and "
-#~ "deadlines established by the University in agreement with the Founder and "
-#~ "the Ministry of Higher and Secondary Specialized Education of the "
-#~ "Republic of Uzbekistan;\n"
-#~ "The parameters for admission to undergraduate and graduate specialties of "
-#~ "the University are determined by the University in agreement with the "
-#~ "Ministry of Higher and Secondary Specialized Education of the Republic of "
-#~ "Uzbekistan, based on the needs of the republican labor market and the "
-#~ "material and technical capabilities of the University;\n"
-#~ "The amount of fee-for-service for studying at the University is "
-#~ "determined by the Founder;\n"
-#~ "The University is headed by a rector, who is appointed and dismissed by "
-#~ "the Founder;\n"
-#~ "Graduates of the University are awarded a diploma of the established "
-#~ "model, which is recognized as a document on higher education in the "
-#~ "Republic of Uzbekistan and the Republic of India;\n"
-#~ "The University is allowed to engage in educational activities after "
-#~ "obtaining a license from the State Inspectorate for Quality Control of "
-#~ "Education under the Cabinet of Ministers of the Republic of Uzbekistan in "
-#~ "the prescribed manner."
+#~ "Teaching at the University is carried out in full-time education in English, Russian and the state language in accordance with the curricula and subject programs approved by Sambhram University (India), taking into account the requirements of the state educational standards of the Republic of Uzbekistan, on a fee-for-service basis;\n"
+#~ "Admission of applicants to the University and certification of graduates is carried out in accordance with the requirements, procedures and deadlines established by the University in agreement with the Founder and the Ministry of Higher and Secondary Specialized Education of the Republic of Uzbekistan;\n"
+#~ "The parameters for admission to undergraduate and graduate specialties of the University are determined by the University in agreement with the Ministry of Higher and Secondary Specialized Education of the Republic of Uzbekistan, based on the needs of the republican labor market and the material and technical capabilities of the University;\n"
+#~ "The amount of fee-for-service for studying at the University is determined by the Founder;\n"
+#~ "The University is headed by a rector, who is appointed and dismissed by the Founder;\n"
+#~ "Graduates of the University are awarded a diploma of the established model, which is recognized as a document on higher education in the Republic of Uzbekistan and the Republic of India;\n"
+#~ "The University is allowed to engage in educational activities after obtaining a license from the State Inspectorate for Quality Control of Education under the Cabinet of Ministers of the Republic of Uzbekistan in the prescribed manner."
 
 #~ msgid ""
-#~ " 5. Sambhram Group kompaniyasining (Hindiston) quyidagi majburiyatlarni "
-#~ "olish togrisidagi takliflari maqullansin:\n"
-#~ "                           kelishuvda korsatib otilgan shartlarga muvofiq "
-#~ "tort yil davomida jami uch million AQSh dollari miqdorida investitsiya "
-#~ "kiritish;\n"
-#~ "                           Universitetga har yili qabul qilinadigan "
-#~ "talabalarning 20 foizini oqitish uchun imtiyozli talim grantlari "
-#~ "ajratish, bunda talabalarning 5 foizini bepul oqitish, 5 foiziga 50 "
-#~ "foizli, 10 foiziga 25 foizli tolov-kontrakt miqdorini tolab berish "
-#~ "boyicha imtiyozlar taqdim etish;\n"
-#~ "                           Universitetda talim berish va oquv jarayonini "
-#~ "tashkil etish uchun 60 foizdan kam bolmagan malakali xorijiy professor-"
-#~ "oqituvchilarni jalb qilish;\n"
-#~ "                           Universitet professor-oqituvchilari malakasini "
-#~ "oshirish va ularni qayta tayyorlash, shu jumladan, nufuzli xorijiy oliy "
-#~ "talim va ilmiy-tadqiqot muassasalarida ularning stajirovkasini tashkil "
-#~ "etish;\n"
-#~ "                           har yili Universitet bitiruvchilarining 25 "
-#~ "foizidan kam bolmagan qismini tegishli mutaxassisliklar boyicha ishga "
-#~ "joylashtirishga komaklashish;\n"
-#~ "                           Universitetning kutubxona fondini "
-#~ "shakllantirish va zamonaviy oquv, oquv-metodik hamda ilmiy adabiyotlar "
-#~ "bilan toldirish;\n"
-#~ "                           Universitetning oquv-laboratoriya bazasini "
-#~ "shakllantirish, shuningdek, maxsus fanlarni oqitish uchun zamonaviy oquv "
-#~ "vositalari bilan jihozlash;\n"
-#~ "                           Sambhram universitetining (Hindiston) yagona "
-#~ "elektron bazasiga Universitetda tahsil olayotgan talabalar haqida "
-#~ "malumotlar hamda talabalarga beriladigan diplomlarning qayd raqamlarini "
-#~ "kiritish;\n"
-#~ "                           Universitet oz faoliyatini tugatgan taqdirda, "
-#~ "Universitetda tahsil olayotgan talabalarga oz yonalishlari boyicha "
-#~ "oqishini davom ettirib, Sambhram universitetining (Hindiston) belgilangan "
-#~ "namunadagi diplomini olishga imkoniyat yaratish;"
+#~ " 5. Sambhram Group kompaniyasining (Hindiston) quyidagi majburiyatlarni olish togrisidagi takliflari maqullansin:\n"
+#~ "                           kelishuvda korsatib otilgan shartlarga muvofiq tort yil davomida jami uch million AQSh dollari miqdorida investitsiya kiritish;\n"
+#~ "                           Universitetga har yili qabul qilinadigan talabalarning 20 foizini oqitish uchun imtiyozli talim grantlari ajratish, bunda talabalarning 5 foizini bepul oqitish, 5 foiziga 50 foizli, 10 foiziga 25 foizli tolov-kontrakt miqdorini tolab berish boyicha imtiyozlar taqdim etish;\n"
+#~ "                           Universitetda talim berish va oquv jarayonini tashkil etish uchun 60 foizdan kam bolmagan malakali xorijiy professor-oqituvchilarni jalb qilish;\n"
+#~ "                           Universitet professor-oqituvchilari malakasini oshirish va ularni qayta tayyorlash, shu jumladan, nufuzli xorijiy oliy talim va ilmiy-tadqiqot muassasalarida ularning stajirovkasini tashkil etish;\n"
+#~ "                           har yili Universitet bitiruvchilarining 25 foizidan kam bolmagan qismini tegishli mutaxassisliklar boyicha ishga joylashtirishga komaklashish;\n"
+#~ "                           Universitetning kutubxona fondini shakllantirish va zamonaviy oquv, oquv-metodik hamda ilmiy adabiyotlar bilan toldirish;\n"
+#~ "                           Universitetning oquv-laboratoriya bazasini shakllantirish, shuningdek, maxsus fanlarni oqitish uchun zamonaviy oquv vositalari bilan jihozlash;\n"
+#~ "                           Sambhram universitetining (Hindiston) yagona elektron bazasiga Universitetda tahsil olayotgan talabalar haqida malumotlar hamda talabalarga beriladigan diplomlarning qayd raqamlarini kiritish;\n"
+#~ "                           Universitet oz faoliyatini tugatgan taqdirda, Universitetda tahsil olayotgan talabalarga oz yonalishlari boyicha oqishini davom ettirib, Sambhram universitetining (Hindiston) belgilangan namunadagi diplomini olishga imkoniyat yaratish;"
 #~ msgstr ""
-#~ "5. To approve the proposals of the Sambhram Group (India) to undertake "
-#~ "the following obligations:\n"
-#~ "to invest a total of three million US dollars over four years in "
-#~ "accordance with the terms specified in the agreement;\n"
-#~ "to provide preferential educational grants for the education of 20 "
-#~ "percent of the students admitted to the University each year, including "
-#~ "free education for 5 percent of the students, 5 percent of the students "
-#~ "to receive 50 percent of the contract fee, and 10 percent to receive 25 "
-#~ "percent of the contract fee;\n"
-#~ "to attract at least 60 percent of qualified foreign professors and "
-#~ "teachers to teach and organize the educational process at the "
-#~ "University;\n"
-#~ "to improve the qualifications of the University's professors and teachers "
-#~ "and retrain them, including organizing their internships in prestigious "
-#~ "foreign higher education and research institutions;\n"
-#~ "to assist in the employment of at least 25 percent of the University's "
-#~ "graduates in relevant specialties each year;\n"
-#~ "To form the library fund of the University and replenish it with modern "
-#~ "educational, educational-methodical and scientific literature;\n"
-#~ "To form the educational-laboratory base of the University, as well as to "
-#~ "equip it with modern teaching aids for teaching special subjects;\n"
-#~ "To enter information about students studying at the University and the "
-#~ "registration numbers of diplomas awarded to students into the single "
-#~ "electronic database of Sambhram University (India);\n"
-#~ "To create an opportunity for students studying at the University to "
-#~ "continue their studies in their specializations and receive a diploma of "
-#~ "the established model of Sambhram University (India) in the event of the "
-#~ "termination of its activities;"
+#~ "5. To approve the proposals of the Sambhram Group (India) to undertake the following obligations:\n"
+#~ "to invest a total of three million US dollars over four years in accordance with the terms specified in the agreement;\n"
+#~ "to provide preferential educational grants for the education of 20 percent of the students admitted to the University each year, including free education for 5 percent of the students, 5 percent of the students to receive 50 percent of the contract fee, and 10 percent to receive 25 percent of the contract fee;\n"
+#~ "to attract at least 60 percent of qualified foreign professors and teachers to teach and organize the educational process at the University;\n"
+#~ "to improve the qualifications of the University's professors and teachers and retrain them, including organizing their internships in prestigious foreign higher education and research institutions;\n"
+#~ "to assist in the employment of at least 25 percent of the University's graduates in relevant specialties each year;\n"
+#~ "To form the library fund of the University and replenish it with modern educational, educational-methodical and scientific literature;\n"
+#~ "To form the educational-laboratory base of the University, as well as to equip it with modern teaching aids for teaching special subjects;\n"
+#~ "To enter information about students studying at the University and the registration numbers of diplomas awarded to students into the single electronic database of Sambhram University (India);\n"
+#~ "To create an opportunity for students studying at the University to continue their studies in their specializations and receive a diploma of the established model of Sambhram University (India) in the event of the termination of its activities;"
 
 #~ msgid ""
 #~ "     Jizzax Sambhram Universiteti Ozbekiston Respublikasi Vazirlar "
-#~ "Mahkamasining 2021-yil 29-iyundagi 401-sonli qarori asosida tashkil "
-#~ "etilgan. Bu qaror Jizzax viloyati hokimligi, Ozbekiston Oliy va orta "
-#~ "maxsus talim vazirligi (hozirgi Oliy talim, fan va innovatsiyalar "
-#~ "vazirligi) hamda Sambhram Group ortasidagi kelishuvdan song qabul "
-#~ "qilingan. Kelishuv 2021-yil 16-fevralda Ozbekiston bosh vaziri orinbosari "
-#~ "Aziz Abduhakimov boshchiligidagi delegatsiyaning Hindistonga tashrifi "
-#~ "chogida erishilgan bolib, memorandum Jizzax viloyati hokimi Ergash "
-#~ "Soliyev va Sambhram Group rahbari Dr. Nagraj Venkatesh tomonidan "
-#~ "imzolangan "
+#~ "Mahkamasining 2021-yil 29-iyundagi 401-sonli qarori asosida tashkil etilgan."
+#~ " Bu qaror Jizzax viloyati hokimligi, Ozbekiston Oliy va orta maxsus talim "
+#~ "vazirligi (hozirgi Oliy talim, fan va innovatsiyalar vazirligi) hamda "
+#~ "Sambhram Group ortasidagi kelishuvdan song qabul qilingan. Kelishuv 2021-yil"
+#~ " 16-fevralda Ozbekiston bosh vaziri orinbosari Aziz Abduhakimov "
+#~ "boshchiligidagi delegatsiyaning Hindistonga tashrifi chogida erishilgan "
+#~ "bolib, memorandum Jizzax viloyati hokimi Ergash Soliyev va Sambhram Group "
+#~ "rahbari Dr. Nagraj Venkatesh tomonidan imzolangan "
 #~ msgstr ""
-#~ "Jizzakh Sambhram University was established by the Resolution of the "
-#~ "Cabinet of Ministers of the Republic of Uzbekistan No. 401 dated June 29, "
-#~ "2021. This decision was made following an agreement between the Jizzakh "
-#~ "regional administration, the Ministry of Higher and Secondary Specialized "
-#~ "Education of Uzbekistan (now the Ministry of Higher Education, Science "
-#~ "and Innovations) and the Sambhram Group. The agreement was reached on "
-#~ "February 16, 2021 during the visit of a delegation led by the Deputy "
-#~ "Prime Minister of Uzbekistan, Aziz Abduhakimov, to India, and the "
-#~ "memorandum was signed by the Governor of Jizzakh region, Ergash Soliyev, "
-#~ "and the Head of Sambhram Group, Dr. Nagraj Venkatesh"
+#~ "Jizzakh Sambhram University was established by the Resolution of the Cabinet"
+#~ " of Ministers of the Republic of Uzbekistan No. 401 dated June 29, 2021. "
+#~ "This decision was made following an agreement between the Jizzakh regional "
+#~ "administration, the Ministry of Higher and Secondary Specialized Education "
+#~ "of Uzbekistan (now the Ministry of Higher Education, Science and "
+#~ "Innovations) and the Sambhram Group. The agreement was reached on February "
+#~ "16, 2021 during the visit of a delegation led by the Deputy Prime Minister "
+#~ "of Uzbekistan, Aziz Abduhakimov, to India, and the memorandum was signed by "
+#~ "the Governor of Jizzakh region, Ergash Soliyev, and the Head of Sambhram "
+#~ "Group, Dr. Nagraj Venkatesh"
 
 #~ msgid ""
-#~ " Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari "
-#~ "(IT) sohasida oliy malumotli kadrlarni tayyorlash bolib, zamonaviy "
-#~ "professional talimni axloqiy qadriyatlar va xarakter tarbiyasi bilan "
-#~ "birlashtirishga etibor beradi. Sambhram Groupning 30 yillik tajribasi va "
-#~ "dunyo boylab 7 ta xalqaro kampusga ega bolgan tarmogi ushbu loyihada "
-#~ "muhim rol oynagan. Universitet oqitishni kunduzgi shaklda ozbek, ingliz "
-#~ "va rus tillarida tolov-kontrakt asosida olib boradi"
+#~ " Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari (IT) "
+#~ "sohasida oliy malumotli kadrlarni tayyorlash bolib, zamonaviy professional "
+#~ "talimni axloqiy qadriyatlar va xarakter tarbiyasi bilan birlashtirishga "
+#~ "etibor beradi. Sambhram Groupning 30 yillik tajribasi va dunyo boylab 7 ta "
+#~ "xalqaro kampusga ega bolgan tarmogi ushbu loyihada muhim rol oynagan. "
+#~ "Universitet oqitishni kunduzgi shaklda ozbek, ingliz va rus tillarida tolov-"
+#~ "kontrakt asosida olib boradi"
 #~ msgstr ""
-#~ "Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari "
-#~ "(IT) sohasida oliy malumotli kadrlarni tayyorlash bolib, zamonaviy "
-#~ "professional talimni axloqiy qadriyatlar va xarakter tarbiyasi bilan "
-#~ "birlashtirishga etibor beradi. Sambhram Groupning 30 yillik tajribasi va "
-#~ "dunyo boylab 7 ta xalqaro kampusga ega bolgan tarmogi ushbu loyihada "
-#~ "muhim rol oynagan. Universitet oqitishni kunduzgi shaklda ozbek, ingliz "
-#~ "va rus tillarida tolov-kontrakt asosida olib boradi"
+#~ "Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari (IT) "
+#~ "sohasida oliy malumotli kadrlarni tayyorlash bolib, zamonaviy professional "
+#~ "talimni axloqiy qadriyatlar va xarakter tarbiyasi bilan birlashtirishga "
+#~ "etibor beradi. Sambhram Groupning 30 yillik tajribasi va dunyo boylab 7 ta "
+#~ "xalqaro kampusga ega bolgan tarmogi ushbu loyihada muhim rol oynagan. "
+#~ "Universitet oqitishni kunduzgi shaklda ozbek, ingliz va rus tillarida tolov-"
+#~ "kontrakt asosida olib boradi"
 
 #, python-format
 #~ msgid ""
@@ -774,16 +650,15 @@ msgstr "Distance Learning"
 #~ "dastlabki investitsiyalar rejalashtirildi. Ular 4 yil davomida jami 3 "
 #~ "million AQSh dollari miqdorida sarmoya kiritish majburiyatini olgan. "
 #~ "Shuningdek, har yili qabul qilinadigan talabalarning 20 foiziga imtiyozli "
-#~ "talim grantlari ajratish (5 foiz bepul, 5 foiz 50%% chegirma, 10 foiz "
-#~ "25%% chegirma) va bitiruvchilarning 25 foizini ishga joylashtirishga "
-#~ "komaklashish kabi majburiyatlar belgilandi"
+#~ "talim grantlari ajratish (5 foiz bepul, 5 foiz 50%% chegirma, 10 foiz 25%% "
+#~ "chegirma) va bitiruvchilarning 25 foizini ishga joylashtirishga komaklashish"
+#~ " kabi majburiyatlar belgilandi"
 #~ msgstr ""
-#~ "2021: After the university was established, the Sambhram Group planned "
-#~ "its initial investments. They committed to investing a total of $3 "
-#~ "million over 4 years. They also committed to providing preferential "
-#~ "tuition grants to 20% of the students admitted each year (5% free, 5% 50% "
-#~ "discount, 10% 25% discount) and to helping 25% of graduates find "
-#~ "employment"
+#~ "2021: After the university was established, the Sambhram Group planned its "
+#~ "initial investments. They committed to investing a total of $3 million over "
+#~ "4 years. They also committed to providing preferential tuition grants to 20%"
+#~ " of the students admitted each year (5% free, 5% 50% discount, 10% 25% "
+#~ "discount) and to helping 25% of graduates find employment"
 
 #~ msgid ""
 #~ " 2022-yil: Jizzax Davlat Pedagogika Universiteti (JDPU) bilan hamkorlik "
@@ -794,59 +669,38 @@ msgstr "Distance Learning"
 #~ "rivojlantirishga qaratildi. Tadbirda Sambhram Universiteti rektori S.O. "
 #~ "Tovboev JDPU vakillariga esdalik sovgalari topshirdi"
 #~ msgstr ""
-#~ "2022: Cooperation relations with Jizzakh State Pedagogical University "
-#~ "(JDPU) were established. A memorandum was signed between the Department "
-#~ "of English Language Teaching Methods of the Faculty of Foreign Languages ​​"
-#~ "and the Department of Bachelor of Information Technology of Sambhram "
-#~ "University. This cooperation was aimed at scientific research activities, "
-#~ "international exchange of experience and development of IT skills. At the "
-#~ "event, the rector of Sambhram University S.O. Tovboev presented souvenirs "
-#~ "to the representatives of JDPU"
+#~ "2022: Cooperation relations with Jizzakh State Pedagogical University (JDPU)"
+#~ " were established. A memorandum was signed between the Department of English"
+#~ " Language Teaching Methods of the Faculty of Foreign Languages ​​and the "
+#~ "Department of Bachelor of Information Technology of Sambhram University. "
+#~ "This cooperation was aimed at scientific research activities, international "
+#~ "exchange of experience and development of IT skills. At the event, the "
+#~ "rector of Sambhram University S.O. Tovboev presented souvenirs to the "
+#~ "representatives of JDPU"
 
 #~ msgid ""
-#~ "Universitet dastlabki yillarida oz infratuzilmasini rivojlantirishga "
-#~ "etibor qaratdi. Rasmiy veb-sayti (sambhram.uz) 2020-2021-yillarda "
-#~ "qurilish jarayonida holatida bolgan, bu esa universitetning dastlabki "
-#~ "bosqichda oz platformasini shakllantirayotganidan dalolat beradi [Web ID: "
-#~ "3] [Web ID: 5]. 2022-yilga kelib, universitet oz faoliyatini kengaytirib, "
-#~ "mahalliy va xalqaro hamkorlik aloqalarini mustahkamlashga kirishdi"
+#~ "Universitet dastlabki yillarida oz infratuzilmasini rivojlantirishga etibor "
+#~ "qaratdi. Rasmiy veb-sayti (sambhram.uz) 2020-2021-yillarda qurilish "
+#~ "jarayonida holatida bolgan, bu esa universitetning dastlabki bosqichda oz "
+#~ "platformasini shakllantirayotganidan dalolat beradi [Web ID: 3] [Web ID: 5]."
+#~ " 2022-yilga kelib, universitet oz faoliyatini kengaytirib, mahalliy va "
+#~ "xalqaro hamkorlik aloqalarini mustahkamlashga kirishdi"
 #~ msgstr ""
-#~ "The university focused on developing its infrastructure in its early "
-#~ "years. Its official website (sambhram.uz) was under construction in "
-#~ "2020-2021, indicating that the university was in the early stages of "
-#~ "developing its platform By 2022, the university had expanded its "
-#~ "activities and begun to strengthen local and international partnerships."
+#~ "The university focused on developing its infrastructure in its early years. "
+#~ "Its official website (sambhram.uz) was under construction in 2020-2021, "
+#~ "indicating that the university was in the early stages of developing its "
+#~ "platform By 2022, the university had expanded its activities and begun to "
+#~ "strengthen local and international partnerships."
 
 #~ msgid ""
 #~ " Talim tizimi va diplomlar\n"
-#~ "                            Universitet bakalavriat va magistratura "
-#~ "dasturlarini taklif qiladi, qabul parametrlari esa oz mustaqil tizimi "
-#~ "asosida belgilanadi. Bitiruvchilarga Ozbekiston va Hindistonda oliy talim "
-#~ "hujjati sifatida tan olinadigan diplomlar beriladi\n"
-#~ "                            Jizzax Sambhram Universiteti 2021-yilda "
-#~ "tashkil etilib, qisqa muddat ichida IT sohasida kadrlarni tayyorlash va "
-#~ "xalqaro hamkorlikni rivojlantirish boyicha muhim qadamlar tashladi. "
-#~ "Sambhram Groupning tajribasi va investitsiyalari, shuningdek, mahalliy "
-#~ "hokimiyat bilan hamkorlik universitetning dastlabki rivojlanishida muhim "
-#~ "rol oynadi. 2024-yildan keyingi yangiliklar haqida malumotim yoq, ammo "
-#~ "universitetning rasmiy sayti (sambhram.uz) yoki ijtimoiy tarmoqlardagi "
-#~ "sahifalarida songgi yangiliklarni topishingiz mumkin.\n"
-#~ "                            Agar qoshimcha malumot yoki boshqa jihatlar "
-#~ "haqida bilmoqchi bolsangiz, ayting!"
+#~ "                            Universitet bakalavriat va magistratura dasturlarini taklif qiladi, qabul parametrlari esa oz mustaqil tizimi asosida belgilanadi. Bitiruvchilarga Ozbekiston va Hindistonda oliy talim hujjati sifatida tan olinadigan diplomlar beriladi\n"
+#~ "                            Jizzax Sambhram Universiteti 2021-yilda tashkil etilib, qisqa muddat ichida IT sohasida kadrlarni tayyorlash va xalqaro hamkorlikni rivojlantirish boyicha muhim qadamlar tashladi. Sambhram Groupning tajribasi va investitsiyalari, shuningdek, mahalliy hokimiyat bilan hamkorlik universitetning dastlabki rivojlanishida muhim rol oynadi. 2024-yildan keyingi yangiliklar haqida malumotim yoq, ammo universitetning rasmiy sayti (sambhram.uz) yoki ijtimoiy tarmoqlardagi sahifalarida songgi yangiliklarni topishingiz mumkin.\n"
+#~ "                            Agar qoshimcha malumot yoki boshqa jihatlar haqida bilmoqchi bolsangiz, ayting!"
 #~ msgstr ""
 #~ "Education system and diplomas\n"
-#~ "The university offers bachelor's and master's programs, and admission "
-#~ "parameters are determined on the basis of its own independent system. "
-#~ "Graduates are awarded diplomas that are recognized as higher education "
-#~ "documents in Uzbekistan and India\n"
-#~ "Jizzakh Sambhram University was established in 2021 and has taken "
-#~ "significant steps in training personnel in the IT sector and developing "
-#~ "international cooperation in a short period of time. Sambhram Group's "
-#~ "experience and investments, as well as cooperation with local "
-#~ "authorities, played an important role in the initial development of the "
-#~ "university. I do not have information about news after 2024, but you can "
-#~ "find the latest news on the university's official website (sambhram.uz) "
-#~ "or on its pages on social networks.\n"
+#~ "The university offers bachelor's and master's programs, and admission parameters are determined on the basis of its own independent system. Graduates are awarded diplomas that are recognized as higher education documents in Uzbekistan and India\n"
+#~ "Jizzakh Sambhram University was established in 2021 and has taken significant steps in training personnel in the IT sector and developing international cooperation in a short period of time. Sambhram Group's experience and investments, as well as cooperation with local authorities, played an important role in the initial development of the university. I do not have information about news after 2024, but you can find the latest news on the university's official website (sambhram.uz) or on its pages on social networks.\n"
 #~ "If you want to know more information or other aspects, let me know!"
 
 #~ msgid "Uzbek"

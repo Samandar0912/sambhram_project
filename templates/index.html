@@ -154,30 +154,27 @@
 
     {% block about_us %}
         <section class="about_us">
-            <section class="about_us">
-                <div class="about-main">
-                    <div class="about-img-cards"></div>
-                    <div class="about-img-logo">
-                        <div class="line-box1">
-                            <span class="loader1"></span>
-                            <span class="loader2"></span>
-                            <span class="loader3"></span>
-                            <div class="img-card">
-                                <img src="{% static 'img/logo.png' %}" alt="">
-                            </div>
+            <div class="about-main">
+                <div class="about-img-logo">
+                    <div class="line-box1">
+                        <span class="loader1"></span>
+                        <span class="loader2"></span>
+                        <span class="loader3"></span>
+                        <div class="img-card">
+                            <img src="{% static 'img/logo.png' %}" alt="">
                         </div>
                     </div>
-                    <div class="about-img-title">
-                        <h3>{% blocktrans %}Universitet haqida{% endblocktrans %}</h3>
-                        <p>{% blocktrans %}“Sambhram Universiteti” nodavlat ta’lim muassasasi bulib, 2021 - yilda tashkil topgan. Universitetda 1ta ochiq futbol maydoni va 1ta yopiq sport zali mavjud.{% endblocktrans %}</p>
-                        <p>{% blocktrans %}Axborot resurs markazida, ARM da 4230 ta darsliklar va o'quv qo'llanmalari kitoblari mavjud.{% endblocktrans %}</p>
-                        <p>{% blocktrans %}Universitetda zami 1977 nafar talabalar talim olmoqda. Zhumladan, 3 ta talim yönalish bwyicha kunduzgi talimda 857, Sirtqi talimda 1 100 nafar hamda magistracy 20 nafar talabalar oqimokda.{% endblocktrans %}</p>
-            
-                        <a href="{% url 'main:about' %}">{% blocktrans %}Batafsil{% endblocktrans %}</a>
-                        
-                    </div>
                 </div>
-            </section>
+                <div class="about-img-title">
+                    <h3>{% blocktrans %}Universitet haqida{% endblocktrans %}</h3>
+                    <p class="p1">{% blocktrans %}Universitetning asosiy maqsadi axborot-kommunikatsiya texnologiyalari (IT) sohasida oliy ma’lumotli kadrlarni tayyorlash bo‘lib, zamonaviy professional ta’limni axloqiy qadriyatlar va xarakter tarbiyasi bilan birlashtirishga e’tibor beradi. Sambhram Groupning 30 yillik tajribasi va dunyo bo‘ylab 7 ta xalqaro kampusga ega bo‘lgan tarmog‘i ushbu loyihada muhim rol o‘ynagan. Universitet o‘qitishni kunduzgi shaklda o‘zbek, ingliz va rus tillarida to‘lov-kontrakt asosida olib boradi{% endblocktrans %}</p>
+                    <p class="p2">{% blocktrans %}Universitet dastlabki yillarida o‘z infratuzilmasini rivojlantirishga e’tibor qaratdi. Rasmiy veb-sayti (sambhram.uz) 2020-2021-yillarda “qurilish jarayonida” holatida bo‘lgan, bu esa universitetning dastlabki bosqichda o‘z platformasini shakllantirayotganidan dalolat beradi. 2022-yilga kelib, universitet o‘z faoliyatini kengaytirib, mahalliy va xalqaro hamkorlik aloqalarini mustahkamlashga kirishdi{% endblocktrans %}</p>
+        
+                    <a href="{% url 'main:about' %}">{% blocktrans %}Batafsil{% endblocktrans %}</a>
+                    
+                </div>
+            </div>
+        </section>
     {% endblock about_us %}
 
     {% block statistika %}
@@ -332,135 +329,3 @@
         </section>
 
     {% endblock indikator %}
-
-
-
-    {% block galareya %}
-        <section class="galareya-page py-8">
-        <div class="container mx-auto max-w-6xl">
-            <!-- Tabs -->
-            <div class="flex space-x-4 mb-6">
-            <button class="tab-btn px-4 py-2 font-semibold text-gray-700 border-b-3 border-transparent hover:border-blue-900 transition-colors tab-active" data-target="foto">FOTOLAVHALAR</button>
-            <button class="tab-btn px-4 py-2 font-semibold text-gray-700 border-b-3 border-transparent hover:border-blue-900 transition-colors" data-target="video">VIDEOLAVHALAR</button>
-            </div>
-        
-            <!-- Foto Galereya -->
-            <div id="foto" class="tab-content">
-            <div class="swiper foto-swiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide_img ">
-                    <img src="{% static 'img/indicator/indicator1.jpg' %}" class="rounded-lg w-full h-48 object-cover" alt="Foto 1" />
-                </div>
-                <div class="swiper-slide swiper-slide_img">
-                    <img src="{% static 'img/indicator/indicator1.jpg' %}" class="rounded-lg w-full h-48 object-cover" alt="Foto 2" />
-                </div>
-                </div>
-                <!-- <div class="swiper-button-next text-blue-900"></div>
-                <div class="swiper-button-prev text-blue-900"></div> -->
-                <!-- <div class="swiper-pagination"></div> -->
-            </div>
-            </div>
-        
-            <!-- Video Galereya -->
-            <div id="video" class="tab-content hidden">
-            <div class="swiper video-swiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <video controls class="rounded-lg w-full h-48">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="swiper-slide">
-                    <video controls class="rounded-lg w-full h-48">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                    </video>
-                </div>
-                </div>
-                <div class="swiper-button-next text-blue-900"></div>
-                <div class="swiper-button-prev text-blue-900"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            </div>
-        </div>
-        </section>
-        
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        
-        <script>
-        // Swiper init for Foto and Video separately
-        const fotoSwiper = new Swiper(".foto-swiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop: true,
-        pagination: { el: ".foto-swiper .swiper-pagination", clickable: true },
-        navigation: { nextEl: ".foto-swiper .swiper-button-next", prevEl: ".foto-swiper .swiper-button-prev" },
-        breakpoints: {
-            1024: { slidesPerView: 4 },
-            768: { slidesPerView: 2 },
-            640: { slidesPerView: 1 },
-        },
-        });
-        
-        const videoSwiper = new Swiper(".video-swiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop: true,
-        pagination: { el: ".video-swiper .swiper-pagination", clickable: true },
-        navigation: { nextEl: ".video-swiper .swiper-button-next", prevEl: ".video-swiper .swiper-button-prev" },
-        breakpoints: {
-            1024: { slidesPerView: 4 },
-            768: { slidesPerView: 2 },
-            640: { slidesPerView: 1 },
-        },
-        });
-        
-        // Tab switching with hide/show functionality
-        const fotoContent = document.getElementById("foto");
-        const videoContent = document.getElementById("video");
-        
-        document.querySelectorAll(".tab-btn").forEach(tab => {
-        tab.addEventListener("click", () => {
-            // Toggle active tab
-            document.querySelectorAll(".tab-btn").forEach(t => t.classList.remove("tab-active"));
-            tab.classList.add("tab-active");
-        
-            // Toggle content visibility using style.display
-            if (tab.dataset.target === "foto") {
-            fotoContent.style.display = "block";
-            videoContent.style.display = "none";
-            } else if (tab.dataset.target === "video") {
-            videoContent.style.display = "block";
-            fotoContent.style.display = "none";
-            }
-        
-            // Refresh Swiper instances to fix layout issues
-            fotoSwiper.update();
-            videoSwiper.update();
-        });
-        });
-        
-        // Add click events to foto and video content areas
-        fotoContent.addEventListener("click", () => {
-        videoContent.style.display = "none";
-        fotoContent.style.display = "block";
-        // Update tab button active state
-        document.querySelectorAll(".tab-btn").forEach(t => t.classList.remove("tab-active"));
-        document.querySelector('.tab-btn[data-target="foto"]').classList.add("tab-active");
-        fotoSwiper.update();
-        });
-        
-        videoContent.addEventListener("click", () => {
-        fotoContent.style.display = "none";
-        videoContent.style.display = "block";
-        // Update tab button active state
-        document.querySelectorAll(".tab-btn").forEach(t => t.classList.remove("tab-active"));
-        document.querySelector('.tab-btn[data-target="video"]').classList.add("tab-active");
-        videoSwiper.update();
-        });
-        </script>
-        
-
-    {% endblock galareya %}
