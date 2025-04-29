@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/about-us.css' %}">
+    <link rel="stylesheet" href="{% static 'css/havola.css' %}">
     <link rel="stylesheet" href="{% static 'css/video.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
@@ -36,12 +37,11 @@
     {% block main %}{% endblock main %}
 
     {% block news %}{% endblock news %}
-    {% block elonlar %}{% endblock elonlar %}
     {% block havola %}{% endblock havola %}
+    {% block elonlar %}{% endblock elonlar %}
     {% block about_us %}{% endblock about_us %}
     {% block statistika %}{% endblock statistika %}
     {% block indikator %}{% endblock indikator %}
-    {% comment %} {% block galareya %}{% endblock galareya %} {% endcomment %}
     
     
     {% include "__footer.html" %}
