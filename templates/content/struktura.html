@@ -3,8 +3,14 @@
 {% block main %}
 
     <div class="bg_img_box">
+        {% for item in struktura %}
+            {% if item %}
+                <img src="{{ item.video_file.url }}" class="struktura_img" alt="img">
+            {% else %}
+                <h3>Horizcha malumot mavjud emas</h3>
+            {% endif %}
 
-        <img src="" alt="img">
+        {% endfor %}
 
     </div>
 

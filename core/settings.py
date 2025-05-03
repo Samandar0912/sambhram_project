@@ -7,8 +7,8 @@ os.environ["PYTHONIOENCODING"] = "utf-8"
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security settings
-SECRET_KEY = 'django-insecure-2*)vfpz0bkomk$co@%ysvr6#f0@#r74di)n_0r&_t0rwi3ge4m'  # Move to env variable in production
-DEBUG = True
+SECRET_KEY = 'django-insecure-2*)vfpz0bkomk$co@%ysvr6#f0@#r74di)n_0r&_t0rwi3ge4m'
+DEBUG = False
 ALLOWED_HOSTS = ["*"]
 
 # Application definition
@@ -109,13 +109,17 @@ LOCALE_PATHS = [
 
 # Static files
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static']
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

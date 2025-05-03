@@ -713,13 +713,13 @@ display: none;
 }
 .all_cards .card{
     border: 1px solid #2C4D78;
-    height: 400px;
+    height: auto;
     text-align: center;
     border-radius: 9px !important;
 }
 
 .all_cards .card img{
-    height: 230px;
+    height: 220px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
@@ -1005,4 +1005,9 @@ display: none;
         height: 25px;
         font-size: 12px;
     }
+}
+
+.struktura_img{
+    width: 100% !important;
+    object-fit: cover;
 }

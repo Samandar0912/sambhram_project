@@ -422,3 +422,13 @@ class Video(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class Uiversitet_Struktura(models.Model):
+    title = models.CharField(max_length=300)
+    video_file = models.FileField(upload_to='struktura/')
+
+
+    def __str__(self):
+        return self.title
+    

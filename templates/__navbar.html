@@ -98,7 +98,7 @@
                         <ul class="dropdown_2"> 
                             <li><a href="{% url 'main:rektorat' %}">{% blocktrans %}Rektorat{% endblocktrans %}</a></li>
                             <li><a href="{% url 'main:fakultet' %}">{% blocktrans %}Fakultetlar{% endblocktrans %}</a></li>
-                            <li><a href="{% url 'main:markaz' %}">  {% blocktrans %}Markazlar{% endblocktrans %}</a></li>
+                            {% comment %} <li><a href="{% url 'main:markaz' %}">  {% blocktrans %}Markazlar{% endblocktrans %}</a></li> {% endcomment %}
                             <li><a href="{% url 'main:bulim' %}">   {% blocktrans %}Bo'limlar{% endblocktrans %}</a></li>
                             <li><a href="{% url 'main:kafedra' %}"> {% blocktrans %}Kafedralar{% endblocktrans %}</a></li>
                         </ul>

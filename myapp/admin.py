@@ -4,11 +4,16 @@ from .models import (
     EkranImages, NewsArticle, NewsImage, ElonArticle, ElonImage, HavolaImages,
     RektoratCategory, RectoratUserModel, UserModel, FacultetUserModel,
     FacultetInUserModel, MarkazUserModel, MarkazInUserModel, BulimUserModel,
-    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel, Video
+    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel, Video, Uiversitet_Struktura
 )
 
 @admin.register(Video)
 class EkranImagesAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+    
+@admin.register(Uiversitet_Struktura)
+class Uiversitet_StrukturaAdmin(admin.ModelAdmin):
     list_display = ('title',)
 
     
