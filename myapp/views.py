@@ -35,6 +35,10 @@ class IndexView(TemplateView):
         context['news'] = NewsArticle.objects.all()
         context['elon'] = ElonArticle.objects.all()
         context['havola'] = HavolaImages.objects.all()
+        context['galareyaIMG1'] = galareyaIMG1.objects.all()
+        context['galareyaIMG2'] = galareyaIMG2.objects.all()
+        context['galareyaIMG3'] = galareyaIMG3.objects.all()
+        context['galareyaIMG4'] = galareyaIMG4.objects.all()
         return context
     
 # ================= NEWS =================

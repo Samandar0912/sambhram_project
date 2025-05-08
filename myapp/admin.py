@@ -1,11 +1,36 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
-from .models import (
-    EkranImages, NewsArticle, NewsImage, ElonArticle, ElonImage, HavolaImages,
-    RektoratCategory, RectoratUserModel, UserModel, FacultetUserModel,
-    FacultetInUserModel, MarkazUserModel, MarkazInUserModel, BulimUserModel,
-    BulimInUserModel, KafedraUserModel, KafedraInUserModel, HistoryUniversity, AboutUsUniversity, CallUserModel, Video, Uiversitet_Struktura
-)
+from .models import *
+
+
+
+
+
+
+
+@admin.register(galareyaIMG1)
+class galareyaIMG1Admin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+@admin.register(galareyaIMG2)
+class galareyaIMG2Admin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+@admin.register(galareyaIMG3)
+class galareyaIMG3Admin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+@admin.register(galareyaIMG4)
+class galareyaIMG4Admin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+
+
+
 
 @admin.register(Video)
 class EkranImagesAdmin(admin.ModelAdmin):

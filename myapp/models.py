@@ -432,3 +432,63 @@ class Uiversitet_Struktura(models.Model):
     def __str__(self):
         return self.title
     
+    
+    
+    
+    
+    
+
+class galareyaIMG1(models.Model):
+    title = models.CharField(max_length=300)
+    img = models.FileField(upload_to='galareya/')
+
+    class Meta:
+        verbose_name = "Galareya rasmi-1"
+        verbose_name_plural = "Galareya rasmi-1"
+        
+    def __str__(self):
+        return self.title
+
+
+
+
+class galareyaIMG2(models.Model):
+    title = models.CharField(max_length=300)
+    img = models.FileField(upload_to='galareya/')
+
+    class Meta:
+        verbose_name = "Galareya rasmi-2"
+        verbose_name_plural = "Galareya rasmi-2"
+        
+    def __str__(self):
+        return self.title
+
+
+
+
+class galareyaIMG3(models.Model):
+    title = models.CharField(max_length=300)
+    img = models.FileField(upload_to='galareya/')
+
+    class Meta:
+        verbose_name = "Galareya rasmi-3"
+        verbose_name_plural = "Galareya rasmi-3"
+        
+    def __str__(self):
+        return self.title
+
+
+
+
+
+
+class galareyaIMG4(models.Model):
+    title = models.CharField(max_length=300)
+    img = models.FileField(upload_to='galareya/')
+
+    class Meta:
+        verbose_name = "Galareya rasmi-4"
+        verbose_name_plural = "Galareya rasmi-4"
+        
+    def __str__(self):
+        return self.title
