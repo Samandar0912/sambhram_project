@@ -6,37 +6,37 @@
 
     
     {% block bg-img %}
-            <div class="bg-img-box">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
+        <div class="bg-img-box">
+            <div class="swiper">
+                <div class="swiper-wrapper">
 
-                        {% for item in bgimg %}
-                            {% if item.img %}
-                                <div class="swiper-slide">
-                                    <img src="{{ item.img.url }}" alt="">
-                                </div>
-                            {% else %}
-                                <div class="swiper-slide">
-                                    <img src="{% static 'img/bg-img-1.jpg' %}" alt="">
-                                </div>
-                            {% endif %}
-                        {% endfor %}
-                        
-                    </div>
-                
-                    <!-- <div class="swiper-pagination"></div> -->
-                
-                    <!-- <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
-                    <div class="swiper-scrollbar"></div>
-                
+                    {% for item in bgimg %}
+                        {% if item.img %}
+                            <div class="swiper-slide">
+                                <img src="{{ item.img.url }}" alt="">
+                            </div>
+                        {% else %}
+                            <div class="swiper-slide">
+                                <img src="{% static 'img/bg-img-1.jpg' %}" alt="">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    
                 </div>
-                <div class="elon-card">
-                    <img src="{% static 'rasm.png' %}" alt="">
-                    <h3>Jizzax Sambhram Universitetida Qabul boshlandi</h3>
-                    <a href="" class="btn">Batafsil</a>
-                </div>
+            
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                <div class="swiper-scrollbar"></div>
+            
             </div>
+            <div class="elon-card">
+                <img src="{% static 'rasm.png' %}" alt="">
+                <h3>Jizzax Sambhram Universitetida Qabul boshlandi</h3>
+                <a href="" class="btn">Batafsil</a>
+            </div>
+        </div>
     {% endblock bg-img %}
 
     {% block news %}
@@ -317,72 +317,72 @@
     {% endblock indikator %}
 
 
-
     {% block galareya %}
-        <section class="news">
-            <div class="section-info havola-line">
-                <div class="left">
-                    <h2>{% blocktrans %}Foydali Havolalar{% endblocktrans %}</h2>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
+    <section class="news">
+        <div class="section-info havola-line">
+            <div class="left">
+                <h2>{% blocktrans %}Foydali Havolalar{% endblocktrans %}</h2>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-            <div class="container-fluid galareya">
-                <div class="video-box-left">
-                    <video controls>
-                        <source src="{% static 'video.mp4' %}" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-box-right">
-                    <!-- Har bir karuselga noyob ID -->
-                    <div class="right-box">
-                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                            <div class="carousel-inner">
-                                {% for item in galareyaIMG1 %}
-                                <div class="carousel-item active">
-                                    <img src="{{ item.img.url }}" class="right-box-img">
-                                </div>
-                                {% endfor %}
+        </div>
+        <div class="container-fluid galareya">
+            <div class="video-box-left">
+                <video controls>
+                    <source src="{% static 'video.mp4' %}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-box-right">
+                <!-- Karusel 1 -->
+                <div class="right-box">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            {% for item in galareyaIMG1 %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
                             </div>
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{% static 'rasm1.JPG' %}" class="right-box-img">
-                                </div>
-                                {% for item in galareyaIMG2 %}
-                                <div class="carousel-item active">
-                                    <img src="{{ item.img.url }}" class="right-box-img">
-                                </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        <div id="carousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                            <div class="carousel-inner">
-                                {% for item in galareyaIMG3 %}
-                                <div class="carousel-item active">
-                                    <img src="{{ item.img.url }}" class="right-box-img">
-                                </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        <div id="carousel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                            <div class="carousel-inner">
-                                {% for item in galareyaIMG4 %}
-                                <div class="carousel-item active">
-                                    <img src="{{ item.img.url }}" class="right-box-img">
-                                </div>
                             {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Karusel 2 -->
+                <div class="right-box">
+                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <!-- Statik rasm (birinchi element sifatida) -->
+                            {% for item in galareyaIMG2 %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
                             </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Karusel 3 -->
+                <div class="right-box">
+                    <div id="carousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            {% for item in galareyaIMG3 %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Karusel 4 -->
+                <div class="right-box">
+                    <div id="carousel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            {% for item in galareyaIMG4 %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     {% endblock galareya %}
