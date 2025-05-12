@@ -56,20 +56,6 @@
 }
 
 
-.links-browser{
-    display: flex;
-}
-.links-browser > a{
-    margin: 0 10px;
-    object-fit: cover;
-
-}
-.links-browser > a:nth-child(2){
-    margin-top: 3px;
-}
-.links-browser > a > img{
-    object-fit: cover;
-}
 
 .navbar-box-2{
     background: #EAF1FB;

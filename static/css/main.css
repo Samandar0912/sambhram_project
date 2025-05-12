@@ -1147,3 +1147,27 @@ display: none;
         margin: 8px 15px 15px;
     }
 }
+
+.fixed_icon {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 350px;
+    z-index: 99;
+}
+.fixed_icon a{
+    height: 60px;
+    width: 60px;
+    background: rgba(40, 91, 173, .3);
+    display: flex   ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.fixed_icon a img{
+    width: 30px;
+}
