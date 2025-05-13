@@ -24,114 +24,141 @@
 .video-box p{
     margin-top: 20px;
 }
+::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #8fcdff;
+    border-radius: 10px;
+    
+}
+/* Galareya konteyneri */
+/* Galareya konteyneri */
+/* Galareya konteyneri */
+/* Galareya konteyneri */
 
 
 /* Galareya konteyneri */
 .galareya {
-    max-width: 1440px; /* Maksimal kenglik */
-    margin: 50px auto; /* Markazlashtirish va yuqoridan bo'shliq */
+    max-width: 1440px;
+    margin: 25px auto;
     display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Elementlar orasidagi bo'shliq */
-    padding: 0 15px; /* Ichki chet bo'shliqlari */
+    flex-direction: column;
 }
 
-/* Video qismi */
-.video-box-left {
-    flex: 1; /* Moslashuvchan kenglik */
-    max-width: 700px; /* Maksimal video kengligi */
-}
-
-.video-box-left video {
+.gallery-container {
+    display: flex;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-image {
+    width: 73%;
+    padding: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 600px;
     object-fit: cover;
 }
 
-.video-box-right {
-    flex: 1; /* Moslashuvchan kenglik */
-    max-width: 700px; /* Maksimal kenglik */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 ta ustun */
-    gap: 20px; /* Karusellar orasidagi bo'shliq */
+.thumbnail-container {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto; /* Vertikal scroll 1024px gacha */
+    max-height: 600px; /* Vertikal scroll uchun balandlik */
 }
 
-/* Har bir karusel bloki */
-.right-box {
-    width: 100%; /* To'liq kenglik */
-    height: 280px; /* Balandlik */
-    overflow: hidden; /* Tashqariga chiqadigan kontentni yashirish */
+.thumbnail-item {
+    margin-bottom: 10px; /* Vertikal bo'shliq */
 }
 
-/* Karusel rasmlari */
-.right-box-img {
-    width: 100%; /* To'liq kenglik */
-    height: 250px; /* Balandlik */
-    object-fit: cover; /* Rasmni to'g'ri joylashtirish */
-    border-radius: 10px;
-    object-position: 50% 50%;
+.thumbnail-item img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%; /* Markazda joylashish uchun tuzatildi */
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
 }
 
-/* Bootstrap karuselini to'g'rilash */
-.carousel-inner {
-    width: 100%;
-    height: 100%;
+.thumbnail-item img:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
 }
 
-.carousel-item {
-    width: 100%;
-    height: 280px; /* Karusel balandligi */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Rasmni to'g'ri joylashtirish */
-}
-
-/* Responsive dizayn */
-@media (max-width: 1200px) {
-    .galareya {
-        flex-direction: column; /* Vertikal joylashuv */
-        align-items: center;
+/* Responsiv dizayn */
+@media (max-width: 1024px) {
+    .gallery-container {
+        flex-direction: row; /* 1024px gacha chap va o'ng */
+        justify-content: space-between;
     }
 
-    .video-box-left,
-    .video-box-right {
-        height: 600px;
-        max-width: 100%; /* To'liq kenglik */
-        display: flex;
-        flex-wrap: wrap;
+    .main-image img {
+        height: 400px;
     }
 
-    .video-box-right {
-        grid-template-columns: 1fr; /* Bitta ustun */
-    }
-
-    .right-box {
-        height: 200px; /* Kichik ekranlarda balandlikni kamaytirish */
-    }
-
-    .right-box-img,
-    .carousel-item {
-        height: 200px; /* Moslashtirilgan balandlik */
-        object-fit: cover;
-        object-position: 50% 50%;
+    .thumbnail-item img {
+        width: 200px; /* 1024px da kichraytirilgan o'lcham */
+        height: 150px;
     }
 }
 
 @media (max-width: 768px) {
-    .video-box-left video {
-        border-radius: 5px; /* Kichik ekranlarda radiusni kamaytirish */
+    .gallery-container {
+        flex-direction: column; /* 768px dan kichikroqda tepa-past */
     }
 
-    .right-box {
-        height: 150px;
+    .main-image {
+        width: 100%; /* To'liq kenglik */
     }
 
-    .right-box-img,
-    .carousel-item {
-        height: 150px;
+    .main-image img {
+        height: 300px;
+    }
+
+    .thumbnail-container {
+        width: 100%;
+        max-height: none; /* Vertikal balandlik cheklovini olib tashlash */
+        overflow-y: hidden; /* Vertikal scrollni o'chirish */
+        overflow-x: auto; /* Gorizontal scroll yoqish */
+        white-space: nowrap; /* Rasmlarni gorizontal qator qilish */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    .thumbnail-item {
+        display: inline-block;
+        margin-right: 10px; /* Gorizontal bo'shliq */
+        margin-bottom: 0; /* Vertikal bo'shliqni olib tashlash */
+        width: 120px; /* Gorizontal o'lcham */
+    }
+
+    .thumbnail-item img {
+        width: 100%;
+        height: 90px; /* Gorizontalda moslashuvchan balandlik */
+        object-fit: cover;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .main-image img {
+        height: 200px;
+    }
+
+    .thumbnail-item {
+        width: 100px; /* Kichik ekranlarda yanada ixcham */
+    }
+
+    .thumbnail-item img {
+        height: 70px;
     }
 }

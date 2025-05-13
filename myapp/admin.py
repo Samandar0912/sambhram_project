@@ -13,20 +13,6 @@ class galareyaIMG1Admin(admin.ModelAdmin):
     list_display = ('title',)
 
 
-@admin.register(galareyaIMG2)
-class galareyaIMG2Admin(admin.ModelAdmin):
-    list_display = ('title',)
-
-
-@admin.register(galareyaIMG3)
-class galareyaIMG3Admin(admin.ModelAdmin):
-    list_display = ('title',)
-
-
-@admin.register(galareyaIMG4)
-class galareyaIMG4Admin(admin.ModelAdmin):
-    list_display = ('title',)
-
 
 
 

@@ -65,6 +65,18 @@
                 document.getElementById('languageMenu').classList.remove('show');
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const thumbnails = document.querySelectorAll('.thumbnail-item img');
+            const mainImage = document.querySelector('.main-image img');
+        
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    mainImage.src = this.src; // Asosiy rasmni almashtirish
+                });
+            });
+        });
+
     </script>
 </body>
 </html>

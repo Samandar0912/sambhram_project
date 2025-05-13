@@ -333,71 +333,28 @@
 
 
     {% block galareya %}
-    <section class="news">
-        <div class="section-info havola-line">
-            <div class="left">
-                <h2>{% blocktrans %}Foydali Havolalar{% endblocktrans %}</h2>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </div>
-        <div class="container-fluid galareya">
-            <div class="video-box-left">
-                <video controls>
-                    <source src="{% static 'video.mp4' %}" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-box-right">
-                <!-- Karusel 1 -->
-                <div class="right-box">
-                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            {% for item in galareyaIMG1 %}
-                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <!-- Karusel 2 -->
-                <div class="right-box">
-                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <!-- Statik rasm (birinchi element sifatida) -->
-                            {% for item in galareyaIMG2 %}
-                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <!-- Karusel 3 -->
-                <div class="right-box">
-                    <div id="carousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            {% for item in galareyaIMG3 %}
-                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <!-- Karusel 4 -->
-                <div class="right-box">
-                    <div id="carousel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            {% for item in galareyaIMG4 %}
-                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                <img src="{{ item.img.url }}" class="right-box-img" alt="Galareya rasmi">
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
+        <section class="news">
+            <div class="section-info havola-line">
+                <div class="left">
+                    <h2>{% blocktrans %}Foto Galareya{% endblocktrans %}</h2>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="container-fluid galareya">
+                <div class="gallery-container">
+                    <div class="main-image">
+                        <img src="{{ galareyaIMG1.0.img.url }}" alt="Main Galareya rasmi">
+                    </div>
+                    <div class="thumbnail-container">
+                        {% for item in galareyaIMG1 %}
+                            <div class="thumbnail-item">
+                                <img src="{{ item.img.url }}" alt="Thumbnail rasmi">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            
+            </div>
+        </section>
     {% endblock galareya %}
