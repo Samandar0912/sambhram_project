@@ -13,6 +13,7 @@ urlpatterns = (
     path('Struktura/', views.StrukturaView.as_view(), name="struktura"),
     path('Universitet-Tarixi/', views.HistoryView.as_view(), name="history"),
     path('Universitet-Haqida/', views.AboutView.as_view(), name="about"),
+    path('Biz-Haqimizda/', views.AboutMeView.as_view(), name="about-me"),
     
     path('Yangiliklar/', views.NewsView.as_view(), name='news'),
     path("Yangiliklar/<slug:slug>/", views.NewsDetailView.as_view(), name="news_detail"),   

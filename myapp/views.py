@@ -84,6 +84,13 @@ class StrukturaView(TemplateView):
 
 
 
+
+class AboutMeView(TemplateView):
+    template_name = "content/about-me.html"
+
+
+
+
 # ================= NEWS =================
 class NewsView(ListView):
     model = NewsArticle
